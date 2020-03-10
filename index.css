@@ -295,16 +295,22 @@ nav {
     width: 900px;
     display: grid;
     margin: auto;
-    padding-top: 20px;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    grid-template-areas: "introduction image";
+    grid-template-rows: 20px 42px 1fr;
+    grid-template-areas: "greeting spacer" "greeting image" "introduction image";
+}
+
+.greeting {
+    grid-area: greeting;
+}
+
+.spacer {
+    grid-area: spacer1;
 }
 
 .introduction {
     grid-area: introduction;
-    padding-top: 65px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-right: 40px;
 }
 
