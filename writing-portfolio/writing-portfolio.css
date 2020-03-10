@@ -296,36 +296,26 @@ nav {
 }
 
 /* Introduction Tisms*/
-
-.toptism {
+.top {
     width: 900px;
-    padding-left: 20px;
-}
-
-/*.top {
-    width: 900px;
-    height: 288px;
     display: grid;
     margin: auto;
     padding-top: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas: "title image" "introduction image";
-}*/
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas: "greeting" "introduction";
+}
 
-.title {
-    grid-area: title;
-    padding-left: 20px;
+.greeting {
+    grid-area: greeting;
+    padding-left: 40px;
+    padding-top: 20px;
 }
 
 .introduction {
     grid-area: introduction;
     padding-left: 40px;
     padding-right: 40px;
-}
-
-.image {
-    grid-area: image;
 }
 
 /* Category Tisms */
