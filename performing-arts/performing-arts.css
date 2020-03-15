@@ -375,19 +375,165 @@ nav {
 
 /* Composition Tisms */
 
-.compositions {
-    width: 880px;
-    padding-left: 20px;
-    padding-right: 20px;
+.requiem {
+    width: 920px;
     font-size: 20px;
     display: grid;
     grid-template-columns: 50% 40% 10%;
-    grid-template-rows: 40px auto;
-    grid-template-areas: "title orchestration date-end";
+    grid-template-rows: 40px;
+    grid-template-areas: "movdown orchestration comp-date";
+}
+
+.movdown {
+    position: relative;
+    grid-area: movdown;
+    width: 200px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-style: italic;
+    color: hsla(7, 52%, 80%, 1);
+}
+
+.orchestration {
+    grid-area: orchestration;
+    padding-top: 10px;
+}
+
+.comp-date {
+    grid-area: comp-date;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.movdown-cont {
+    display: none;
+    position: relative;
+    top: 6px;
+    right: 20px;
+    background-color: hsla(0, 15%, 15%, 1);
+    z-index: 6;
+    width: 520px;
+    overflow: auto;
+}
+
+.movdown:hover {
+    background-color: hsla(0, 15%, 15%, 1);
+}
+
+.movdown:hover .movdown-cont {
+    display: block;
+}
+
+.movements-table {
+    display: grid;
+    padding-bottom: 30px;
+    width: 520px;
+    grid-template-columns: 260px 260px;
+    grid-template-rows: repeat(9, 40px);
+    grid-template-areas: "mov1 mov10" "mov2 mov11" "mov3 mov12" "mov4 mov13" "mov5 mov14" "mov6 mov15" "mov7 mov16" "mov8 mov17" "mov9 mov9";
+}
+
+.cont {
+    position: relative;
+    top: 10px;
+}
+
+.mov {
+    text-align: left;
+    width: 220px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mov:hover {
+    background-color: hsla(0, 25%, 25%, 0.9);
+}
+
+.one {
+    grid-area: mov1;
+}
+
+.two {
+    grid-area: mov2;
+}
+
+.three {
+    grid-area: mov3;
+}
+
+.four {
+    grid-area: mov4;
+}
+
+.five {
+    grid-area: mov5;
+}
+
+.six {
+    grid-area: mov6;
+}
+
+.seven {
+    grid-area: mov7;
+}
+
+.eight {
+    grid-area: mov8;
+}
+
+.nine {
+    grid-area: mov9;
+}
+
+.ten {
+    grid-area: mov10;
+}
+
+.eleven {
+    grid-area: mov11;
+}
+
+.twelve {
+    grid-area: mov12;
+}
+
+.thirteen {
+    grid-area: mov13;
+}
+
+.fourteen {
+    grid-area: mov14;
+}
+
+.fiteen {
+    grid-area: mov15;
+}
+
+.sixteen {
+    grid-area: mov16;
+}
+
+.seventeen {
+    grid-area: mov17;
+}
+
+.compositions {
+    width: 920px;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 50% 40% 10%;
+    grid-template-rows: 40px;
+    grid-template-areas: "title orchestration comp-date";
 }
 
 .title {
     font-style: italic;
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 /* Skill Tisms */
