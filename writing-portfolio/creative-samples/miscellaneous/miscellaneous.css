@@ -1,7 +1,7 @@
 /* General Tisms */
 html {
     height: 100%;
-    background: DarkSlateGray;
+    background: hsla(210, 25%, 25%, 1);
     color: white;
     font-family: optima;
 }
@@ -12,7 +12,7 @@ body {
 }
 
 a {
-    color: PowderBlue;
+    color: hsla(217, 52%, 80%, 1);
     text-decoration: none;
     font-size: 20px;
 }
@@ -66,7 +66,7 @@ header {
     left: 0;
     right: 0;
     height: 130px;
-    background-color: hsla(180, 15%, 15%, 0.9);
+    background-color: hsla(210, 15%, 15%, 0.9);
     z-index: 5;
 }
 
@@ -101,7 +101,7 @@ nav {
 }
 
 .box:hover {
-    background-color: hsla(180, 25%, 25%, 0.9);
+    background-color: hsla(210, 25%, 25%, 0.9);
     text-align: center;
 }
 
@@ -129,20 +129,20 @@ nav {
     grid-area: a;
     font-size: 20px;
     padding-top: 10px;
-    color: powderblue;
+    color: hsla(217, 52%, 80%, 1);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     top: 40px;
-    background-color: hsla(180, 15%, 15%, 0.9);
+    background-color: hsla(210, 15%, 15%, 0.9);
     z-index: 6;
     width: 360px;
 }
 
 .dropdown:hover {
-    background-color: hsla(180, 25%, 25%, 0.9)
+    background-color: hsla(210, 25%, 25%, 0.9)
 }
 
 .dropdown:hover .dropdown-content {
@@ -172,7 +172,7 @@ nav {
 }
 
 .item:hover {
-    background-color: hsla(180, 25%, 25%, 0.9);
+    background-color: hsla(210, 25%, 25%, 0.9);
 }
 
 .i {
@@ -199,20 +199,20 @@ nav {
     grid-area: d;
     font-size: 20px;
     padding-top: 10px;
-    color: powderblue;
+    color: hsla(217, 52%, 80%, 1);
 }
 
 .dropcontact-content {
     display: none;
     position: absolute;
     top: 40px;
-    background-color: hsla(180, 15%, 15%, 0.9);
+    background-color: hsla(210, 15%, 15%, 0.9);
     z-index: 6;
     width: 360px;
 }
 
 .dropcontact:hover {
-    background-color: hsla(180, 25%, 25%, 0.9)
+    background-color: hsla(210, 25%, 25%, 0.9)
 }
 
 .dropcontact:hover .dropcontact-content {
@@ -242,7 +242,7 @@ nav {
 }
 
 .contact-item:hover {
-    background-color: hsla(180, 25%, 25%, 0.9);
+    background-color: hsla(210, 25%, 25%, 0.9);
 }
 
 .email-address {
@@ -264,7 +264,7 @@ nav {
     margin: auto;
     grid-template-columns: 960px;
     grid-template-rows: auto;
-    background-color: hsla(180, 22%, 22%, 1);
+    background-color: hsla(210, 22%, 22%, 1);
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
@@ -357,7 +357,7 @@ footer {
     position: absolute;
     left: 0;
     right: 0;
-    background-image: linear-gradient(to bottom, hsla(180, 15%, 15%, 1), hsla(180, 20%, 20%, 1));
+    background-image: linear-gradient(to bottom, hsla(210, 15%, 15%, 1), hsla(210, 20%, 20%, 1));
     padding-bottom: 20px;
 }
 
