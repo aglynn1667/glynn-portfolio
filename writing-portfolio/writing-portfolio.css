@@ -128,7 +128,7 @@ nav {
     top: 40px;
     background-color: hsla(210, 15%, 15%, 0.9);
     z-index: 6;
-    width: 280px;
+    width: 384px;
 }
 
 .dropdown:hover {
@@ -142,8 +142,8 @@ nav {
 .contents-table {
     display: grid;
     padding-bottom: 30px;
-    width: 240px;
-    grid-template-columns: 240px;
+    width: 384px;
+    grid-template-columns: 384px;
     grid-template-rows: repeat(3, 40px);
     grid-template-areas: "item1" "item2" "item3";
 }
@@ -155,7 +155,7 @@ nav {
 
 .item {
     text-align: left;
-    width: 240px;
+    width: 344px;
     height: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -192,7 +192,7 @@ nav {
     top: 40px;
     background-color: hsla(210, 15%, 15%, 0.9);
     z-index: 6;
-    width: 360px;
+    width: 384px;
 }
 
 .dropcontact:hover {
@@ -205,9 +205,9 @@ nav {
 
 .dropcontact-table {
     display: grid;
-    width: 360px;
+    width: 384px;
     padding-bottom: 30px;
-    grid-template-columns: 360px;
+    grid-template-columns: 384px;
     grid-template-rows: repeat(3, 40px);
     grid-template-areas: "e-mail" "cell-no" "linked-in";
 }
@@ -219,7 +219,7 @@ nav {
 
 .contact-item {
     text-align: left;
-    width: 320px;
+    width: 344px;
     height: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -327,7 +327,7 @@ nav {
     font-weight: normal;
     grid-template-columns: 800px;
     grid-template-rows: auto;
-    grid-template-areas: "milton" "renaissance" "misc";
+    grid-template-areas: "renaissance" "milton" "misc";
 }
 
 .milton {

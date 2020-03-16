@@ -269,7 +269,7 @@ i. {
     top: 40px;
     background-color: hsla(0, 15%, 15%, 0.9);
     z-index: 6;
-    width: 360px;
+    width: 384px;
 }
 
 .dropcontact:hover {
@@ -282,9 +282,9 @@ i. {
 
 .dropcontact-table {
     display: grid;
-    width: 360px;
+    width: 384px;
     padding-bottom: 30px;
-    grid-template-columns: 360px;
+    grid-template-columns: 384px;
     grid-template-rows: repeat(3, 40px);
     grid-template-areas: "e-mail" "cell-no" "linked-in";
 }
@@ -296,7 +296,7 @@ i. {
 
 .contact-item {
     text-align: left;
-    width: 320px;
+    width: 344px;
     height: 40px;
     padding-left: 20px;
     padding-right: 20px;
