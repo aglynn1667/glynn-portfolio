@@ -144,8 +144,8 @@ nav {
     padding-bottom: 30px;
     width: 384px;
     grid-template-columns: 384px;
-    grid-template-rows: repeat(5, 40px);
-    grid-template-areas: "item1" "item2" "item3" "item4" "item5";
+    grid-template-rows: repeat(6, 40px);
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6";
 }
 
 .content {
@@ -173,6 +173,10 @@ nav {
 .box:hover {
     background-color: hsla(210, 25%, 25%, 0.9);
     text-align: center;
+}
+
+.reg {
+    font-size: 10px;
 }
 
 /* Contact Dropdown Tisms*/
@@ -316,6 +320,55 @@ nav {
     grid-area: image;
 }
 
+/* Recommendation Tisms */
+
+.recomm {
+    width 880px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 60px 2fr 1fr 60px;
+    grid-template-rows: 50px 60px 50px auto;
+    grid-template-areas: "quotel reco-text reco-text blankr" "blankml reco-text reco-text blankmr" "blankl reco-text reco-text quoter" "recommender recommender  reco-link reco-link";
+}
+
+.quotel {
+    grid-area: quotel;
+    font-family: georgia;
+    font-size: 100px;
+    padding-top: 0px;
+}
+
+.blankr {
+    grid-area: blankr;
+}
+
+.blankl {
+    grid-area: blankl;
+}
+
+.quoter {
+    grid-area: quoter;
+    font-family: georgia;
+    font-size: 100px;
+}
+
+.reco-text {
+    grid-area: reco-text;
+}
+
+.recommender {
+    grid-area: recommender;
+    text-indent: -20px;
+    padding-left: 40px;
+}
+
+.reco-link {
+    grid-area: reco-link;
+    text-align: right;
+}
+
 /* Education Tisms */
 
 .education {
@@ -358,7 +411,9 @@ gpa {
     grid-template-areas: "position company location date-start date-dash date-end" "deets deets deets deets deets deets";
 }
 
-.position {grid-area: position;}
+.position {
+    grid-area: position;
+}
 
 .company {
     grid-area: company;
@@ -539,8 +594,7 @@ footer {
     display: grid;
     margin: auto;
     width: 920px;
-    grid-template-columns: 1fr 2fr 8fr;
-    grid-column-gap: 100px;
+    grid-template-columns: 192px 1fr 1fr;
     grid-template-rows: 25px 25px 25px;
     grid-template-areas: "email emails emails" "cellno cellnos cellnos" "online onlines copyright";
     grid-row-gap: 3px;
