@@ -57,6 +57,10 @@ span.footnote {
     display: inline-block;
 }
 
+.reg {
+    font-size: 10px;
+}
+
 /* Header Tisms */
 
 .invisible-header {
@@ -173,10 +177,6 @@ nav {
 .box:hover {
     background-color: hsla(210, 25%, 25%, 0.9);
     text-align: center;
-}
-
-.reg {
-    font-size: 10px;
 }
 
 /* Contact Dropdown Tisms*/

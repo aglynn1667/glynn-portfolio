@@ -53,6 +53,10 @@ span.footnote {
     display: inline-block;
 }
 
+.reg {
+    font-size: 10px;
+}
+
 /* Header Tisms */
 
 .invisible-header {
@@ -361,8 +365,7 @@ footer {
     display: grid;
     margin: auto;
     width: 920px;
-    grid-template-columns: 1fr 2fr 8fr;
-    grid-column-gap: 100px;
+    grid-template-columns: 192px 1fr 1fr;
     grid-template-rows: 25px 25px 25px;
     grid-template-areas: "email emails emails" "cellno cellnos cellnos" "online onlines copyright";
     grid-row-gap: 3px;
