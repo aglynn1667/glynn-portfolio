@@ -422,15 +422,21 @@ gpa {
     margin: auto;
     width: 880px;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(5, 20px);
-    grid-template-areas: "general generals" "office offices" "adobe adobes" "other others" "prog_lang prog_langs";
+    grid-template-rows: 40px repeat(5, 20px) 40px 40px 20px 60px;
+    grid-template-areas: "software software" "general generals" "office offices" "adobe adobes" "other others" "prog_lang prog_langs" "other_skills other_skills" "lang langs" "admin admins" "note note";
     grid-row-gap: 3px;
     padding-bottom: 20px;
+}
+
+.software {
+    grid-area: software;
+    padding-left: 0px;
 }
 
 .general {
     grid-area: general;
     font-weight: bold;
+    padding-left: 20px;
 }
 
 .generals {
@@ -440,6 +446,7 @@ gpa {
 .office {
     grid-area: office;
     font-weight: bold;
+    padding-left: 20px;
 }
 
 .offices {
@@ -449,6 +456,7 @@ gpa {
 .adobe {
     grid-area: adobe;
     font-weight: bold;
+    padding-left: 20px;
 }
 
 .adobes {
@@ -458,6 +466,7 @@ gpa {
 .other {
     grid-area: other;
     font-weight: bold;
+    padding-left: 20px;
 }
 
 .others {
@@ -467,10 +476,46 @@ gpa {
 .prog_lang {
     grid-area: prog_lang;
     font-weight: bold;
+    padding-left: 20px;
 }
 
 .prog_langs {
     grid-area: prog_langs;
+}
+
+.other_skills {
+    grid-area: other_skills;
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+.lang {
+    grid-area: lang;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.langs {
+    grid-area: langs;
+    padding-top: 20px;
+}
+
+.admin {
+    grid-area: admin;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.admins {
+    grid-area: admins;
+}
+
+.note {
+    grid-area: note;
+    padding-top: 40px;
+    font-style: italic;
+    padding-left: 60px;
 }
 
 /* Footer Tisms */
