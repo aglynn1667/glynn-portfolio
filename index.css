@@ -581,72 +581,23 @@ gpa {
     padding-left: 60px;
 }
 
-/* Footer Tisms */
-
-footer {
-    height: 200px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    background-image: linear-gradient(to bottom, hsla(210, 15%, 15%, 1), hsla(210, 20%, 20%, 1));
-    padding-bottom: 20px;
-}
-
-#contact_header {
-    width: 930px;
-    margin: auto;
-    padding-top: 20px;
-}
-
-.contact {
-    display: grid;
-    margin: auto;
-    width: 920px;
-    grid-template-columns: 192px 1fr 1fr;
-    grid-template-rows: 25px 25px 25px;
-    grid-template-areas: "email emails emails" "cellno cellnos cellnos" "online onlines copyright";
-    grid-row-gap: 3px;
-    padding-bottom: 20px;
-}
-
-.email {
-    grid-area: email;
-    font-weight: bold;
-}
-
-.emails {
-    grid-area: emails;
-}
-
-.cellno {
-    grid-area: cellno;
-    font-weight: bold;
-}
-
-.cellnos {
-    grid-area: cellnos;
-}
-
-.online {
-    grid-area: online;
-    font-weight: bold;
-}
-
-.onlines {
-    grid-area: onlines;
-}
-
-.copyright {
-    grid-area: copyright;
-    text-align: right;
-}
-
 /* Hyper-Specific Tisms */
 
 #home {
     color: white;
 }
 
+#start {
+    margin-top: -270px;
+    padding-bottom: 250px;
+    display: inline-block;
+}
+
 #present {
     text-align: left;
+}
+
+#intext {
+    float: none;
+    padding-right: 0px;
 }
