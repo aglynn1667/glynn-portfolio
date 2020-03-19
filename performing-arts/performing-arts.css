@@ -426,7 +426,7 @@ nav {
     right: 20px;
     background-color: hsla(0, 15%, 15%, 1);
     z-index: 6;
-    width: 520px;
+    width: 560px;
     overflow: auto;
 }
 
@@ -441,10 +441,19 @@ nav {
 .movements-table {
     display: grid;
     padding-bottom: 30px;
-    width: 520px;
-    grid-template-columns: 260px 260px;
+    width: 560px;
+    grid-template-columns: 280px 280px;
     grid-template-rows: repeat(9, 40px);
     grid-template-areas: "mov1 mov10" "mov2 mov11" "mov3 mov12" "mov4 mov13" "mov5 mov14" "mov6 mov15" "mov7 mov16" "mov8 mov17" "mov9 mov9";
+}
+
+.romnum {
+    float: left;
+    width: 30px;
+    padding-right: 20px;
+    text-align: left;
+    font-style: italic;
+    font-weight: normal;
 }
 
 .cont {
@@ -454,7 +463,7 @@ nav {
 
 .mov {
     text-align: left;
-    width: 220px;
+    width: 240px;
     height: 40px;
     padding-left: 20px;
     padding-right: 20px;
