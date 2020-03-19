@@ -450,6 +450,14 @@ footer {
     text-align: right;
 }
 
+/* Hyper-Specific Tisms */
+
+#start {
+    margin-top: -270px;
+    padding-bottom: 250px;
+    display: inline-block;
+}
+
 #home {
     color: white;
 }

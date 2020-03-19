@@ -719,6 +719,14 @@ footer {
     font-size: 25px;
 }
 
+/* Hyper-Specific Tisms */
+
+#start {
+    margin-top: -270px;
+    padding-bottom: 250px;
+    display: inline-block;
+}
+
 #home {
     color: white;
 }
