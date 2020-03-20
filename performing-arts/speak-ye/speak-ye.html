@@ -4,9 +4,15 @@
 <meta charset="UTF-8">
 <title>Speak Ye Who Best Can Tell</title>
 <link href="speak-ye.css" type="text/css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/performing-arts/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/performing-arts/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/performing-arts/favicon-16x16.png">
+<link rel="manifest" href="/performing-arts/site.webmanifest">
+<script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+<script src="/include.js"></script>
 </head>
 <body>
-    <div class="invisible-header"></div>
+    <div class="invisible-header" id="start"></div>
     <header>
         <a href="/index.html" id="home">
             <div class="banner">
@@ -33,32 +39,13 @@
             <a class="box b" href="/index.html"><div>Curriculum Vitae</div></a>
             <a class="box c" href="/writing-portfolio/writing-portfolio.html"><div>Writing Portfolio</div></a>
             <div class="dropcontact">Contact&ensp;&#9662;
-                <div class="dropcontact-content">
-                    <div class="dropcontact-table">
-                        <a href="mailto:ag@glynnportfolio.com">
-                            <div class="contact-item e-mail">
-                                <p class="contact-content">ag@glynnportfolio.com</p>
-                            </div>
-                        </a>
-                        <a href="tel:1-312-366-0097">
-                            <div class="contact-item cell-no">
-                                <p class="contact-content">(312) 366-0097</p>
-                            </div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/aaron-glynn/">
-                            <div class="contact-item linked-in">
-                                <p class="contact-content">LinkedIn</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                <div w3-include-html="/contact-menu.html"></div>
             </div>
             <a class="box e" href="/performing-arts/performing-arts.html"><div>Performing Arts</div></a>
         </nav>
     </header>
-    <br><br>
     <div class="score">
-        <h1 class="h1">Speak Ye Who Best Can Tell<span class="tism" id="start"></span></h1>
+        <h1 class="h1">Speak Ye Who Best Can Tell</h1>
         <h2 class="h2">for SSATBB</h2>
         <img src="speak-ye1.png" class="p1" width=880px>
         <img src="speak-ye2.png" class="p2" width=880px>
@@ -71,7 +58,7 @@
         <img src="speak-ye9.png" class="p9" width=880px>
         <img src="speak-ye10.png" class="p10" width=880px>
         <div class="text">
-            <h2 class="text-title">The Matin Prayer of Adam and Eve:</h2>
+            <h2 class="text-title">The Matin Prayer of Adam and Eve:<span class="footnote" id="text"></span></h2>
             <p>Speak ye who best can tell, ye sons of light,
             <br>Angels, for ye behold him, and with songs
             <br>And choral symphonies, day without night,
@@ -81,20 +68,8 @@
             <p class="attribution">&mdash; John Milton, <em>Paradise Lost</em> V. 160-65</p>
         </div>
     </div>
-    <br><br><br>
     <div class="section_break"></div>
-    <footer>
-        <br>
-        <h1 id="contact_header">Contact<span class="footnote" id="contact"></span></h1>
-        <div class="contact">
-            <p class="cellno">Cell:</p>
-            <p class="cellnos"><a href="tel:1-312-366-0097">(312) 366-0097</a></p>
-            <p class="email">Email:</p>
-            <p class="emails"><a href="mailto:ag@glynnportfolio.com">ag@glynnportfolio.com</a></p>
-            <p class="online">Online:</p>
-            <p class="onlines"><a href="https://www.linkedin.com/in/aaron-glynn/">LinkedIn</a></p>
-            <p class="copyright">&copy; 2020 Aaron Glynn</p>
-        </div>
-    </footer>
+    <div w3-include-html="/footerpa.html"></div>
 </body>
+<script>includeHTML();</script>
 </html>

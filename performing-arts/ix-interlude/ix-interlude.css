@@ -541,6 +541,10 @@ footer {
 
 /* Hyper-Specific Tisms */
 
+.section_break {
+    padding: 20px;
+}
+
 #section_title {
     text-indent: -20px;
     padding-bottom: 20px;

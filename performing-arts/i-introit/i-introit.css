@@ -509,6 +509,10 @@ footer {
     padding-bottom: 20px;
 }
 
+.section_break {
+    padding: 20px;
+}
+
 /*.main {
     display: grid;
     margin: auto;
