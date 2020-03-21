@@ -61,6 +61,13 @@ span.footnote {
     font-size: 10px;
 }
 
+.far {
+    float: left;
+    width: 30px;
+    padding-right: 20px;
+    text-align: center;
+}  
+
 /* Header Tisms */
 
 .invisible-header {
@@ -132,7 +139,7 @@ nav {
     top: 40px;
     background-color: hsla(210, 15%, 15%, 0.9);
     z-index: 6;
-    width: 192px;
+    width: 384px;
 }
 
 .dropdown:hover {
@@ -146,8 +153,8 @@ nav {
 .contents-table {
     display: grid;
     padding-bottom: 30px;
-    width: 192px;
-    grid-template-columns: 192px;
+    width: 384px;
+    grid-template-columns: 384px;
     grid-template-rows: repeat(10, 40px);
     grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9" "item10";
 }
@@ -159,7 +166,7 @@ nav {
 
 .item {
     text-align: left;
-    width: 152px;
+    width: 344px;
     height: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -221,8 +228,12 @@ nav {
 
 /* Contact Dropdown Tisms*/
 
-.dummy {
-    color: white;
+.current {
+    padding-left: 50px;
+}
+
+#current_chapter {
+    float: right;
 }
 
 .dropcontact {

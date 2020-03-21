@@ -144,8 +144,8 @@ nav {
     padding-bottom: 30px;
     width: 384px;
     grid-template-columns: 384px;
-    grid-template-rows: repeat(3, 40px);
-    grid-template-areas: "item1" "item2" "item3";
+    grid-template-rows: repeat(4, 40px);
+    grid-template-areas: "item1" "item2" "item3" "item4";
 }
 
 .content {

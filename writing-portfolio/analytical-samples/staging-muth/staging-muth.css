@@ -128,7 +128,7 @@ nav {
     top: 40px;
     background-color: hsla(210, 15%, 15%, 0.9);
     z-index: 6;
-    width: 192px;
+    width: 384px;
 }
 
 .dropdown:hover {
@@ -142,8 +142,8 @@ nav {
 .contents-table {
     display: grid;
     padding-bottom: 30px;
-    width: 192px;
-    grid-template-columns: 192px;
+    width: 384px;
+    grid-template-columns: 384px;
     grid-template-rows: repeat(3, 40px);
     grid-template-areas: "item1" "item2" "item3";
 }
@@ -155,7 +155,7 @@ nav {
 
 .item {
     text-align: left;
-    width: 152px;
+    width: 344px;
     height: 40px;
     padding-left: 20px;
     padding-right: 20px;
