@@ -2,15 +2,21 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <!--Make page same width as device-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aaron Glynn: CV</title>
+    <!--Style Sheet-->
     <link href="index-cell.css" type="text/css" rel="stylesheet">
+    <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon-main/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-main/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-main/favicon-16x16.png">
     <link rel="manifest" href="/favicon-main/site.webmanifest">
+    <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+    <!--Enable Inclusions-->
     <script src="/include.js"></script>
+    <!--JS for main nav-->
     <script>
         /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
         function navDrop() {
@@ -22,6 +28,7 @@
             }
         }
     </script>
+    <!--JS for 'on this page' nav-->
     <script>
         function currentDrop() {
             var y = document.getElementById("currentLinks");
@@ -32,6 +39,7 @@
             }
         }
     </script>
+    <!--JS for 'contact' nav-->
     <script>
         function contactDrop() {
             var z = document.getElementById("contactLinks");
@@ -43,14 +51,17 @@
         }
     </script>
 </head>
+<!--Body begins here-->
 <body>
     <div class="invisible-header"></div>
     <header>
         <nav>
+            <!--Header bar displaying name-->
             <a href="#home" class="active">Aaron Glynn</a>
     <!-- Navigation links (hidden by default) -->
             <div id="navLinks">
                 <div class="subnav">
+                    <!--JS configuring 'on this page' dropdown incorporated into nav element-->
                     <a href="javascript:void(0);" onclick="currentDrop()"><i class="fas fa-desktop"></i>On This Page<i id="currentcaret" class="fas fa-caret-down"></i></a>
                     <div id="currentLinks">
                         <a href="#start"><i class="fas fa-file-signature"></i>Endorsement</a>
@@ -64,6 +75,7 @@
                 <a href="/index.html"><i class="fas fa-address-card"></i>Curriculum Vitae</a>
                 <a href="/writing-portfolio/writing-portfolio.html"><i class="fas fa-paragraph"></i>Writing Portfolio</a>
                 <div class="subnav">
+                    <!--JS configuring 'contact' dropdown incorporated into nav element-->
                     <a href="javascript:void(0);" onclick="contactDrop()"><i class="fas fa-address-book"></i>Contact<i id="contactcaret" class="fas fa-caret-down"></i></a>
                     <div id="contactLinks">
                         <a href="mailto:ag@glynnportfolio.com"><i class="fas fa-envelope"></i>ag@glynnportfolio.com</a>
@@ -77,6 +89,7 @@
             <a href="javascript:void(0);" class="icon" onclick="navDrop()"><i class="fa fa-bars"></i></a>
         </nav>
     </header>
+    <!--Introduction-->
     <div class="main">
         <div class="top">
             <h1 class="greeting">Hello there.<span id="start"></span></h1>
@@ -86,6 +99,7 @@
         </div>
     </div>
     <div class="section_break"><hr></div>
+    <!--Endorsement-->
     <div class="main">
         <h1 class="section_title">Endorsement<span class="footnote" id="recommendations"></span></h1>
         <blockquote>
@@ -99,6 +113,7 @@
         <a class="rec-link" href="https://www.linkedin.com/in/aaron-glynn">View on my LinkedIn<sup class="reg">&reg;</sup> Profile <i class="fas fa-user" id="intext"></i></a>
     </div>
     <div class="section_break"><hr></div>
+    <!--Education-->
     <div class="main">
         <h1 class="section_title">Education<span class="footnote" id="education"></span></h1>
         <div class="education">
@@ -121,6 +136,7 @@
         </div>
     </div>
     <div class="section_break"><hr></div>
+    <!--Work Experience-->
     <div class="main">
         <h1 class="section_title">Work Experience<span class="footnote" id="work_experience"></span></h1>
         <div class="job">
@@ -195,6 +211,7 @@
         </div>
     </div>
     <div class="section_break"><hr></div>
+    <!--Presentations-->
     <div>
         <div class="main">
             <h1 class="section_title">Presentations (UChicago)<span class="footnote" id="presentations"></span></h1>
@@ -251,6 +268,7 @@
         </div>
     </div>
     <div class="section_break"><hr></div>
+    <!--Skills-->
     <div class="main">
         <h1 class="section_title">Skills<span class="footnote" id="skills"></span></h1>
         <div class="skills">
@@ -274,7 +292,9 @@
         </div>
     </div>
     <div class="section_break" id="contact"></div>
+    <!--Footer include-->
     <div w3-include-html="/footer-cell.html"></div>
 </body>
+<!--JS function call-->
 <script>includeHTML();</script>
 </html>

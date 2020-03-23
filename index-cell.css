@@ -1,6 +1,12 @@
 /* General Tisms */
+html, body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 html {
-    max-width: 100%;
     font-size: 1rem;
     background: hsla(210, 25%, 25%, 1);
     color: white;
@@ -8,9 +14,7 @@ html {
 }
 
 body {
-    max-width: 100%;
     font-size: 1rem;
-    margin: 0;
 }
 
 a {
