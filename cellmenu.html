@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html><!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<head>
+    <meta charset="UTF-8">
+    <link href="cellmenu.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function navDrop() {
+            var x = document.getElementById("navLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
+    <script>
+        function currentDrop() {
+            var y = document.getElementById("currentLinks");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            } else {
+                y.style.display = "block";
+            }
+        }
+    </script>
+    <script>
+        function contactDrop() {
+            var z = document.getElementById("contactLinks");
+            if (z.style.display === "block") {
+                z.style.display = "none";
+            } else {
+                z.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+<!-- Top Navigation Menu -->
+<div class="topnav">
+    <a href="#home" class="active"><h1>Aaron Glynn</h1></a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="navLinks">
+      <div class="subnav">
+          <a href="javascript:void(0);" onclick="currentDrop()"><i class="fas fa-desktop"></i>On This Page<i class="fas fa-caret-down"></i></a>
+          <div id="currentLinks">
+              <a href="#start"><i class="fas fa-file-signature"></i>Endorsement</a>
+              <a href="#education"><i class="fas fa-graduation-cap"></i>Education</a>
+              <a href="#work_experience"><i class="fas fa-briefcase"></i>Work Experience</a>
+              <a href="#presentations"><i class="fas fa-chalkboard-teacher"></i>Presentations</a>
+              <a href="#skills"><i class="fas fa-code"></i>Skills</a>
+              <a href="#contact"><i class="fas fa-address-book"></i>Contact</a>
+          </div>
+      </div>
+      <a href="/index.html"><i class="fas fa-address-card"></i>Curriculum Vitae</a>
+      <a href="/writing-portfolio/writing-portfolio.html"><i class="fas fa-paragraph"></i>Writing Portfolio</a>
+      <div class="subnav">
+          <a href="javascript:void(0);" onclick="contactDrop()"><i class="fas fa-address-book"></i>Contact<i class="fas fa-caret-down"></i></a>
+          <div id="contactLinks">
+              <a href="mailto:ag@glynnportfolio.com"><i class="fas fa-envelope"></i>ag@glynnportfolio.com</a>
+              <a href="tel:1-312-366-0097"><i class="fas fa-mobile"></i>(312) 366-0097</a>
+              <a href="https://www.linkedin.com/in/aaron-glynn"><i class="fas fa-user"></i>LinkedIn<sup class="reg">&reg;</sup> Profile</a>
+          </div>
+      </div>
+      <a href="/performing-arts/performing-arts.html"><i class="fas fa-music"></i>Musical Work</a>
+    </div>
+  <!-- "Hamburger menu" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="navDrop()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</body>
+</html>

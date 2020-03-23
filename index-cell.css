@@ -1,0 +1,536 @@
+/* General Tisms */
+html {
+    max-width: 100%;
+    font-size: 1rem;
+    background: hsla(210, 25%, 25%, 1);
+    color: white;
+    font-family: optima;
+}
+
+body {
+    max-width: 100%;
+    font-size: 1rem;
+    margin: 0;
+}
+
+a {
+    color: hsla(217, 52%, 80%, 1);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+h2 {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+li {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+hr {
+    width: 40%;
+}
+
+span {
+    padding-left: 1rem;
+}
+
+.invisible-header {
+    display: none;
+}
+
+i {
+    float: left;
+    width: 3rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+/*
+span.tism {
+    margin-top: -170px;
+    padding-bottom: 130px;
+    display: block;
+}
+
+span.footnote {
+    margin-top: -230px;
+    padding-bottom: 210px;
+    display: inline-block;
+}
+*/
+
+.reg {
+    font-size: 0.5rem;
+}
+
+/* Header Tisms */
+
+
+header {
+    max-width: 100%;
+    display: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: hsla(210, 15%, 15%, 0.9);
+    z-index: 5;
+}
+
+/* Style the navigation menu */
+nav {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+nav #navLinks {
+    display: none;
+    padding-left: 0.5rem;
+}
+
+.subnav #currentLinks {
+    display: none;
+    max-width: 100%;
+    padding-left: 4rem;
+    background-color: hsla(210, 22%, 22%, 1)
+}
+
+.subnav #contactLinks {
+    display: none;
+    max-width: 100%;
+    padding-left: 4rem;
+    background-color: hsla(210, 22%, 22%, 1)
+}
+
+/* Style navigation menu links */
+nav a {
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  display: block;
+}
+
+/* Style the hamburger menu */
+nav a.icon {
+    display: block;
+    width: 1.6rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.8rem;
+    margin: 1.2rem;
+    padding: 0;
+}
+
+/* Add a grey background color on mouse-over
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+*/
+
+/* Style the active link (or home/logo) */
+.active {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#currentcaret {
+    float: right;
+    padding-right: 4rem;
+}
+
+#contactcaret {
+    float: right;
+    padding-right: 4rem;
+}
+
+/* Body Tisms */
+
+.main {
+    max-width: 100%;
+    background-color: hsla(210, 22%, 22%, 1);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.section_title {
+    width: auto;
+    padding: 1rem;
+    margin: auto;
+}
+
+.section_break {
+    width: 100%;
+    padding: 1rem;
+}
+
+.company {
+    font-style: italic;
+}
+
+.start {
+    text-align: left;
+}
+
+.dash {
+    text-align: center;
+}
+
+.end {
+    text-align: right;
+}
+
+.institution, .date, .position, .category, .contact_type {
+    font-weight: bold;
+}
+
+/* Introduction Tisms*/
+
+.top {
+    width: 100%;
+    overflow: hidden;
+}
+
+.top img {
+    height: auto;
+    display: block;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+}
+
+.greeting {
+    grid-area: greeting;
+    padding-left: 1rem;
+}
+
+.introduction {
+    grid-area: introduction;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.image {
+    grid-area: image;
+}
+
+/* Recommendation Tisms */
+
+blockquote {
+    quotes: "“" "”";
+    margin: 0;
+    max-width: 100%;
+    padding: 1em;
+}
+
+blockquote:before {
+    color: white;
+    font-family: georgia;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.4em;
+}
+
+blockquote:after {
+    color: white;
+    font-family: georgia;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 1em;
+    float: right;
+}
+
+blockquote p {
+    display: inline;
+}
+
+.rec {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1rem 1rem 1rem;
+    grid-template-areas: "rec-name" "rec-title" "rec-company";
+    padding-top: 0;
+    padding-bottom: 3rem;
+    margin: 0;
+}
+
+.rec p {
+}
+
+.rec-name {
+    grid-area: rec-name;
+    padding-left: 1rem;
+}
+
+.rec-title {
+    font-style: italic;
+    grid-area: rec-title;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.rec-company {
+    font-style: italic;
+    grid-area: rec-company;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.rec-link {
+    grid-area: reco-link;
+    padding-left: 1rem;
+}
+
+/* Education Tisms */
+
+.education {
+    max-width: 100%;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 45% 25% 8% 22%;
+    grid-template-rows: 2rem 2rem 2rem;
+    grid-template-areas: "institution institution institution institution" "degree major major gpa" "date-start date-start date-dash date-end";
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.institution {
+    grid-area: institution;
+}
+
+.degree {
+    grid-area: degree;
+    text-align: right;
+    padding-right: 0.5em;
+}
+
+.major {
+    grid-area: major;
+    padding-left: 0.3rem;
+}
+
+.gpa {
+    grid-area: gpa;
+    text-align: right;
+}
+
+/* Work Experience Tisms */
+
+.job {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 3rem;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 45% 23% 8% 24%;
+    grid-template-rows: 2rem 2rem 2rem 2rem auto;
+    grid-template-areas: "position position position position" "company company company company" "location location location location" "date-start date-start date-dash date-end" "deets deets deets deets";
+}
+
+.position {
+    grid-area: position;
+}
+
+.company {
+    grid-area: company;
+}
+
+.location {
+    grid-area: location;
+    text-align: left;
+}
+
+.date-start {
+    grid-area: date-start;
+    font-weight: bold;
+    text-align: right;
+}
+
+.date-dash {
+    grid-area: date-dash;
+    font-weight: bold;
+    text-align: center;
+}
+
+.date-end {
+    grid-area: date-end;
+    font-weight: bold;
+}
+
+.deets {
+    grid-area: deets;
+    padding-left: 1.4rem;
+}
+
+.deets ul {
+    padding-left: 1.8rem;
+}
+
+#uc {
+    padding-bottom: 0;
+}
+
+/* Presentation Tisms*/
+
+.presentations {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    font-size 1rem;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "title title" "venue date";
+}
+
+.title {
+    grid-area: title;
+    font-weight: bold;
+}
+
+.venue {
+    grid-area: venue;
+    font-style: italic;
+    text-align: right;
+}
+
+/* Skill Tisms */
+
+.skills {
+    display: grid;
+    margin: auto;
+    max-width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "software software" "general generals" "office offices" "adobe adobes" "other others" "prog_lang prog_langs" "other_skills other_skills" "lang langs" "admin admins" "note note";
+}
+
+.software {
+    grid-area: software;
+}
+
+.general {
+    grid-area: general;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.generals {
+    grid-area: generals;
+    padding-right: 1rem;
+}
+
+.office {
+    grid-area: office;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.offices {
+    grid-area: offices;
+    padding-right: 1rem;
+}
+
+.adobe {
+    grid-area: adobe;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.adobes {
+    grid-area: adobes;
+    padding-right: 1rem;
+}
+
+.other {
+    grid-area: other;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.others {
+    grid-area: others;
+    padding-right: 1rem;
+}
+
+.prog_lang {
+    grid-area: prog_lang;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.prog_langs {
+    grid-area: prog_langs;
+}
+
+.other_skills {
+    grid-area: other_skills;
+    padding-left: 1rem;
+}
+
+.lang {
+    grid-area: lang;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.langs {
+    grid-area: langs;
+    padding-right: 1rem;
+}
+
+.admin {
+    grid-area: admin;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.admins {
+    grid-area: admins;
+    padding-right: 1rem;
+}
+
+.note {
+    grid-area: note;
+    font-style: italic;
+    padding-left: 2rem;
+}
+
+/* Hyper-Specific Tisms */
+
+#home {
+    color: white;
+}
+
+#start {
+    margin-top: -270px;
+    padding-bottom: 250px;
+    display: inline-block;
+}
+
+#intext {
+    float: none;
+    padding-right: 0px;
+}
