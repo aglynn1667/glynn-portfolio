@@ -1,62 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <!--Make page same width as device-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>That Which We Call A Rose: The Grimms&rsquo; &lsquo;Brier Rose&rsquo;</title>
-    <!--Style Sheet-->
-    <link href="/master.css" type="text/css" rel="stylesheet">
-    <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-main/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-main/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-main/favicon-16x16.png">
-    <link rel="manifest" href="/favicon-main/site.webmanifest">
-    <!--Font Awesome-->
+<meta charset="UTF-8">
+<title>That Which We Call A Rose</title>
+<link href="brier-rose.css" type="text/css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon-main/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-main/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-main/favicon-16x16.png">
+<link rel="manifest" href="/favicon-main/site.webmanifest">
     <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
-    <!--Enable Inclusions-->
     <script src="/include.js"></script>
-    <!--JS for main nav-->
-    <script>
-        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-        function navDrop() {
-            var x = document.getElementById("navLinks");
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "flex";
-            }
-        }
-    </script>
 </head>
-<!--Body begins here-->
 <body>
-    <!--Header and Sidebar Includes-->
-    <div w3-include-html="/universals.html"></div>
-    <!--Context Nav-->
-    <div class="context-nav">
-        <a class="category">That Which We Call A Rose</a>
-        <a href="#start">The Text</a>
-        <a href="#works-cited">Works Cited:</a>
-    </div>
-    <!--Page Content-->
-    <style>
-        .main h1 {
-          padding-bottom: 0;
-        }
-
-        .main h2 {
-            padding-left: 2rem;
-            padding-bottom: 1rem;
-        }
-
-        .main p {
-            padding: 0 1rem;
-            line-height: 1.5rem;
-            text-align: justify;
-        }
-    </style>
-    <div class="main" id="first">
+    <div class="invisible-header"></div>
+    <header>
+        <a href="/index.html" id="home">
+            <div class="banner">
+                <h1>Aaron Glynn</h1>
+            </div>
+        </a>
+        <nav>
+            <div class="dropdown">On This Page&ensp;&#9662;
+                <div class="dropdown-content">
+                    <div class="contents-table">
+                        <a href="#start">
+                            <div class="item i">
+                                <p class="content"><i class="fas fa-paragraph"></i>That Which We Call A Rose</p>
+                            </div>
+                        </a>
+                        <a href="#works-cited">
+                            <div class="item ii">
+                                <p class="content"><i class="fas fa-book"></i>Works Cited</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class="box b" href="/index.html"><div>Curriculum Vitae</div></a>
+            <a class="box c" href="/writing-portfolio/writing-portfolio.html"><div>Writing Portfolio</div></a>
+            <div class="dropcontact">Contact&ensp;&#9662;
+                <div w3-include-html="/contact-menu.html"></div>
+            </div>
+            <a class="box e" href="/performing-arts/performing-arts.html"><div>Performing Arts</div></a>
+        </nav>
+    </header>
+    <div class="main">
         <h1 class="section_title">That Which We Call A Rose:<span class="footnote" id="start"></span></h1>
         <h2>The Grimms&rsquo; Brier Rose</h2>
         <div class="textbox">
@@ -75,7 +63,7 @@
             <p>Becoming a woman also means sexual maturation, which is equally suggested by the symbolism we have discussed. The rose for which the princess is named has prominent sexual connotations: the flower suggests virginity, its red color the flush of sexual arousal and the blood of the menstruating woman. The prick of the spindle, occurring on her fifteenth birthday, also seems to suggest the blood of female puberty, an inevitable reality that is part of her fate as a woman. By sheltering the princess from knowledge of the spindle, her parents have made her vulnerable to it: by preventing her from maturing into adulthood, she is not prepared for the sexual maturation that accompanies it.</p>
         </div>
         <div class="textbox indent">
-            <p>The solution to this problem, it transpires, is further symbols of penetration. Brier Rose, the delicate flower vulnerable to needles, is surrounded by thorns to protect her from harm, but when the prince arrives &lsquo;he found nothing but beautiful flowers that opened of their own accord&rsquo; (Grimm 188). The princess has now sexually flowered&mdash;symbolized by the transformation of the briers into flowers&mdash;and the prince is permitted to penetrate her protective barriers, which open for him like the expansion of the female genitalia during arousal. Though he wakes her with a simple kiss, her awakening is, on the symbolic level, a fundamentally sexual one.</p>
+            <p>The solution to this problem, it transpires, is further symbols of penetration. Brier Rose, the delicate flower vulnerable to needles, is surrounded by thorns to protect her from harm, but when the prince arrives &lsquo;he found nothing but beautiful flowers that opened of their own accord&rsquo; (Grimm 188). The princess has now sexually flowered – symbolized by the transformation of the briers into flowers – and the prince is permitted to penetrate her protective barriers, which open for him like the expansion of the female genitalia during arousal. Though he wakes her with a simple kiss, her awakening is, on the symbolic level, a fundamentally sexual one.</p>
         </div>
         <div class="textbox indent">
             <p>A somewhat different emphasis on maturation is to be found in Perrault&rsquo;s version of the tale (1697). The princess pricks herself because &lsquo;she had been hasty, a little thoughtless, and moreover, the sentence of the fairies had ordained it to be that way&rsquo; (Zipes 690). The role of fate in the event is more explicit here, but the dimension of haste and thoughtlessness is absent from the Grimms&rsquo; version. Perrault&rsquo;s princess, on waking, gives the prince &lsquo;a look more tender than a first glance might seem to warrant&rsquo;, which recalls the haste that resulted in the prick, but the narrator emphasizes that her slumber had given her &lsquo;time enough to consider what she should say to him&rsquo; (Zipes 691, 693). The tale&rsquo;s moral, though claiming not to &lsquo;deplore&rsquo; or &lsquo;preach&rsquo;, argues that only &lsquo;a very rare woman&rsquo; will &lsquo;wait one hundred years&rsquo; and &lsquo;[n]othing [is] lost after a century or so&rsquo;, thus seeming to esteem patience (Zipes 695). The princess, overly hasty in her first penetrative experience with the spindle, has time to mature into a marriageable woman. The enchantment ends at the very moment the prince arrives, allowing her to actively participate in their first meeting, and since there is not even a kiss, the scene lacks some of the sexual emphasis found in the Grimms&rsquo; equivalent moment. Perrault&rsquo;s princess is content to wait until she is married and the &lsquo;curtains of their bed [are] closed&rsquo; (Zipes 693).</p>
@@ -90,14 +78,8 @@
         <div class="section_break">
             <hr>
         </div>
-    <style>
-        .bibliography {
-          padding-left: 1rem;
-          text-indent: -1rem;
-        }
-    </style>
     <div class="main">
-        <h1 class="section_title">Works Cited:<span class="footnote" id="works-cited"></span></h2>
+        <h2>Works Cited:<span class="footnote" id="works-cited"></span></h2>
         <div class="textbox bibliography">
             <p>Grimm, Brothers. <em>The Complete Fairy Tales of the Brothers Grimm</em>. Edited by Jack Zipes, Bantam Books, 1987.</p>
         </div>
@@ -105,11 +87,10 @@
             <p>Zipes, Jack, editor. <em>The Great Fairy Tale Tradition: From Straparola and Basile to the Brothers Grimm</em>. W.W. Norton & Co., 2001.</p>
         </div>
         <div class="textbox bibliography">
-            <p>Zipes, Jack, and Andrea Dezs&ouml;, editors. <em>The Original Folk and Fairy Tales of the Brothers Grimm: The Complete First Edition</em>. Princeton University Press, 2016.</p>
+            <p>Zipes, Jack, and Andrea Dezsö, editors. <em>The Original Folk and Fairy Tales of the Brothers Grimm: The Complete First Edition</em>. Princeton University Press, 2016.</p>
         </div>
     </div>
-    <!--Footer Include-->
-    <div class="section_break" id="contact"></div>
+    <div class="section_break"></div>
     <div w3-include-html="/footer.html"></div>
 </body>
 <script>includeHTML();</script>

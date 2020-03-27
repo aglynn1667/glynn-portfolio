@@ -187,3 +187,29 @@ i {
     width: 100%;
     padding: 1rem;
 }
+
+sup {
+    font-size: 0.5rem;
+}
+
+.textbox {
+    padding: 0 1rem;
+}
+
+.quote {
+    padding: 0 3rem;
+}
+
+.attribution {
+    padding-left: 5rem;
+}
+
+.endnote {
+    padding: 0 1rem;
+    text-indent: -1rem;
+}
+
+.bibliography {
+    padding-left: 1rem;
+    text-indent: -1rem;
+  }
