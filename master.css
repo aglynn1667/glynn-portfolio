@@ -61,6 +61,12 @@ span {
     padding-left: 1rem;
 }
 
+.footnote {
+    margin-top: -16rem;
+    padding-bottom: 14rem;
+    display: inline-block;
+}
+
 i {
     float: left;
     width: 1.5rem;
