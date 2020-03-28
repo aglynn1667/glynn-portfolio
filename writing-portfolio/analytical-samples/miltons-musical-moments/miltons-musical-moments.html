@@ -1,127 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Milton&rsquo;s Musical Moments</title>
-<link href="miltons-musical-moments.css" type="text/css" rel="stylesheet">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon-main/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-main/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-main/favicon-16x16.png">
-<link rel="manifest" href="/favicon-main/site.webmanifest">
+    <meta charset="UTF-8">
+    <!--Make page same width as device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milton&rsquo;s Musical Moments</title>
+    <!--Style Sheet-->
+    <link href="/master.css" type="text/css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-main/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-main/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-main/favicon-16x16.png">
+    <link rel="manifest" href="/favicon-main/site.webmanifest">
+    <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+    <!--Enable Inclusions-->
     <script src="/include.js"></script>
+    <!--JS for main nav-->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function navDrop() {
+            var x = document.getElementById("navLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+    <style>
+        .main h1 {
+          padding-bottom: 0;
+        }
+
+        .main h2 {
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        #first h2 {
+            padding-left: 2rem;
+        }
+
+        .main p {
+            padding: 0 1rem;
+            line-height: 1.5rem;
+        }
+
+        .attribution {
+            margin-left: 5rem;
+        }
+
+        .endnote {
+            margin-left: 1rem;
+            text-indent: -2rem;
+        }
+    </style>
 </head>
+<!--Body begins here-->
 <body>
-    <div class="invisible-header"></div>
-    <header>
-        <a href="/index.html" id="home">
-            <div class="banner">
-                <h1>Aaron Glynn</h1>
-            </div>
-        </a>
-        <nav>
-            <div class="dropdown">On This Page&ensp;&#9662;
-                <div class="dropdown-content">
-                    <div class="contents-table">
-                        <a href="#start">
-                            <div class="item i">
-                                <p class="content"><i class="fas fa-paragraph"></i>Milton&rsquo;s Musical Moments</p>
-                            </div>
-                        </a>
-                        <a href="#notes">
-                            <div class="item ii">
-                                <p class="content"><i class="fas fa-thumbtack"></i>Notes</p>
-                            </div>
-                        </a>
-                        <a href="#works-cited">
-                            <div class="item iii">
-                                <p class="content"><i class="fas fa-book"></i>Works Cited</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a class="box b" href="/index.html"><div>Curriculum Vitae</div></a>
-            <a class="box c" href="/writing-portfolio/writing-portfolio.html"><div>Writing Portfolio</div></a>
-            <div class="dropcontact">Contact&ensp;&#9662;
-                <div w3-include-html="/contact-menu.html"></div>
-            </div>
-            <a class="box e" href="/performing-arts/performing-arts.html"><div>Performing Arts</div></a>
-        </nav>
-    </header>
-    <div class="main">
-        <h1 class="section_title">Milton&rsquo;s Musical Moments:<span class="footnote" id="start"></span></h1>
+    <!--Header and Sidebar Includes-->
+    <div w3-include-html="/universals.html"></div>
+    <!--Context Nav-->
+    <div class="context-nav">
+        <a class="category">Milton's Musical Moments</a>
+        <a href="#start">The Text</a>
+        <a href="#notes">Notes</a>
+        <a href="#works-cited">Works Cited:</a>
+    </div>
+    <!--Page Content-->
+    <div class="main" id="first">
+        <h1 class="section_title">Milton&rsquo;s Musical Moments<span class="footnote" id="start"></span></h1>
         <h2>The Meaning, Metaphor, and Mimesis of Music in Milton&rsquo;s Meters and Monographs</h2>
-        <div class="textbox">
-            <p>John Milton&rsquo;s treatments of music across his poetic career increasingly resist categorization by simple dichotomies. In his early works, the attention given to the concept of the Music of the Spheres&mdash;the divine harmony inaudible to the &lsquo;gross unpurged ear&rsquo; of fallen man (Milton 79)&mdash;sponsors a simple dichotomy of sacred versus profane, or divine versus earthly, music. This focus bleeds into Milton&rsquo;s later work, <em>Paradise Lost</em> (1667, 1674),<a href="#footnote1"><sup>[1]</sup><span class="footnote" id="asterisk1"></span></a> in the contrasts drawn between the music of fallen and unfallen beings, but the dichotomy is complicated by the aesthetic praise afforded to both kinds of music in the poem. In <em>Paradise Lost</em>, a more nuanced conception of music forms, in which the distinctions to be drawn between different kinds of music relate less to the aesthetic quality of the music itself and more to the motive, means and method by which music is approached.</p>
-        </div>
-        <div class="textbox indent">
-            <p>The original dichotomy, while not absolute, is explicit in Milton&rsquo;s earlier treatments of music: namely, divine music is contrasted with earthly music. In the second of his <em>Prolusions</em>, Milton discusses the enduring concept of the Music of the Spheres, the &lsquo;symphony of the heavens, which has never been heard&rsquo; by mortal ears (Milton 603):</p>
-        </div>
-        <div class="textbox quote">
+        <p>John Milton&rsquo;s treatments of music across his poetic career increasingly resist categorization by simple dichotomies. In his early works, the attention given to the concept of the Music of the Spheres&mdash;the divine harmony inaudible to the &lsquo;gross unpurged ear&rsquo; of fallen man (Milton 79)&mdash;sponsors a simple dichotomy of sacred versus profane, or divine versus earthly, music. This focus bleeds into Milton&rsquo;s later work, <em>Paradise Lost</em> (1667, 1674),<a href="#footnote1"><sup>[1]</sup><span class="footnote" id="asterisk1"></span></a> in the contrasts drawn between the music of fallen and unfallen beings, but the dichotomy is complicated by the aesthetic praise afforded to both kinds of music in the poem. In <em>Paradise Lost</em>, a more nuanced conception of music forms, in which the distinctions to be drawn between different kinds of music relate less to the aesthetic quality of the music itself and more to the motive, means and method by which music is approached.</p>
+        <p>The original dichotomy, while not absolute, is explicit in Milton&rsquo;s earlier treatments of music: namely, divine music is contrasted with earthly music. In the second of his <em>Prolusions</em>, Milton discusses the enduring concept of the Music of the Spheres, the &lsquo;symphony of the heavens, which has never been heard&rsquo; by mortal ears (Milton 603):</p>
+        <div class="quote">
             <p>Our impotence to hear this harmony seems to be a consequence of the insolence of the robber, Prometheus, which brought so many evils upon men, and at the same time deprived us of that felicity which we shall never be permitted to enjoy as long as we wallow in sin and are brutalized by our animal desires. (Milton 604)</p>
         </div>
-        <div class="textbox">
-            <p>Here Milton implicitly ties Prometheus to Adam and the Fall of Man, which &lsquo;brought so many evils upon men&rsquo; with the beginning of &lsquo;sin&rsquo; and &lsquo;animal desires.&rsquo; This connection becomes clear if we consider other references to the Music of the Spheres in the early poems: in &lsquo;Arcades&rsquo; (1632), the music is &lsquo;the heavenly tune, which none can hear | Of human mold with gross unpurged ear&rsquo;; in &lsquo;At a Solemn Music&rsquo; (1633), we read that &lsquo;we on Earth&rsquo; could &lsquo;answer&rsquo; the music when we &lsquo;stood | In first obedience and [our] state of good&rsquo; until &lsquo;disproportion&rsquo;d sin | Jarr&rsquo;d against nature&rsquo;s chime&rsquo; (Milton 79, 82). The latter most explicitly alludes to the Fall: our &lsquo;first obedience&rsquo; was the &lsquo;state of good&rsquo; that pre-existed &lsquo;Man&rsquo;s first disobedience&rsquo; (<em>Paradise Lost</em> I.1).</p>
-        </div>
-        <div class="textbox indent">
-            <p>Given the inability of the human ear to experience this divine sound, it becomes an academic matter, not merely in the sense of being the subject of academic discourse&mdash;as it is in Milton&rsquo;s <em>Prolusion</em>, an oratorical performance on an academic subject&mdash;but also in the sense of being theoretical and speculative. No mortal, it is thought, has heard the divine music, save Pythagoras, &lsquo;that god of philosophers&rsquo;, such a paragon of scholarly thought as to become &lsquo;worthy to consort with the gods themselves, whom he resembled&rsquo; (Milton 603, 604). Nevertheless, the theoretical ideal of hearing the sound is worth striving towards. Analyzing &lsquo;On the Morning of Christ&rsquo;s Nativity&rsquo; (1629) )<a href="#footnote2"><sup>[2]</sup><span class="footnote" id="asterisk2"></span></a>, M.N.K. Mander argues that &lsquo;the perfect state described,&rsquo; in which the music is audible, &lsquo;which the voice of the poem expects as a result of the incarnation, is still a future state which humanity craves&rsquo;, as opposed to a state achievable in the present (Mander, &ldquo;Music in Milton&rsquo;s &lsquo;Hymn&rsquo;&rdquo; 422). Nonetheless, the poem&rsquo;s &lsquo;allusions to an impossible perfection remind us of a possible approach to that perfection&rsquo;, namely the Platonic idea that &lsquo;by imitation of the absolutely unvarying revolutions of the God we might stabilize the variable revolutions within ourselves&rsquo; (Mander, &ldquo;Music in Milton&rsquo;s &lsquo;Hymn&rsquo;&rdquo; 422–23).</p>
-        </div>
-        <div class="textbox indent">
-            <p>Such imitation, Milton&rsquo;s verses make clear, cannot fully succeed: the divine music &lsquo;never was by mortal finger struck&rsquo;, according to the Nativity Ode, and its sounds are &lsquo;Inimitable&rsquo;, beyond the &lsquo;inferior hand or voice&rsquo; of the Genius in &lsquo;Arcades&rsquo; (Milton 45, 79). This did not prevent academic attempts to imitate it in the Seventeenth Century, most notably by Athanasius Kircher, whose <em>Musurgia Universalis</em> (1650) &lsquo;contains a Canon which may be sung by twelve million two hundred thousand voices&rsquo; designed to imitate the song of heavenly choirs (Grove 343). Mander also cites Macrobius, who:</p>
-        </div>
-        <div class="textbox quote">
+        <p>Here Milton implicitly ties Prometheus to Adam and the Fall of Man, which &lsquo;brought so many evils upon men&rsquo; with the beginning of &lsquo;sin&rsquo; and &lsquo;animal desires.&rsquo; This connection becomes clear if we consider other references to the Music of the Spheres in the early poems: in &lsquo;Arcades&rsquo; (1632), the music is &lsquo;the heavenly tune, which none can hear | Of human mold with gross unpurged ear&rsquo;; in &lsquo;At a Solemn Music&rsquo; (1633), we read that &lsquo;we on Earth&rsquo; could &lsquo;answer&rsquo; the music when we &lsquo;stood | In first obedience and [our] state of good&rsquo; until &lsquo;disproportion&rsquo;d sin | Jarr&rsquo;d against nature&rsquo;s chime&rsquo; (Milton 79, 82). The latter most explicitly alludes to the Fall: our &lsquo;first obedience&rsquo; was the &lsquo;state of good&rsquo; that pre-existed &lsquo;Man&rsquo;s first disobedience&rsquo; (<em>Paradise Lost</em> I.1).</p>
+        <p>Given the inability of the human ear to experience this divine sound, it becomes an academic matter, not merely in the sense of being the subject of academic discourse&mdash;as it is in Milton&rsquo;s <em>Prolusion</em>, an oratorical performance on an academic subject&mdash;but also in the sense of being theoretical and speculative. No mortal, it is thought, has heard the divine music, save Pythagoras, &lsquo;that god of philosophers&rsquo;, such a paragon of scholarly thought as to become &lsquo;worthy to consort with the gods themselves, whom he resembled&rsquo; (Milton 603, 604). Nevertheless, the theoretical ideal of hearing the sound is worth striving towards. Analyzing &lsquo;On the Morning of Christ&rsquo;s Nativity&rsquo; (1629) )<a href="#footnote2"><sup>[2]</sup><span class="footnote" id="asterisk2"></span></a>, M.N.K. Mander argues that &lsquo;the perfect state described,&rsquo; in which the music is audible, &lsquo;which the voice of the poem expects as a result of the incarnation, is still a future state which humanity craves&rsquo;, as opposed to a state achievable in the present (Mander, &ldquo;Music in Milton&rsquo;s &lsquo;Hymn&rsquo;&rdquo; 422). Nonetheless, the poem&rsquo;s &lsquo;allusions to an impossible perfection remind us of a possible approach to that perfection&rsquo;, namely the Platonic idea that &lsquo;by imitation of the absolutely unvarying revolutions of the God we might stabilize the variable revolutions within ourselves&rsquo; (Mander, &ldquo;Music in Milton&rsquo;s &lsquo;Hymn&rsquo;&rdquo; 422–23).</p>
+        <p>Such imitation, Milton&rsquo;s verses make clear, cannot fully succeed: the divine music &lsquo;never was by mortal finger struck&rsquo;, according to the Nativity Ode, and its sounds are &lsquo;Inimitable&rsquo;, beyond the &lsquo;inferior hand or voice&rsquo; of the Genius in &lsquo;Arcades&rsquo; (Milton 45, 79). This did not prevent academic attempts to imitate it in the Seventeenth Century, most notably by Athanasius Kircher, whose <em>Musurgia Universalis</em> (1650) &lsquo;contains a Canon which may be sung by twelve million two hundred thousand voices&rsquo; designed to imitate the song of heavenly choirs (Grove 343). Mander also cites Macrobius, who:</p>
+        <div class="quote">
             <p>[S]hows how the ratios underlying the music of the spheres can be reproduced in stringed instruments, so that the perfect music and its sublime effects can be reproduced by man. In his optimism concerning the possibilities available to the musician, we can compare him to those theorists of Milton&rsquo;s time, particularly Mei and Doni, who saw great possibilities of moral improvement through the reform of musical compositions of their day in accordance with the rules of the ancients. (Mander, &ldquo;Milton and the Music of the Spheres&rdquo; 67)</p>
         </div>
-        <div class="textbox">
-            <p>Milton expresses a similar optimism in the Nativity Ode, in which the speaker hopes that &lsquo;if such holy song | Enwrap our fancy long, | Time will run back, and fetch the age of gold&rsquo;: should man hear the divine music again, the primordial golden age&mdash;the classical equivalent of the prelapsarian world&mdash;may be restored. This ideal proves speculative, for &lsquo;wisest Fate says no, | This must not yet be so&rsquo; and only &lsquo;at the world&rsquo;s last session…at last our bliss [will be]| Full and perfect&rsquo; (Milton 47). Nevertheless, the hope for a musical redemption is present, which demonstrates the relevance of the contemporary musical theorists that Mander cites.</p>
-        </div>
-        <div class="textbox indent">
-            <p>In these early poems, we find multiple similar moments of extremely poignant hopefulness. In &lsquo;Arcades&rsquo;, the Genius expresses a desire to praise through the divine music:</p>
-        </div>
-        <div class="textbox quote">
+        <p>Milton expresses a similar optimism in the Nativity Ode, in which the speaker hopes that &lsquo;if such holy song | Enwrap our fancy long, | Time will run back, and fetch the age of gold&rsquo;: should man hear the divine music again, the primordial golden age&mdash;the classical equivalent of the prelapsarian world&mdash;may be restored. This ideal proves speculative, for &lsquo;wisest Fate says no, | This must not yet be so&rsquo; and only &lsquo;at the world&rsquo;s last session…at last our bliss [will be]| Full and perfect&rsquo; (Milton 47). Nevertheless, the hope for a musical redemption is present, which demonstrates the relevance of the contemporary musical theorists that Mander cites.</p>
+        <p>In these early poems, we find multiple similar moments of extremely poignant hopefulness. In &lsquo;Arcades&rsquo;, the Genius expresses a desire to praise through the divine music:</p>
+        <div class="quote">
             <p>If my inferior hand or voice could hit
             <br>Inimitable sounds; yet as we go,
             <br>Whate&rsquo;er the skill of lesser gods can show,
             <br>I will assay, her worth to celebrate. (Milton 79)</p>
         </div>
-        <div class="textbox">
-            <p>Here again we see the Platonic principle Mander identifies: the Genius will &lsquo;assay&rsquo; or try what skill he has as a means of striving towards an ideal he cannot attain. Likewise, in &lsquo;At a Solemn Music&rsquo;, though Adam&rsquo;s sin &lsquo;Broke the fair music that all creatures made | To their great Lord&rsquo;, nevertheless the speaker hopes: &lsquo;O may we soon again renew that Song, | And keep in tune with Heav&rsquo;n&rsquo; (Milton 82).</p>
-        </div>
-        <div class="textbox indent">
-            <p>Quite extraordinarily, however, in the first epigram to Leonora (1639), a divine music seems to have been found, &lsquo;For the music of her voice itself bespeaks the presence of God&rsquo; (Milton 130). Hughes&rsquo; translation does not capture the full immediacy of the Latin &lsquo;tua praesentem vox sonat ipsa Deum&rsquo;, literally &lsquo;your voice itself sounds the present God&rsquo;, in which the adjective &lsquo;praesentem&rsquo; [present] forms part of the object taken by the firm present indicative &lsquo;sonat&rsquo; [sounds]. The synchysis of the line&mdash;&lsquo;praesentem…Deum&rsquo; [present God] intermixed with &lsquo;tua…vox…ipsa&rsquo; [your voice itself]&mdash;weaves voice and God firmly together. It transpires that this immediacy is hyperbolic: in the very next line Milton gives us the more suspect structure &lsquo;Aut Deus, aut…certe mens tertia&rsquo; [either God, or certainly a third mind], immediately undermining the certainty suggested by the definitive placement of &lsquo;Deum&rsquo; at the end of the previous line. The antithesis of &lsquo;Aut…aut&rsquo; [either…or] and &lsquo;certe&rsquo; [certainly] also removes credibility from the previously established sense of certainty.</p>
-        </div>
-        <div class="textbox indent">
-            <p>The speaker amends the assertion that God is present in Leonora&rsquo;s voice to the claim that &lsquo;God is all things and permeates all things&rsquo; but &lsquo;in you alone he speaks&rsquo;, a somewhat more moderate declaration (Milton 130-31). The speaker no longer implies that he hears divine music in all its glory at this instant, but asserts that the spirit in Leonora&rsquo;s throat teaches mortals &lsquo;Sensim immortali assuescere…sono&rsquo; [gradually to grow accustomed to immortal sound]. )<a href="#footnote3"><sup>[3]</sup><span class="footnote" id="asterisk3"></span></a> In stark contrast to the immediacy of &lsquo;tua praesentem vox sonat ipsa Deum&rsquo;, the combination here of &lsquo;Sensim&rsquo; [gradually] and &lsquo;assue<strong>sc</strong>ere&rsquo; [to grow accustomed], with the &lsquo;sc&rsquo; of Latin words that signify gradual change, emphasizes the gradational movement (the <em>cre<strong>sc</strong>endo poco a poco</em>) towards divine music: in her singing lies hope of reaching the ideal of the sacred music that our ears cannot presently hear.</p>
-        </div>
-        <div class="textbox indent">
-            <p>By the end of the poem, then, the idea of God&rsquo;s immediate presence in Leonora&rsquo;s voice has been amended somewhat, but the claim that &lsquo;in [her] alone [God] speaks&rsquo; still flirts with an extraordinary hyperbole: in this poem, the speaker comes dangerously close to claiming that he has heard the divine music so inaccessible in the poems we have previously discussed. The potential danger of such hyperbole is subtly implicit in the third epigram to Leonora, in which she is compared to a &lsquo;Siren&rsquo; who &lsquo;lays the spell of her song upon both men and gods&rsquo; (Milton 131). According to Katherine R. Larson:</p>
-        </div>
-        <div class="textbox quote">
+        <p>Here again we see the Platonic principle Mander identifies: the Genius will &lsquo;assay&rsquo; or try what skill he has as a means of striving towards an ideal he cannot attain. Likewise, in &lsquo;At a Solemn Music&rsquo;, though Adam&rsquo;s sin &lsquo;Broke the fair music that all creatures made | To their great Lord&rsquo;, nevertheless the speaker hopes: &lsquo;O may we soon again renew that Song, | And keep in tune with Heav&rsquo;n&rsquo; (Milton 82).</p>
+        <p>Quite extraordinarily, however, in the first epigram to Leonora (1639), a divine music seems to have been found, &lsquo;For the music of her voice itself bespeaks the presence of God&rsquo; (Milton 130). Hughes&rsquo; translation does not capture the full immediacy of the Latin &lsquo;tua praesentem vox sonat ipsa Deum&rsquo;, literally &lsquo;your voice itself sounds the present God&rsquo;, in which the adjective &lsquo;praesentem&rsquo; [present] forms part of the object taken by the firm present indicative &lsquo;sonat&rsquo; [sounds]. The synchysis of the line&mdash;&lsquo;praesentem…Deum&rsquo; [present God] intermixed with &lsquo;tua…vox…ipsa&rsquo; [your voice itself]&mdash;weaves voice and God firmly together. It transpires that this immediacy is hyperbolic: in the very next line Milton gives us the more suspect structure &lsquo;Aut Deus, aut…certe mens tertia&rsquo; [either God, or certainly a third mind], immediately undermining the certainty suggested by the definitive placement of &lsquo;Deum&rsquo; at the end of the previous line. The antithesis of &lsquo;Aut…aut&rsquo; [either…or] and &lsquo;certe&rsquo; [certainly] also removes credibility from the previously established sense of certainty.</p>
+        <p>The speaker amends the assertion that God is present in Leonora&rsquo;s voice to the claim that &lsquo;God is all things and permeates all things&rsquo; but &lsquo;in you alone he speaks&rsquo;, a somewhat more moderate declaration (Milton 130-31). The speaker no longer implies that he hears divine music in all its glory at this instant, but asserts that the spirit in Leonora&rsquo;s throat teaches mortals &lsquo;Sensim immortali assuescere…sono&rsquo; [gradually to grow accustomed to immortal sound]. )<a href="#footnote3"><sup>[3]</sup><span class="footnote" id="asterisk3"></span></a> In stark contrast to the immediacy of &lsquo;tua praesentem vox sonat ipsa Deum&rsquo;, the combination here of &lsquo;Sensim&rsquo; [gradually] and &lsquo;assue<strong>sc</strong>ere&rsquo; [to grow accustomed], with the &lsquo;sc&rsquo; of Latin words that signify gradual change, emphasizes the gradational movement (the <em>cre<strong>sc</strong>endo poco a poco</em>) towards divine music: in her singing lies hope of reaching the ideal of the sacred music that our ears cannot presently hear.</p>
+        <p>By the end of the poem, then, the idea of God&rsquo;s immediate presence in Leonora&rsquo;s voice has been amended somewhat, but the claim that &lsquo;in [her] alone [God] speaks&rsquo; still flirts with an extraordinary hyperbole: in this poem, the speaker comes dangerously close to claiming that he has heard the divine music so inaccessible in the poems we have previously discussed. The potential danger of such hyperbole is subtly implicit in the third epigram to Leonora, in which she is compared to a &lsquo;Siren&rsquo; who &lsquo;lays the spell of her song upon both men and gods&rsquo; (Milton 131). According to Katherine R. Larson:</p>
+        <div class="quote">
             <p>Stella Revard and others have helpfully distinguished between two very different classical siren figures in Milton&rsquo;s works: Homer&rsquo;s nymphs, who lure men to their destruction through their seductive songs, and the Platonic sirens often associated with the muses and responsible for the heavenly music of the spheres. Milton merges these two varieties of musical sirens at several points in his writings, exemplified by his characterization of Leonora. (Larson 90)</p>
         </div>
-        <div class="textbox">
-            <p>Larson goes on to observe a &lsquo;tension between earthly and heavenly realms&rsquo;, in which, though &lsquo;Milton depicts Leonora above all as a celestial siren&rsquo;, her song remains &lsquo;disturbingly seductive&rsquo; (Larson 91). Larson views this tension as gendered: a conflict between Leonora&rsquo;s female body and her celestial potential to &lsquo;unite her hearers with God&rsquo;.</p>
-        </div>
-        <div class="textbox indent">
-            <p>I contend that the issue is rather one of idolatry. Jean-Luc Marion makes a crucial distinction between idol and icon: an idol purports to encapsulate the divine within itself, whereas the icon &lsquo;refer[s] to an other than itself, without, however, that other ever being reproduced in the visible&rsquo; (Marion et al. 18). Milton the iconoclast may not have been personally comfortable with such terminology, but the conceptual framework nevertheless applies to Leonora&rsquo;s voice. To claim that her &lsquo;voice itself sounds the present God&rsquo; is to stray into idolatrous waters. If the inaudible music of divinity is ostensibly audible in her voice &lsquo;ipsa&rsquo; [itself], dangerously juxtaposed with &lsquo;Deum&rsquo; [God], then her voice is an idol. The correction, that through her voice mortals &lsquo;may gradually become accustomed to immortal tones&rsquo;, retreats some way back towards the icon, which, to paraphrase Marion, refers to an other without reproducing it in the audible. Nevertheless, the siren spell of Leonora&rsquo;s voice seems to draw the speaker in a hazardous direction.</p>
-        </div>
-        <div class="textbox indent">
-            <p>With Leonora we stand in ambiguous territory: her voice may invite a gradual progression toward divine music through imperfect imitation of it, in keeping with the Platonic ideal that Mander cites, or an idolatrous regard for that same imperfect imitation. Jean Calvin ascribes a similarly ambiguous potential to music in his Epistle introducing the <em>Geneva Psalter</em>:</p>
-        </div>
-        <div class="textbox quote">
+        <p>Larson goes on to observe a &lsquo;tension between earthly and heavenly realms&rsquo;, in which, though &lsquo;Milton depicts Leonora above all as a celestial siren&rsquo;, her song remains &lsquo;disturbingly seductive&rsquo; (Larson 91). Larson views this tension as gendered: a conflict between Leonora&rsquo;s female body and her celestial potential to &lsquo;unite her hearers with God&rsquo;.</p>
+        <p>I contend that the issue is rather one of idolatry. Jean-Luc Marion makes a crucial distinction between idol and icon: an idol purports to encapsulate the divine within itself, whereas the icon &lsquo;refer[s] to an other than itself, without, however, that other ever being reproduced in the visible&rsquo; (Marion et al. 18). Milton the iconoclast may not have been personally comfortable with such terminology, but the conceptual framework nevertheless applies to Leonora&rsquo;s voice. To claim that her &lsquo;voice itself sounds the present God&rsquo; is to stray into idolatrous waters. If the inaudible music of divinity is ostensibly audible in her voice &lsquo;ipsa&rsquo; [itself], dangerously juxtaposed with &lsquo;Deum&rsquo; [God], then her voice is an idol. The correction, that through her voice mortals &lsquo;may gradually become accustomed to immortal tones&rsquo;, retreats some way back towards the icon, which, to paraphrase Marion, refers to an other without reproducing it in the audible. Nevertheless, the siren spell of Leonora&rsquo;s voice seems to draw the speaker in a hazardous direction.</p>
+        <p>With Leonora we stand in ambiguous territory: her voice may invite a gradual progression toward divine music through imperfect imitation of it, in keeping with the Platonic ideal that Mander cites, or an idolatrous regard for that same imperfect imitation. Jean Calvin ascribes a similarly ambiguous potential to music in his Epistle introducing the <em>Geneva Psalter</em>:</p>
+        <div class="quote">
             <p>[T]here is hardly anything in the world with more power to turn or bend, this way and that, the morals of men…And in fact we find by experience that it has a secret and almost incredible power to move our hearts in one way or another. (Calvin 366)</p>
         </div>
-        <div class="textbox">
-            <p>The crucial distinction for Calvin is &lsquo;the letter, or subject and matter&rsquo; of the music, for &lsquo;song has great force and vigor to move and inflame the hearts of men to invoke and praise God with a more vehement and ardent zeal&rsquo;, but an &lsquo;evil word…when it has the melody with it…pierces the heart much more strongly&rsquo; (Calvin 365–66). Thus, Calvin justifies the vernacular Psalter, from which one can &lsquo;sing [holy words] knowing what he is saying&rsquo; rather than having &lsquo;devotion, either at prayers or at ceremonies, without understanding anything of them&rsquo; (Calvin 367, 365). Milton makes a similar complaint about the King&rsquo;s chapel in <em>Eikonoklastes</em> (1649), in which &lsquo;so many things were sung, and pray&rsquo;d in those Songs, which were not understood&rsquo; (Milton and Patterson 263).</p>
-        </div>
-        <div class="textbox indent">
-            <p>The ambiguous potential of music leads to a new understanding in Milton&rsquo;s later poems: that the distinction between divine and profane music is not to be made in terms of the substance of the music itself, but in terms of the manner in which it is approached and produced. While the Music of the Spheres continues to be important, the crucial issue is not the nature of the music itself, but the context from which and in which it arises. This is epitomized in Milton&rsquo;s poetic treatment of polyphony and musical instruments. In Seventeenth-Century England, the Puritan side of the religious debate condemned both polyphony and the use of instruments in religious settings. &lsquo;The English Puritans acknowledged no arguments in favour of musical instruments in church&rsquo;, according to Helen and Peter Williams, and the &lsquo;decadent polyphony of Anglican anthems was, to Puritans, a clamorous obfuscation of the Word of God&rsquo; according to Glenda Goodman (Williams and Williams 760; Goodman 708). These condemnations have their roots in the emphasis on &lsquo;the letter, or subject and matter&rsquo; expressed by Calvin. Sacred music, in English Puritan thinking, should be simple and homophonic, since the ornamentations of vocal and instrumental polyphony would draw attention away from the words. However, though Milton condemned the High-Church Arminian end of the religious spectrum in <em>Eikonoklastes</em>, he does not appear to endorse the Puritan view of polyphonic music either. Polyphony has complex connotations in <em>Paradise Lost</em> (1667, 1674), and appears in multiple contexts, from the supremely sacred to the utterly profane.</p>
-        </div>
-        <div class="textbox indent">
-            <p>In Milton&rsquo;s Heaven, polyphony appears to signify the harmonious concord of the divine court. At various points in the poem, the pronouncements and acts of God are celebrated with the songs of angelic choirs. In Milton&rsquo;s version of the Creation, the first day is celebrated by &lsquo;Celestial Choirs&rsquo; with &lsquo;Golden Harps&rsquo;, the second day by a &lsquo;Morning <em>Chorus</em>&rsquo;, the sixth with &lsquo;Ev&rsquo;ning Harps and Matin&rsquo; (<em>PL</em> VII. 254-8, 275, 450). On the Sabbath:</p>
-        </div>
-        <div class="textbox quote">
+        <p>The crucial distinction for Calvin is &lsquo;the letter, or subject and matter&rsquo; of the music, for &lsquo;song has great force and vigor to move and inflame the hearts of men to invoke and praise God with a more vehement and ardent zeal&rsquo;, but an &lsquo;evil word…when it has the melody with it…pierces the heart much more strongly&rsquo; (Calvin 365–66). Thus, Calvin justifies the vernacular Psalter, from which one can &lsquo;sing [holy words] knowing what he is saying&rsquo; rather than having &lsquo;devotion, either at prayers or at ceremonies, without understanding anything of them&rsquo; (Calvin 367, 365). Milton makes a similar complaint about the King&rsquo;s chapel in <em>Eikonoklastes</em> (1649), in which &lsquo;so many things were sung, and pray&rsquo;d in those Songs, which were not understood&rsquo; (Milton and Patterson 263).</p>
+        <p>The ambiguous potential of music leads to a new understanding in Milton&rsquo;s later poems: that the distinction between divine and profane music is not to be made in terms of the substance of the music itself, but in terms of the manner in which it is approached and produced. While the Music of the Spheres continues to be important, the crucial issue is not the nature of the music itself, but the context from which and in which it arises. This is epitomized in Milton&rsquo;s poetic treatment of polyphony and musical instruments. In Seventeenth-Century England, the Puritan side of the religious debate condemned both polyphony and the use of instruments in religious settings. &lsquo;The English Puritans acknowledged no arguments in favour of musical instruments in church&rsquo;, according to Helen and Peter Williams, and the &lsquo;decadent polyphony of Anglican anthems was, to Puritans, a clamorous obfuscation of the Word of God&rsquo; according to Glenda Goodman (Williams and Williams 760; Goodman 708). These condemnations have their roots in the emphasis on &lsquo;the letter, or subject and matter&rsquo; expressed by Calvin. Sacred music, in English Puritan thinking, should be simple and homophonic, since the ornamentations of vocal and instrumental polyphony would draw attention away from the words. However, though Milton condemned the High-Church Arminian end of the religious spectrum in <em>Eikonoklastes</em>, he does not appear to endorse the Puritan view of polyphonic music either. Polyphony has complex connotations in <em>Paradise Lost</em> (1667, 1674), and appears in multiple contexts, from the supremely sacred to the utterly profane.</p>
+        <p>In Milton&rsquo;s Heaven, polyphony appears to signify the harmonious concord of the divine court. At various points in the poem, the pronouncements and acts of God are celebrated with the songs of angelic choirs. In Milton&rsquo;s version of the Creation, the first day is celebrated by &lsquo;Celestial Choirs&rsquo; with &lsquo;Golden Harps&rsquo;, the second day by a &lsquo;Morning <em>Chorus</em>&rsquo;, the sixth with &lsquo;Ev&rsquo;ning Harps and Matin&rsquo; (<em>PL</em> VII. 254-8, 275, 450). On the Sabbath:</p>
+        <div class="quote">
             <p><span id="harp">[T]he Harp</span>
             <br>Had work and rested not, the solemn Pipe,
             <br>And Dulcimer, all Organs of sweet stop,
@@ -129,49 +115,29 @@
             <br>Temper&rsquo;d soft Tunings, intermixt with Voice
             <br>Choral or Unison. (<em>PL</em> VII. 594-9)</p>
         </div>
-        <div class="textbox">
-            <p>Music, it seems, is so much a part of proceedings in Heaven that music-making is exempt from Sabbatical rest. Williams and Williams argues that &lsquo;this section of Book VII may date from many years before the main composition of the poem (<em>c</em>1654-<em>c</em>1663), perhaps to the early 1640s when Milton [was] freshly returned from Italy&rsquo; (Williams and Williams 762). The thriving musical cultures of the Italian cities may have inspired this musical vision of the Creation just as they inspired the epigrams to Leonora. By the 1630s, when Milton visited Italy, <em>a capella</em> music had largely given way to music accompanied at least by a basso continuo, which may have inspired the strong emphasis on the use of musical instruments in Heaven, here and elsewhere in <em>Paradise Lost</em>, despite the increasing English Puritan distaste for accompanied music in religious settings.</p>
-        </div>
-        <div class="textbox indent">
-            <p>During the Creation celebrations, the angels&rsquo; song is &lsquo;Choral or Unison&rsquo;, inexact terminology, but in light of other scenes of celebration in Heaven, we can interpret &lsquo;Choral&rsquo; as polyphonic&mdash;in opposition to &lsquo;Unison&rsquo;&mdash;with a fair degree of safety. These other scenes are more explicit: for example, when the Son volunteers to die for Man&rsquo;s sins and the Father asserts that when the Apocalypse comes, &lsquo;God shall be All in All&rsquo;, the angels celebrate with &lsquo;sacred Song&rsquo; and &lsquo;No voice exempt, no voice but well could join | Melodious part, such concord is in Heav&rsquo;n&rsquo; (<em>PL</em> III. 341, 369-71).  The phrase &lsquo;Melodious part&rsquo; appears to be an explicit reference to contrapuntal music, in which each &ldquo;voice&rdquo; or &ldquo;part&rdquo; has its own melody. According to Diane McColley:</p>
-        </div>
-        <div class="textbox quote">
+        <p>Music, it seems, is so much a part of proceedings in Heaven that music-making is exempt from Sabbatical rest. Williams and Williams argues that &lsquo;this section of Book VII may date from many years before the main composition of the poem (<em>c</em>1654-<em>c</em>1663), perhaps to the early 1640s when Milton [was] freshly returned from Italy&rsquo; (Williams and Williams 762). The thriving musical cultures of the Italian cities may have inspired this musical vision of the Creation just as they inspired the epigrams to Leonora. By the 1630s, when Milton visited Italy, <em>a capella</em> music had largely given way to music accompanied at least by a basso continuo, which may have inspired the strong emphasis on the use of musical instruments in Heaven, here and elsewhere in <em>Paradise Lost</em>, despite the increasing English Puritan distaste for accompanied music in religious settings.</p>
+        <p>During the Creation celebrations, the angels&rsquo; song is &lsquo;Choral or Unison&rsquo;, inexact terminology, but in light of other scenes of celebration in Heaven, we can interpret &lsquo;Choral&rsquo; as polyphonic&mdash;in opposition to &lsquo;Unison&rsquo;&mdash;with a fair degree of safety. These other scenes are more explicit: for example, when the Son volunteers to die for Man&rsquo;s sins and the Father asserts that when the Apocalypse comes, &lsquo;God shall be All in All&rsquo;, the angels celebrate with &lsquo;sacred Song&rsquo; and &lsquo;No voice exempt, no voice but well could join | Melodious part, such concord is in Heav&rsquo;n&rsquo; (<em>PL</em> III. 341, 369-71).  The phrase &lsquo;Melodious part&rsquo; appears to be an explicit reference to contrapuntal music, in which each &ldquo;voice&rdquo; or &ldquo;part&rdquo; has its own melody. According to Diane McColley:</p>
+        <div class="quote">
             <p>The choral music Milton describes, in which the angels rejoice that &ldquo;God shall be All in All,&rdquo; suggests that the unity of the God-filled or God-reentering congregation of creatures is not limited to, though it may include, the unity of chant, but is a polyphonic web of being in which each voice is distinct, and made distinct by being part of the unity&rsquo;. (McColley 216)</p>
         </div>
-        <div class="textbox">
-            <p>In Milton&rsquo;s angelic counterpoint we have a musical rendering of godly individuality. Any voice may join counterpoint, so long as it is in concordance with the rest: contrapuntal pieces theoretically have the potential for infinite parts. However, any discordant voice may spoil the harmony, for not every melodic line can form coherent counterpoint with every other. The angels have to conform to certain rules, but do not all have to sing the same melodic line. Thus, individuality is reconciled with unity and (all-important in <em>Paradise Lost</em>) obedience through music.</p>
-        </div>
-        <div class="textbox indent">
-            <p>In Hell, however, counterpoint is demonstrative of what has been lost. Once the council at Pandaemonium has concluded, the company of fallen angels fractures, each to their own pursuit. There is no musical unity in celebration of Satan&rsquo;s determination as there is in Heaven as a response to the Father&rsquo;s proclamations. It is only a group of &lsquo;more mild&rsquo; rebel angels who &lsquo;Retreated in a silent valley, sing&rsquo; separate from their fellows (<em>PL</em> II. 546-7). The substance or quality of their music, &lsquo;notes angelical&rsquo;, is apparently the same as that of the faithful angels:</p>
-        </div>
-        <div class="textbox quote">
+        <p>In Milton&rsquo;s angelic counterpoint we have a musical rendering of godly individuality. Any voice may join counterpoint, so long as it is in concordance with the rest: contrapuntal pieces theoretically have the potential for infinite parts. However, any discordant voice may spoil the harmony, for not every melodic line can form coherent counterpoint with every other. The angels have to conform to certain rules, but do not all have to sing the same melodic line. Thus, individuality is reconciled with unity and (all-important in <em>Paradise Lost</em>) obedience through music.</p>
+        <p>In Hell, however, counterpoint is demonstrative of what has been lost. Once the council at Pandaemonium has concluded, the company of fallen angels fractures, each to their own pursuit. There is no musical unity in celebration of Satan&rsquo;s determination as there is in Heaven as a response to the Father&rsquo;s proclamations. It is only a group of &lsquo;more mild&rsquo; rebel angels who &lsquo;Retreated in a silent valley, sing&rsquo; separate from their fellows (<em>PL</em> II. 546-7). The substance or quality of their music, &lsquo;notes angelical&rsquo;, is apparently the same as that of the faithful angels:</p>
+        <div class="quote">
             <p>Their song was partial, but the harmony
                 <br>(What could it less when spirits immortal sing?)
                 <br>Suspended Hell, and took with ravishment
                 <br>The thronging audience. (<em>PL</em> II. 542-5)</p>
         </div>
-        <div class="textbox">
-            <p>Still &lsquo;spirits immortal&rsquo;, they cannot fail to achieve a divine affect. As David Ainsworth observes:</p>
-        </div>
-        <div class="textbox quote">
+        <p>Still &lsquo;spirits immortal&rsquo;, they cannot fail to achieve a divine affect. As David Ainsworth observes:</p>
+        <div class="quote">
             <p>The word &ldquo;partial&rdquo; here constitutes a triple pun, referring to the choral or part-singing of the devils, the partiality of their account of the conflict against heaven, and the incompleteness of the music. (Ainsworth 150)</p>
         </div>
-        <div class="textbox">
-            <p>In other words, though the rebel angels sing in the same immortal and &lsquo;partial&rsquo; counterpoint as their heavenly counterparts, their isolation from God and their fellows prevents their music from being whole in the same manner as the counterpoint of heaven, in which individual angels participate in a perfect unity.</p>
-        </div>
-        <div class="textbox indent">
-            <p>Hell&rsquo;s music, then, is similar in substance, but distinct in manifestation from its Heavenly counterpart. An additional parallel between the war music of Heaven and that of Hell further demonstrates this phenomenon. The rebels march in a &lsquo;<em>Phalanx</em>&rsquo;, the angels in a &lsquo;Quadrate&rsquo;: Merritt Y. Hughes glosses the latter as &lsquo;a square phalanx&rsquo; and notes the parallel to the former (<em>PL</em> I. 550, VI. 62; Milton 325). The rebels &lsquo;Mov&rsquo;d on in silence&rsquo;, a phrase exactly replicated in the description of the faithful angels, except in being enjambed: &lsquo;mov&rsquo;d on | In silence&rsquo; (<em>PL</em> I. 61, VI. 63-4). Both armies march &lsquo;to the sound |Of instrumental harmony&rsquo;, which &lsquo;rais&rsquo;d [the rebels]| To highth of noblest temper&rsquo; and brings &lsquo;Heroic Ardor&rsquo; to the faithful (<em>PL</em> VI. 64-5, I. 51-2, VI. 66). These effects are &lsquo;breath&rsquo;d&rsquo; into both armies (<em>PL</em> I. 54, VI. 65). In these similarities we once again find Calvin&rsquo;s concern about the ability of music to &lsquo;move our hearts in one way or another&rsquo; and thereby to inflame either the virtuous or the vicious (Calvin 366). The music being &lsquo;instrumental&rsquo;, it lacks the all-important &lsquo;letter, or subject and matter&rsquo;: it is melody &lsquo;without understanding&rsquo; (Calvin 366, 365). Thus, it can be put to the use of either the rebels or the faithful.</p>
-        </div>
-        <div class="textbox indent">
-            <p>Milton includes the peculiar detail that the rebel angels march &lsquo;to the <em>Dorian</em> mood&rsquo; (<em>PL</em> I. 550). As McColley notes, in Plato&rsquo;s <em>Republic</em>, Socrates identifies the Dorian and Phrygian modes as those which &lsquo;best express the accents of courage in the face of stern necessity and misfortune, and of temperance in prosperity won by peaceful pursuits&rsquo; (McColley, 39). Hence, McColley argues, it makes sense for the rebel angels to use the Dorian to imbue &lsquo;deliberate valor&rsquo;. Howard Schultz argues that the rebels&rsquo; use of &lsquo;Flutes and soft Recorders&rsquo; also makes sense in the context of the classical canon: Thucydides and others after him emphasize the use of pipe rather than brass instruments to prepare warriors for battle, by which means &lsquo;the fierce impetuosity of the soldiers was checked&rsquo;, making them more controlled, effective soldiers (Schultz 96). Thus, it appears that the rebel angels, with &lsquo;soft Pipes&rsquo; in the &lsquo;<em>Dorian</em> mood&rsquo;, are more prudent warriors than the faithful, with their &lsquo;Ethereal Trumpet from on high&rsquo; (<em>PL</em> VI. 60).</p>
-        </div>
-        <div class="textbox indent">
-            <p>However, in <em>The Principles of Musik</em> (1636), Charles Butler contends that the &lsquo;Doric Mood consists of sober slow-timed notes&rsquo; and &lsquo;moveth to sobriety, prudence, modesty, and godliness&rsquo; (Butler 1).<a href="#footnote4"><sup>[4]</sup><span class="footnote" id="asterisk4"></span></a>  The Phrygian, by contrast, is &lsquo;manly and courageous&rsquo;, which with &lsquo;loud and violent tones, rouseth the spirit, and inciteth to arms and activity: such are Marches…and the warlike sounds of Trumpet, Fife, and Drum&rsquo; (Butler 2). The rebel angels conform to the classical model of war music, appropriately enough, since in the catalogue of their aliases (<em>PL</em> I. 376-521) it is explained that they will go on to become the false deities of the classical pantheon. The faithful angels&rsquo; war music conforms to the model offered by a contemporary Christian source, <em>The Principles of Musik</em>, and the faithful prove victorious in the conflict. Once again, the profanity of hell is not distinguished from the sanctity of heaven by the substance of each realm&rsquo;s music, which in both cases consists of &lsquo;notes angelical&rsquo;, but by the approach taken to that music: what mode and instruments are chosen.</p>
-        </div>
-        <div class="textbox indent">
-            <p>On Milton&rsquo;s Earth, we find the center of the disjuncture between sacred and profane music. In prelapsarian Eden, Adam and Eve make their prayers &lsquo;Unmeditated&rsquo; each morning, &lsquo;More tuneable than needed Lute or Harp | To add more sweetness&rsquo; (<em>PL</em> V. 149, 151-2). They are able to improvise music without preparation and unaccompanied. After the Fall, the only musical scene we are given is the following:</p>
-        </div>
-        <div class="textbox quote">
+        <p>In other words, though the rebel angels sing in the same immortal and &lsquo;partial&rsquo; counterpoint as their heavenly counterparts, their isolation from God and their fellows prevents their music from being whole in the same manner as the counterpoint of heaven, in which individual angels participate in a perfect unity.</p>
+        <p>Hell&rsquo;s music, then, is similar in substance, but distinct in manifestation from its Heavenly counterpart. An additional parallel between the war music of Heaven and that of Hell further demonstrates this phenomenon. The rebels march in a &lsquo;<em>Phalanx</em>&rsquo;, the angels in a &lsquo;Quadrate&rsquo;: Merritt Y. Hughes glosses the latter as &lsquo;a square phalanx&rsquo; and notes the parallel to the former (<em>PL</em> I. 550, VI. 62; Milton 325). The rebels &lsquo;Mov&rsquo;d on in silence&rsquo;, a phrase exactly replicated in the description of the faithful angels, except in being enjambed: &lsquo;mov&rsquo;d on | In silence&rsquo; (<em>PL</em> I. 61, VI. 63-4). Both armies march &lsquo;to the sound |Of instrumental harmony&rsquo;, which &lsquo;rais&rsquo;d [the rebels]| To highth of noblest temper&rsquo; and brings &lsquo;Heroic Ardor&rsquo; to the faithful (<em>PL</em> VI. 64-5, I. 51-2, VI. 66). These effects are &lsquo;breath&rsquo;d&rsquo; into both armies (<em>PL</em> I. 54, VI. 65). In these similarities we once again find Calvin&rsquo;s concern about the ability of music to &lsquo;move our hearts in one way or another&rsquo; and thereby to inflame either the virtuous or the vicious (Calvin 366). The music being &lsquo;instrumental&rsquo;, it lacks the all-important &lsquo;letter, or subject and matter&rsquo;: it is melody &lsquo;without understanding&rsquo; (Calvin 366, 365). Thus, it can be put to the use of either the rebels or the faithful.</p>
+        <p>Milton includes the peculiar detail that the rebel angels march &lsquo;to the <em>Dorian</em> mood&rsquo; (<em>PL</em> I. 550). As McColley notes, in Plato&rsquo;s <em>Republic</em>, Socrates identifies the Dorian and Phrygian modes as those which &lsquo;best express the accents of courage in the face of stern necessity and misfortune, and of temperance in prosperity won by peaceful pursuits&rsquo; (McColley, 39). Hence, McColley argues, it makes sense for the rebel angels to use the Dorian to imbue &lsquo;deliberate valor&rsquo;. Howard Schultz argues that the rebels&rsquo; use of &lsquo;Flutes and soft Recorders&rsquo; also makes sense in the context of the classical canon: Thucydides and others after him emphasize the use of pipe rather than brass instruments to prepare warriors for battle, by which means &lsquo;the fierce impetuosity of the soldiers was checked&rsquo;, making them more controlled, effective soldiers (Schultz 96). Thus, it appears that the rebel angels, with &lsquo;soft Pipes&rsquo; in the &lsquo;<em>Dorian</em> mood&rsquo;, are more prudent warriors than the faithful, with their &lsquo;Ethereal Trumpet from on high&rsquo; (<em>PL</em> VI. 60).</p>
+        <p>However, in <em>The Principles of Musik</em> (1636), Charles Butler contends that the &lsquo;Doric Mood consists of sober slow-timed notes&rsquo; and &lsquo;moveth to sobriety, prudence, modesty, and godliness&rsquo; (Butler 1).<a href="#footnote4"><sup>[4]</sup><span class="footnote" id="asterisk4"></span></a>  The Phrygian, by contrast, is &lsquo;manly and courageous&rsquo;, which with &lsquo;loud and violent tones, rouseth the spirit, and inciteth to arms and activity: such are Marches…and the warlike sounds of Trumpet, Fife, and Drum&rsquo; (Butler 2). The rebel angels conform to the classical model of war music, appropriately enough, since in the catalogue of their aliases (<em>PL</em> I. 376-521) it is explained that they will go on to become the false deities of the classical pantheon. The faithful angels&rsquo; war music conforms to the model offered by a contemporary Christian source, <em>The Principles of Musik</em>, and the faithful prove victorious in the conflict. Once again, the profanity of hell is not distinguished from the sanctity of heaven by the substance of each realm&rsquo;s music, which in both cases consists of &lsquo;notes angelical&rsquo;, but by the approach taken to that music: what mode and instruments are chosen.</p>
+        <p>On Milton&rsquo;s Earth, we find the center of the disjuncture between sacred and profane music. In prelapsarian Eden, Adam and Eve make their prayers &lsquo;Unmeditated&rsquo; each morning, &lsquo;More tuneable than needed Lute or Harp | To add more sweetness&rsquo; (<em>PL</em> V. 149, 151-2). They are able to improvise music without preparation and unaccompanied. After the Fall, the only musical scene we are given is the following:</p>
+        <div class="quote">
             <p><span id="sound">[T]he sound</span>
                 <br>Of Instruments that made melodious chime
                 <br>Was heard, of Harp and Organ; and who mov&rsquo;d
@@ -179,96 +145,87 @@
                 <br>Instinct through all proportions low and high
                 <br>Fled and pursu&rsquo;d transverse the resonant fugue. (<em>PL</em> XI. 558-63)</p>
         </div>
-        <div class="textbox">
-            <p>According to Hughes, the image is of Jubal, &lsquo;the father of all such as handle the harp and organ&rsquo; (Milton 446). It is a complimentary image: the chime is &lsquo;melodious&rsquo;, the fugue &lsquo;resonant&rsquo;, and Jubal&rsquo;s touch &lsquo;volant&rsquo;. James Whaler refers to the final three lines as &lsquo;Milton&rsquo;s unsurpassable definition of fugue&rsquo; (Whaler 74). The &lsquo;Instinct&rsquo; with which Jubal plays recalls the &lsquo;Unmeditated&rsquo; musical prayers of Adam and Eve. As in the fall of the rebel angels, not all has been lost by the Fall of Man; certainly not exquisite contrapuntal music.</p>
-        </div>
-        <div class="textbox indent">
-            <p>However, like the rebel angels, Man appears to have lost the absolute communality of unfallen counterpoint. The united prayers of Adam and Eve, at that time the sum total and representation of humanity, are replaced by a single anonymous individual, producing counterpoint alone through man-made tools. Immediately following the quoted passage is a description of, according to Hughes, Jubal&rsquo;s brother Tubal-Cain, &lsquo;an instructor of every artificer in brass and iron&rsquo;, who stands &lsquo;at the Forge | Laboring&rsquo; (Milton 446; <em>PL</em> XI. 564-5). It is presumably through this artifice that Jubal&rsquo;s instruments were created.</p>
-        </div>
-        <div class="textbox indent">
-            <p>Here we must return to &lsquo;the insolence of the robber, Prometheus&rsquo;, to which Milton attributes our inability to hear the Music of the Spheres, as well as our loss of the &lsquo;felicity&rsquo; of prelapsarian Eden. Like Cain&rsquo;s sons, Prometheus was a pioneer of human artifice: he brough τέχνη [craftsmanship] to Man. Disobeying God (like Prometheus), humanity has lost the Edenic state, which provided for all our needs. Before the Fall, Eve possessed &lsquo;such Gard&rsquo;ning Tools as Art yet rude, | Guiltless of fire had form&rsquo;d, or Angels brought&rsquo; (<em>PL</em> IX. 391-2). The phrase &lsquo;Guiltless of fire&rsquo; particularly recalls Prometheus&mdash;whose guilty theft of fire enables Man&rsquo;s τέχνη&mdash;and, in <em>Paradise Lost</em>, Tubal-Cain&rsquo;s forge. Isolated as individuals&mdash;one to metal-working, one to music, and so on&mdash;the communality of Heaven&rsquo;s choirs or Adam and Eve&rsquo;s prayers lost, fallen humans must use artifice to produce contrapuntal music, the &lsquo;Harp and Organ&rsquo; with which one individual can play several parts or voices at once. As Williams and Williams argue, music is:</p>
-        </div>
-        <div class="textbox quote">
+        <p>According to Hughes, the image is of Jubal, &lsquo;the father of all such as handle the harp and organ&rsquo; (Milton 446). It is a complimentary image: the chime is &lsquo;melodious&rsquo;, the fugue &lsquo;resonant&rsquo;, and Jubal&rsquo;s touch &lsquo;volant&rsquo;. James Whaler refers to the final three lines as &lsquo;Milton&rsquo;s unsurpassable definition of fugue&rsquo; (Whaler 74). The &lsquo;Instinct&rsquo; with which Jubal plays recalls the &lsquo;Unmeditated&rsquo; musical prayers of Adam and Eve. As in the fall of the rebel angels, not all has been lost by the Fall of Man; certainly not exquisite contrapuntal music.</p>
+        <p>However, like the rebel angels, Man appears to have lost the absolute communality of unfallen counterpoint. The united prayers of Adam and Eve, at that time the sum total and representation of humanity, are replaced by a single anonymous individual, producing counterpoint alone through man-made tools. Immediately following the quoted passage is a description of, according to Hughes, Jubal&rsquo;s brother Tubal-Cain, &lsquo;an instructor of every artificer in brass and iron&rsquo;, who stands &lsquo;at the Forge | Laboring&rsquo; (Milton 446; <em>PL</em> XI. 564-5). It is presumably through this artifice that Jubal&rsquo;s instruments were created.</p>
+        <p>Here we must return to &lsquo;the insolence of the robber, Prometheus&rsquo;, to which Milton attributes our inability to hear the Music of the Spheres, as well as our loss of the &lsquo;felicity&rsquo; of prelapsarian Eden. Like Cain&rsquo;s sons, Prometheus was a pioneer of human artifice: he brough τέχνη [craftsmanship] to Man. Disobeying God (like Prometheus), humanity has lost the Edenic state, which provided for all our needs. Before the Fall, Eve possessed &lsquo;such Gard&rsquo;ning Tools as Art yet rude, | Guiltless of fire had form&rsquo;d, or Angels brought&rsquo; (<em>PL</em> IX. 391-2). The phrase &lsquo;Guiltless of fire&rsquo; particularly recalls Prometheus&mdash;whose guilty theft of fire enables Man&rsquo;s τέχνη&mdash;and, in <em>Paradise Lost</em>, Tubal-Cain&rsquo;s forge. Isolated as individuals&mdash;one to metal-working, one to music, and so on&mdash;the communality of Heaven&rsquo;s choirs or Adam and Eve&rsquo;s prayers lost, fallen humans must use artifice to produce contrapuntal music, the &lsquo;Harp and Organ&rsquo; with which one individual can play several parts or voices at once. As Williams and Williams argue, music is:</p>
+        <div class="quote">
             <p>[O]ne of the conscious &lsquo;arts that polish life&rsquo;…but the life that is outside Paradise and fallen away from spontaneous nature. The skill required for &ldquo;pursuing a resonant fugue&rdquo; is that of a &ldquo;rare inventor&rdquo; all too often…&ldquo;unmindful of his maker&rdquo;&rsquo; (Williams and Williams 761).</p>
         </div>
-        <div class="textbox">
-            <p>Having fallen, Man has lost the &lsquo;Unmeditated&rsquo; and unaccompanied spontaneity of the prelapsarian music exhibited by Adam and Eve, and once humanity employs artifice to simulate the communality of divine harmony, we risk forgetting the originator both of ourselves and of that harmony. Nor is there any mention of singing (and therefore words) in Jubal&rsquo;s music. Thus, this fallen music is open to the ambiguous potential of which Calvin was afraid, and which manifests earlier in the poem in the use of instrumental music by the faithful and rebel angels for purposes good and ill.</p>
-        </div>
-        <div class="textbox indent">
-            <p>Milton&rsquo;s poetic treatments of music, then, progress from dichotomy to ambiguity. The conception delineated in his early poems, of sacred and profane music as defined by the substance of the music itself, gives way to depictions of music with the potential for good or ill. In <em>Paradise Lost</em>, contemporary concerns regarding this potential manifest not in the censoriousness of Puritanism, but in a nuanced examination of the ambiguity itself. The principal distinction is no longer between the essential qualities of sacred and profane music, but between the different manners and contexts&mdash;sacred and profane, fallen and unfallen&mdash;in which music is produced.</p>
-        </div>
+        <p>Having fallen, Man has lost the &lsquo;Unmeditated&rsquo; and unaccompanied spontaneity of the prelapsarian music exhibited by Adam and Eve, and once humanity employs artifice to simulate the communality of divine harmony, we risk forgetting the originator both of ourselves and of that harmony. Nor is there any mention of singing (and therefore words) in Jubal&rsquo;s music. Thus, this fallen music is open to the ambiguous potential of which Calvin was afraid, and which manifests earlier in the poem in the use of instrumental music by the faithful and rebel angels for purposes good and ill.</p>
+        <p>Milton&rsquo;s poetic treatments of music, then, progress from dichotomy to ambiguity. The conception delineated in his early poems, of sacred and profane music as defined by the substance of the music itself, gives way to depictions of music with the potential for good or ill. In <em>Paradise Lost</em>, contemporary concerns regarding this potential manifest not in the censoriousness of Puritanism, but in a nuanced examination of the ambiguity itself. The principal distinction is no longer between the essential qualities of sacred and profane music, but between the different manners and contexts&mdash;sacred and profane, fallen and unfallen&mdash;in which music is produced.</p>
     </div>
-        <div class="section_break">
-            <hr>
-        </div>
+    <div class="section_break">
+        <hr>
+    </div>
     <div class="main">
-        <h2>Notes:<span class="footnote" id="notes"></span></h2>
-        <div class="textbox endnote">
+        <h1 class="section_title">Notes:<span class="footnote" id="notes"></span></h1>
+        <div class="endnote">
             <p><a href="#asterisk1"><sup>[1]</sup><span class="footnote" id="footnote1"></span></a> All quotations from Paradise Lost are taken from the 12-Book version of the poem (1674) as reproduced in Complete Poems and Major Prose and abbreviated <em>PL</em>, followed by Book and line references.</p>
         </div>
-        <div class="textbox endnote">
+        <div class="endnote">
             <p><a href="#asterisk2"><sup>[2]</sup><span class="footnote" id="footnote2"></span></a> Hereafter referred to as the ‘Nativity Ode’.</p>
         </div>
-        <div class="textbox endnote">
+        <div class="endnote">
             <p><a href="#asterisk3"><sup>[3]</sup><span class="footnote" id="footnote3"></span></a> My translation.</p>
         </div>
-        <div class="textbox endnote">
+        <div class="endnote">
             <p><a href="#asterisk4"><sup>[4]</sup><span class="footnote" id="footnote4"></span></a> All quotations from Butler are my transliteration from the facsimile.</p>
         </div>
     </div>
-        <div class="section_break">
-            <hr>
-        </div>
+    <div class="section_break">
+        <hr>
+    </div>
     <div class="main">
-        <h2>Works Cited:<span class="footnote" id="works-cited"></span></h2>
-        <div class="textbox bibliography">
+        <h1 class="section_title">Works Cited:<span class="footnote" id="works-cited"></span></h1>
+        <div class="bibliography">
             <p>Ainsworth, David. “Rapturous Milton and the Communal Harmony of Faith.” <em>Milton Quarterly</em>, vol. 47, no. 3, 2013, pp. 149–62.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Butler, Charles. <em>The Principles of Musik, in Singing and Setting: With the Two-Fold Use Thereof, Ecclesiasticall and Civil. By Charles Butler Magd. Master of Arts</em>. Printed by Iohn Haviland, for the author, 1636.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Calvin, Jean. “The Geneva Psalter (1542): Epistle to the Reader.” <em>Source Readings in Music History</em>, Rev. ed. /, W. W. Norton, 1998, pp. 364–67.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Goodman, Glenda. “‘The Tears I Shed at the Songs of Thy Church’: Seventeenth-Century Musical Piety in the English Atlantic World.” <em>Journal of the American Musicological Society</em>, vol. 65, no. 3, 2012, pp. 691–725. <em>JSTOR</em>, doi:10.1525/jams.2012.65.3.691.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Grove, George. <em>Grove’s Dictionary of Music and Musicians</em>. Edited by J. A. Fuller-Maitland, vol. 3, The Macmillan Company, 1907.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Larson, Katherine R. “‘Blest Pair of Sirens … Voice and Verse’: Milton’s Rhetoric of Song.” <em>Milton Studies</em>, vol. 54, no. 1, 2013, pp. 81–106. <em>Project MUSE</em>, doi:10.1353/mlt.2013.0002.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Mander, M. N. K. “Milton and the Music of the Spheres.” <em>Milton Quarterly</em>, vol. 24, no. 2, 1990, pp. 63–71. JSTOR.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>---. “Music in Milton’s ‘Hymn.’” <em>Renaissance Studies</em>, vol. 5, no. 4, 1991, pp. 412–26. JSTOR.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Marion, Jean-Luc, et al. <em>God without Being: Hors-Texte</em>. 2nd ed., University of Chicago Press, 2012. </p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>McColley, Diane Kelsey. <em>Poetry and Music in Seventeenth-Century England</em>. Cambridge University Press, 1997.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Milton, John. <em>Complete Poems and Major Prose</em>. Edited by Merritt Y Hughes, Hackett Pub., 2003.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Milton, John, and Frank Allen Patterson. <em>The Works of John Milton</em>. Vol. 5, Columbia University Press, 1931.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Schultz, Howard. “Warlike Flutes: Gellius, Castiglione, Montaigne, and Milton.” <em>Modern Language Notes</em>, vol. 64, no. 2, 1949, pp. 96–98. JSTOR, <em>JSTOR</em>, doi:10.2307/2910061.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Whaler, James. <em>Counterpoint and Symbol; an Inquiry into the Rhythm of Milton’s Epic Style</em>. Rosenkilde and Bagger, 1956.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Williams, Helen, and Peter Williams. “Milton and Music; Or the Pandaemonic Organ.” <em>The Musical Times</em>, vol. 107, no. 1483, 1966, pp. 760–63. JSTOR, <em>JSTOR</em>, doi:10.2307/954289.</p>
         </div>
     </div>
-    <div class="section_break"></div>
-	<div w3-include-html="/footer.html"></div>
+    <!--Footer Include-->
+    <div class="section_break" id="contact"></div>
+    <div w3-include-html="/footer.html"></div>
 </body>
 <script>includeHTML();</script>
 </html>

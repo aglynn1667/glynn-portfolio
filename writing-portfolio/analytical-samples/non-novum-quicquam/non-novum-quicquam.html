@@ -1,83 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Non Novum Quicquam: The Exegetical Paradox of John Milton&rsquo;s <em>De Doctrina Christiana</em></title>
-<link href="non-novum-quicquam.css" type="text/css" rel="stylesheet">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon-main/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-main/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-main/favicon-16x16.png">
-<link rel="manifest" href="/favicon-main/site.webmanifest">
-<script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
-<script src="/include.js"></script>
+    <meta charset="UTF-8">
+    <!--Make page same width as device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non Novum Quicquam</title>
+    <!--Style Sheet-->
+    <link href="/master.css" type="text/css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-main/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-main/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-main/favicon-16x16.png">
+    <link rel="manifest" href="/favicon-main/site.webmanifest">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+    <!--Enable Inclusions-->
+    <script src="/include.js"></script>
+    <!--JS for main nav-->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function navDrop() {
+            var x = document.getElementById("navLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+    <style>
+        .main h1 {
+          padding-bottom: 0;
+        }
+
+        .main h2 {
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        #first h2 {
+            padding-left: 2rem;
+        }
+
+        .main p {
+            padding: 0 1rem;
+            line-height: 1.5rem;
+        }
+
+        .attribution {
+            margin-left: 5rem;
+        }
+
+        .endnote {
+            margin-left: 1rem;
+            text-indent: -2rem;
+        }
+    </style>
 </head>
+<!--Body begins here-->
 <body>
-    <div class="invisible-header"></div>
-    <header>
-        <a href="/index.html" id="home">
-            <div class="banner">
-                <h1>Aaron Glynn</h1>
-            </div>
-        </a>
-        <nav>
-            <div class="dropdown">On This Page&ensp;&#9662;
-                <div class="dropdown-content">
-                    <div class="contents-table">
-                        <a href="#start">
-                            <div class="item i">
-                                <p class="content"><i class="fas fa-paragraph"></i>Introduction</p>
-                            </div>
-                        </a>
-                        <a href="#i-radical-endeavor">
-                            <div class="item ii">
-                                <p class="content"><i class="fas fa-paragraph"></i>I. Radical Endeavor</p>
-                            </div>
-                        </a>
-                        <a href="#ii-paradox-of-purpose">
-                            <div class="item iii">
-                                <p class="content"><i class="fas fa-paragraph"></i>II. Paradox of Purpose</p>
-                            </div>
-                        </a>
-                        <a href="#iii-rhetorical-subtlety">
-                            <div class="item iv">
-                                <p class="content"><i class="fas fa-paragraph"></i>III. Rhetorical Subtlety</p>
-                            </div>
-                        </a>
-                        <a href="#iv-non-novum-quicquam">
-                            <div class="item v">
-                                <p class="content"><i class="fas fa-paragraph"></i>IV. Non Novum Quicquam</p>
-                            </div>
-                        </a>
-                        <a href="#notes">
-                            <div class="item vi">
-                                <p class="content"><i class="fas fa-thumbtack"></i>Notes</p>
-                            </div>
-                        </a>
-                        <a href="#works-cited">
-                            <div class="item vii">
-                                <p class="content"><i class="fas fa-book"></i>Works Cited</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a class="box b" href="/index.html"><div>Curriculum Vitae</div></a>
-            <a class="box c" href="/writing-portfolio/writing-portfolio.html"><div>Writing Portfolio</div></a>
-            <div class="dropcontact">Contact&ensp;&#9662;
-                <div w3-include-html="/contact-menu.html"></div>
-            </div>
-            <a class="box e" href="/performing-arts/performing-arts.html"><div>Performing Arts</div></a>
-        </nav>
-    </header>
-    <div class="main">
-        <h1 class="section_title">Non Novum Quicquam:<span class="footnote" id="start"></span></h1>
+    <!--Header and Sidebar Includes-->
+    <div w3-include-html="/universals.html"></div>
+    <!--Context Nav-->
+    <div class="context-nav">
+        <a class="category">Non Novum Quicquam</a>
+        <a href="#start">Introduction</a>
+        <a href="#i-radical-endeavor">I. Radical Endeavor</a>
+        <a href="#ii-paradox-of-purpose">II. Paradox of Purpose</a>
+        <a href="#iii-rhetorical-subtlety">III. Rhetorical Subtlety</a>
+        <a href="#iv-non-novum-quicquam">IV. Non Novume Quicquam?</a>
+        <a href="#notes">Notes</a>
+        <a href="#works-cited">Works Cited</a>
+    </div>
+    <!--Page Content-->
+    <div class="main" id="first">
+        <h1 class="section_title">Non Novum Quicquam<span class="footnote" id="start"></span></h1>
         <h2>The Exegetical Paradox of John Milton's <em>De Doctrina Christiana</em></h2>
-        <div class="textbox quote">
+        <div class="quote">
             <p><em>Hic autem non novum quicquam docetur</em><br><em>(In this work nothing new is being taught)</em></p>
-            <p class="attribution">— John Milton, <em>De Doctrina Christiana</em></p>
         </div>
-        <div class="textbox">
-            <p>John Milton’s <em>De Doctrina Christiana</em> is a treatise determined to differentiate itself from the exegetical tradition in which it participates. In the opening pages, even as he praises the exegetical progress achieved since the dawn of the Reformation, Milton contrasts the form, emphasis and method of his work with that of other Reformation theologians. While there is some truth to these contrasts, the extent to which they are asserted raises troubling questions as to the merit of Milton’s enterprise: so strongly does he contrast the treatise with its forerunners that the purpose and value of <em>De Doctrina Christiana</em> itself is cast into doubt. In practice, however, his textual radicalism is applied in a somewhat spurious manner, and consequently brings him to genuinely innovative conclusions.</p>
+        <p class="attribution">— John Milton, <em>De Doctrina Christiana</em></p>
+        <p>John Milton’s <em>De Doctrina Christiana</em> is a treatise determined to differentiate itself from the exegetical tradition in which it participates. In the opening pages, even as he praises the exegetical progress achieved since the dawn of the Reformation, Milton contrasts the form, emphasis and method of his work with that of other Reformation theologians. While there is some truth to these contrasts, the extent to which they are asserted raises troubling questions as to the merit of Milton’s enterprise: so strongly does he contrast the treatise with its forerunners that the purpose and value of <em>De Doctrina Christiana</em> itself is cast into doubt. In practice, however, his textual radicalism is applied in a somewhat spurious manner, and consequently brings him to genuinely innovative conclusions.</p>
         </div>
     </div>
     <div class="section_break">
@@ -85,136 +88,96 @@
     </div>
     <div class="main">
         <h2>I. Radical Endeavor<span class="footnote" id="i-radical-endeavor"></span></h2>
-        <div class="textbox">
-            <p>Milton’s claim to have departed from the mainstream of Protestant exegesis is not unfounded. As Michael Bauman contends:</p>
-        </div>
-        <div class="textbox quote">
+        <p>Milton’s claim to have departed from the mainstream of Protestant exegesis is not unfounded. As Michael Bauman contends:</p>
+        <div class="quote">
             <p>I have discovered no systematic theology, Protestant or other, that is even remotely as biblically grounded as Milton’s. For page after page, the range and number of his biblical references easily outstrip those of every other comparable text. (Bauman 9)</p>
         </div>
-        <div class="textbox">
-            <p>Milton repeatedly declares that his arguments are derived from ‘perusing and perpending the scripture of God itself’ and ‘taken out of the word of God itself alone’ (Milton, <em>The Complete Works of John Milton</em> 5, 7).<a href="#footnote1"><sup>[1]</sup><span class="footnote" id="asterisk1"></span></a> The 9,346 scriptural citations, by Bauman’s count, present in the treatise suggest the consistency with which Milton applies this method (Bauman 178). Nor is the problem that Milton claims by such an approach to solve an insignificant one:</p>
-        </div>
-        <div class="textbox quote">
+        <p>Milton repeatedly declares that his arguments are derived from ‘perusing and perpending the scripture of God itself’ and ‘taken out of the word of God itself alone’ (Milton, <em>The Complete Works of John Milton</em> 5, 7).<a href="#footnote1"><sup>[1]</sup><span class="footnote" id="asterisk1"></span></a> The 9,346 scriptural citations, by Bauman’s count, present in the treatise suggest the consistency with which Milton applies this method (Bauman 178). Nor is the problem that Milton claims by such an approach to solve an insignificant one:</p>
+        <div class="quote">
             <p>[S]ince the majority of those who have written at greatest length on these subjects have been accustomed to fill up almost the whole of their pages with explaining their own opinions, while thrusting into the margin the scriptural passages by which all their teaching is most confirmed, with the numbers of the chapters and verses only summarily noted, I have preferred that my pages’ space should overflow with scriptural authorities assembled from all parts of the Bible, even when they repeat one another, and that as little room as possible be left for my own words. (Milton 9)</p>
         </div>
-        <div class="textbox">
-            <p>Michael Lieb interprets these complaints as referring to other ‘authors of systematic theologies,’ (Lieb 41) but the problem is broader than that: outside the systematic theological tradition, scriptural commentaries written by the most prominent Reformation theologians – such as John Calvin – frequently fail to quote the source text in full, despite filling multiple pages with discussion of individual verses. Milton moves to the opposite extreme, however, not merely citing the Biblical text in full, but providing such a plenitude of citations as to, by his own admission, overwhelm his own exegetical prose. This constitutes an extraordinary scriptural radicalism (in the etymological sense of getting to the “roots” of Christian doctrine). Lieb argues that in his professed emphasis on drawing from scripture, Milton follows Ames and Wolleb, his most significant influences from the Ramistic systematic theological tradition (in the estimation both of Lieb and of John K. Hale and J. Donald Cullington), but unlike them, he fulfils the claim:</p>
-        </div>
-        <div class="textbox quote">
+        <p>Michael Lieb interprets these complaints as referring to other ‘authors of systematic theologies,’ (Lieb 41) but the problem is broader than that: outside the systematic theological tradition, scriptural commentaries written by the most prominent Reformation theologians – such as John Calvin – frequently fail to quote the source text in full, despite filling multiple pages with discussion of individual verses. Milton moves to the opposite extreme, however, not merely citing the Biblical text in full, but providing such a plenitude of citations as to, by his own admission, overwhelm his own exegetical prose. This constitutes an extraordinary scriptural radicalism (in the etymological sense of getting to the “roots” of Christian doctrine). Lieb argues that in his professed emphasis on drawing from scripture, Milton follows Ames and Wolleb, his most significant influences from the Ramistic systematic theological tradition (in the estimation both of Lieb and of John K. Hale and J. Donald Cullington), but unlike them, he fulfils the claim:</p>
+        <div class="quote">
             <p>Ames may declare his allegiance to “the holy Scriptures” in the title of his treatise, but, upon careful examination, one begins to notice the curious lack of proof-texts that might be otherwise invoked to aid Ames’ cause. (Lieb 31)</p>
         </div>
-        <div class="textbox quote">
+        <div class="quote">
             <p>Whereas in Ramist dialectic and its heirs (such as Ames and Wolleb), proof-texts are invoked sparingly, Milton features them prominently. (Lieb 40)</p>
         </div>
-        <div class="textbox">
-            <p>I would go further still, contending that even Milton’s statement of scriptural emphasis is more forceful. Where Ames’s title claims that his doctrine is ‘ex sacris literis, earumque interpretibus, extracta’ [drawn out of the holy scriptures and their interpreters] Milton’s treatise purports to be ‘ex sacris duntaxat libris petita’ [sought out from the sacred writings alone]. However, it is not immediately obvious why so strict an emphasis on the scriptural sources as to minimize Milton’s own exegetical prose should be desirable. Indeed, he bizarrely claims that ‘nothing new is being taught’ in the treatise, which raises the fundamental question of what its function actually is (Milton 19). What purpose can be served by a theological treatise so dedicated to drawing from scripture alone that its innumerable citations come at the expense of any exegetical interpretation?</p>
-        </div>
+        <p>I would go further still, contending that even Milton’s statement of scriptural emphasis is more forceful. Where Ames’s title claims that his doctrine is ‘ex sacris literis, earumque interpretibus, extracta’ [drawn out of the holy scriptures and their interpreters] Milton’s treatise purports to be ‘ex sacris duntaxat libris petita’ [sought out from the sacred writings alone]. However, it is not immediately obvious why so strict an emphasis on the scriptural sources as to minimize Milton’s own exegetical prose should be desirable. Indeed, he bizarrely claims that ‘nothing new is being taught’ in the treatise, which raises the fundamental question of what its function actually is (Milton 19). What purpose can be served by a theological treatise so dedicated to drawing from scripture alone that its innumerable citations come at the expense of any exegetical interpretation?</p>
     </div>
     <div class="section_break">
         <hr>
     </div>
     <div class="main">    
         <h2>II. Paradox of Purpose<span class="footnote" id="ii-paradox-of-purpose"></span></h2>
-        <div class="textbox">
-            <p>We consequently arrive at an exegetical paradox: Milton’s emphasis on the radicalism of his project is so pronounced that he openly admits to the lack of any new doctrinal ideas contained within it, yet he attempts to justify it on the grounds of its necessity. Since salvation is open ‘solely to each person’s individual faith,’ Milton can ‘rely on the faith or judgement of no one else as to the things of God’ and so ‘could not in conscience entrust to these guides [namely, the treatises produced by other theologians] the whole authority for [his] faith or [his] hope of salvation’ (Milton 5). On the other hand, he deemed it ‘absolutely necessary’ to have some ‘systematic arrangement’ of Christian doctrine (Milton 5). The word that Hale and Cullington here translate as ‘systematic’ is ‘methodicam’ (Milton 4). The concept of ‘methodus’ [method] is central, Lieb argues, to the Ramist tradition of systematic theology(Lieb 26): Milton identifies the need for a Ramist treatise, but none of those that exist will suffice, as he cannot rely on any authority other than the scripture itself. As William Kolbrener phrases it, ‘No previous effort “on this subject,” no matter how definitive, would have prevented Milton himself from taking up the task’ (Kolbrener 82).</p>
-        </div>
-        <div class="textbox indent">
-            <p>However, if Christian doctrine may be derived only from scripture to the point that keeping one’s own words to a minimum is desirable, we may reasonably ask the point of producing such a tractate at all. If one cannot entrust one’s salvation to the writings of others, what value does such a treatise have for anyone other than Milton himself? Indeed, the emphasis on the first-person pronoun in his characterizations of the work seem to imply that it is only for his benefit:</p>
-        </div>
-        <div class="textbox quote">
+        <p>We consequently arrive at an exegetical paradox: Milton’s emphasis on the radicalism of his project is so pronounced that he openly admits to the lack of any new doctrinal ideas contained within it, yet he attempts to justify it on the grounds of its necessity. Since salvation is open ‘solely to each person’s individual faith,’ Milton can ‘rely on the faith or judgement of no one else as to the things of God’ and so ‘could not in conscience entrust to these guides [namely, the treatises produced by other theologians] the whole authority for [his] faith or [his] hope of salvation’ (Milton 5). On the other hand, he deemed it ‘absolutely necessary’ to have some ‘systematic arrangement’ of Christian doctrine (Milton 5). The word that Hale and Cullington here translate as ‘systematic’ is ‘methodicam’ (Milton 4). The concept of ‘methodus’ [method] is central, Lieb argues, to the Ramist tradition of systematic theology(Lieb 26): Milton identifies the need for a Ramist treatise, but none of those that exist will suffice, as he cannot rely on any authority other than the scripture itself. As William Kolbrener phrases it, ‘No previous effort “on this subject,” no matter how definitive, would have prevented Milton himself from taking up the task’ (Kolbrener 82).</p>
+        <p>However, if Christian doctrine may be derived only from scripture to the point that keeping one’s own words to a minimum is desirable, we may reasonably ask the point of producing such a tractate at all. If one cannot entrust one’s salvation to the writings of others, what value does such a treatise have for anyone other than Milton himself? Indeed, the emphasis on the first-person pronoun in his characterizations of the work seem to imply that it is only for his benefit:</p>
+        <div class="quote">
             <p>[S]ummoque solatio fuit, magnum me, Deo bene iuvante, subsidium fidei mihimet comparasse.<a href="#footnote2"><sup>[2]</sup></a><span class="footnote" id="asterisk2"></span><br>[A]nd I felt the utmost comfort that I had by God’s good help gained a great strengthening for my faith. (Milton 6-7)</p>
         </div>
-        <div class="textbox">
-            <p>However, if it is a purely personal exercise to write such a work, what need is there ‘haec…omnibus palam fac[ere]’ [to make it open to all]<a href="#footnote3"><sup>[3]</sup><span class="footnote" id="asterisk3"></span></a> and justify its composition as Milton does in the opening pages (Milton 6)? Why does the work, in Kolbrener’s words, remain ‘ever conscious of its public for whom it exists’ (Kolbrener 81)?</p>
-        </div>
-        <div class="textbox indent">
-            <p>Milton ostensibly resolves this paradox by suggesting that others might themselves undertake the same exercise: ‘I shall mention what has proved profitable to my own studies, in case the same hope subsequently leads someone else to enter on the same way’ (Milton 5). The earnestness of such a suggestion is questionable however: how many others did Milton envisage writing tracts of their own, hundreds of pages in length, in order to achieve independence from the exegetical tradition? The decision to write the treatise in Latin is also at odds with the personal emphasis: an English Protestant work, in which Milton – like many other Reformation theologians – emphasizes the importance of studying the Biblical text in its original languages (Milton 5), has little reason to employ the Latin traditionally associated with the Catholic faith other than to reach the widest possible audience. Given the extraordinary emphasis on Hebrew, Greek and vernacular scripture characteristic of the Reformation, the most likely justification for the use of Latin is a purely pragmatic one: Latin remained the common language of academic Europe.<a href="#footnote4"><sup>[4]</sup><span class="footnote" id="asterisk4"></span></a> Milton had previously employed it most notably for his <em>Defensiones</em> (1651, 1654), treatises specifically aimed at a European audience as justifications of the Regicide and the English Commonwealth.</p>
-        </div>
-        <div class="textbox indent">
-            <p>The paradox persists, therefore: we have reason to doubt the earnestness of Milton’s scriptural radicalism, and to question whether the distinguishing characteristics of his tractate justify his claims to its necessity and innovation. Let us therefore examine a further distinction that the treatise can legitimately claim: <em>De Doctrina Christiana</em> is neither a verse-by-verse commentary on a continuous section of the Bible, like Calvin’s commentaries, nor a typical Ramist statement of principles with, in Lieb’s estimation at least, limited recourse to the Biblical text. Rather, it takes the form of a thematic index or encyclopedia of scripture: Milton compiles ‘things which are read in dispersal in the holy books, by bringing them together for convenience into a single body, so to speak, and by distributing them under definite headings’ (Milton 19). He frames his selection and juxtaposition of verses in pragmatic terms: it is done ‘for convenience’ and ‘for the sake of the [reader’s] memory’, the latter point repeated from his explanation of the need for a ‘methodicam institutionem’ [systematic arrangement] (Milton 19, 4-5). Though accepted by Hale and Cullington as a justification, this mnemonic emphasis seems disingenuous: as John Rogers argues, Milton seems to have possessed ‘one of the most capacious, one of the largest memories in English letters’ (Milton lvii-lviii; Rogers). This is not to say that he must have compiled over 9,000 citations from memory – indeed, according to Hale and Cullington, ‘the research process was essentially one of gradual accretion, and overwhelmingly what were added were more biblical citations’ (Milton xxiv)–merely that it is questionable whether practical mnemonic considerations were the principal motivation behind the treatise and the form that it takes.</p>
-        </div>
+        <p>However, if it is a purely personal exercise to write such a work, what need is there ‘haec…omnibus palam fac[ere]’ [to make it open to all]<a href="#footnote3"><sup>[3]</sup><span class="footnote" id="asterisk3"></span></a> and justify its composition as Milton does in the opening pages (Milton 6)? Why does the work, in Kolbrener’s words, remain ‘ever conscious of its public for whom it exists’ (Kolbrener 81)?</p>
+        <p>Milton ostensibly resolves this paradox by suggesting that others might themselves undertake the same exercise: ‘I shall mention what has proved profitable to my own studies, in case the same hope subsequently leads someone else to enter on the same way’ (Milton 5). The earnestness of such a suggestion is questionable however: how many others did Milton envisage writing tracts of their own, hundreds of pages in length, in order to achieve independence from the exegetical tradition? The decision to write the treatise in Latin is also at odds with the personal emphasis: an English Protestant work, in which Milton – like many other Reformation theologians – emphasizes the importance of studying the Biblical text in its original languages (Milton 5), has little reason to employ the Latin traditionally associated with the Catholic faith other than to reach the widest possible audience. Given the extraordinary emphasis on Hebrew, Greek and vernacular scripture characteristic of the Reformation, the most likely justification for the use of Latin is a purely pragmatic one: Latin remained the common language of academic Europe.<a href="#footnote4"><sup>[4]</sup><span class="footnote" id="asterisk4"></span></a> Milton had previously employed it most notably for his <em>Defensiones</em> (1651, 1654), treatises specifically aimed at a European audience as justifications of the Regicide and the English Commonwealth.</p>
+        <p>The paradox persists, therefore: we have reason to doubt the earnestness of Milton’s scriptural radicalism, and to question whether the distinguishing characteristics of his tractate justify his claims to its necessity and innovation. Let us therefore examine a further distinction that the treatise can legitimately claim: <em>De Doctrina Christiana</em> is neither a verse-by-verse commentary on a continuous section of the Bible, like Calvin’s commentaries, nor a typical Ramist statement of principles with, in Lieb’s estimation at least, limited recourse to the Biblical text. Rather, it takes the form of a thematic index or encyclopedia of scripture: Milton compiles ‘things which are read in dispersal in the holy books, by bringing them together for convenience into a single body, so to speak, and by distributing them under definite headings’ (Milton 19). He frames his selection and juxtaposition of verses in pragmatic terms: it is done ‘for convenience’ and ‘for the sake of the [reader’s] memory’, the latter point repeated from his explanation of the need for a ‘methodicam institutionem’ [systematic arrangement] (Milton 19, 4-5). Though accepted by Hale and Cullington as a justification, this mnemonic emphasis seems disingenuous: as John Rogers argues, Milton seems to have possessed ‘one of the most capacious, one of the largest memories in English letters’ (Milton lvii-lviii; Rogers). This is not to say that he must have compiled over 9,000 citations from memory – indeed, according to Hale and Cullington, ‘the research process was essentially one of gradual accretion, and overwhelmingly what were added were more biblical citations’ (Milton xxiv)–merely that it is questionable whether practical mnemonic considerations were the principal motivation behind the treatise and the form that it takes.</p>
     </div>
     <div class="section_break">
         <hr>
     </div>
     <div class="main">
         <h2>III. Rhetorical Subtlety<span class="footnote" id="iii-rhetorical-subtlety"></span></h2>
-        <div class="textbox">
-            <p>The question remains, therefore, why Milton would construct <em>De Doctrina Christiana</em> so as to leave ‘as little room as possible’ for his own prose. This might be read as the logical conclusion of the principle of <em>sola scriptura</em> that Milton repeatedly emphasizes: if righteous doctrine comes only from the Biblical text itself, then it is in the citation of and attention to that text that the predominant focus should lie. Alternatively, it is possible to read such an approach as a subtler means of imposing Milton’s own interpretation of the text upon the reader. It is uncharacteristic of the prolific polemicist, unafraid to produce prose as incendiary as <em>Eikonoklastes</em> (1649), the <em>Defensiones</em> and – on the eve of the Restoration – <em>The Ready and Easy Way to Establish a Free Commonwealth</em> (1660), to denigrate his own words, unless for rhetorical effect (as in the <em>Prolusions</em> for example). The claim to have cited scripture so extensively in order to minimize the presence of his own words seems indeed to be a rhetorical one. I contend that, rather than diminishing Milton’s own exegetical contribution, his extreme dedication to textual citation is the principal manifestation of it. The argument is to be found as much in the selection and juxtaposition of particular verses as in Milton’s exegetical prose itself.</p>
-        </div>
-        <div class="textbox indent">
-            <p>Milton was not innocently unaware of the powerful rhetorical impact of compiling and juxtaposing citations: contemporaneously<a href="#footnote5"><sup>[5]</sup><span class="footnote" id="asterisk5"></span></a> with <em>De Doctrina Christiana</em>, he was composing <em>Paradise Lost</em> (1667), in which allusions to numerous and disparate classical myths are often juxtaposed in order to make theological points.<a href="#footnote6"><sup>[6]</sup><span class="footnote" id="asterisk6"></span></a> The enumeration of evidence, one as well-read in the classical rhetorical tradition as Milton must have known, has an overwhelming effect: to reject a single line of interpretation on a single verse of Genesis is a far more approachable task than the refutation of a principle defended with a dozen carefully selected quotations from disparate parts of the scripture juxtaposed on the page.</p>
-        </div>
-        <div class="textbox indent">
-            <p>Moreover, it is a form of rhetorical apophasisto claim that the Biblical text has been cited so extensively as to leave ‘little room’ for one’s own words: it implies that what exegetical prose has been included derives naturally from the scripture cited (Milton 9). Milton even hints at this implication in claiming that he leaves ‘as little room as possible’ for his own words, though ‘contextu scripturarum natis’ [they arise from the weaving together of the passages] (Milton 8-9). The word ‘natis’ is a passive participle literally meaning ‘born’, while ‘contextu’ is the ablative supine ‘from the weaving together’: through this phrasing – passive and lacking an indicative verb – Milton omits his own agency, subtly suggesting that his words develop organically from the text, rather than primarily from his own input. Thus, though Milton distances himself from ‘vagis cogitationibus atque argutiis’ [the vague cogitations and sophistries] and ‘subtilius de Deo comminiscendi’ [the contriving of ever subtler ideas about God]<a href="#footnote7"><sup>[7]</sup><span class="footnote" id="asterisk7"></span></a> of typical mortal thinking, it appears that Milton is partaking in a subtlety of his own (Milton 28-9).</p>
-        </div>
+        <p>The question remains, therefore, why Milton would construct <em>De Doctrina Christiana</em> so as to leave ‘as little room as possible’ for his own prose. This might be read as the logical conclusion of the principle of <em>sola scriptura</em> that Milton repeatedly emphasizes: if righteous doctrine comes only from the Biblical text itself, then it is in the citation of and attention to that text that the predominant focus should lie. Alternatively, it is possible to read such an approach as a subtler means of imposing Milton’s own interpretation of the text upon the reader. It is uncharacteristic of the prolific polemicist, unafraid to produce prose as incendiary as <em>Eikonoklastes</em> (1649), the <em>Defensiones</em> and – on the eve of the Restoration – <em>The Ready and Easy Way to Establish a Free Commonwealth</em> (1660), to denigrate his own words, unless for rhetorical effect (as in the <em>Prolusions</em> for example). The claim to have cited scripture so extensively in order to minimize the presence of his own words seems indeed to be a rhetorical one. I contend that, rather than diminishing Milton’s own exegetical contribution, his extreme dedication to textual citation is the principal manifestation of it. The argument is to be found as much in the selection and juxtaposition of particular verses as in Milton’s exegetical prose itself.</p>
+        <p>Milton was not innocently unaware of the powerful rhetorical impact of compiling and juxtaposing citations: contemporaneously<a href="#footnote5"><sup>[5]</sup><span class="footnote" id="asterisk5"></span></a> with <em>De Doctrina Christiana</em>, he was composing <em>Paradise Lost</em> (1667), in which allusions to numerous and disparate classical myths are often juxtaposed in order to make theological points.<a href="#footnote6"><sup>[6]</sup><span class="footnote" id="asterisk6"></span></a> The enumeration of evidence, one as well-read in the classical rhetorical tradition as Milton must have known, has an overwhelming effect: to reject a single line of interpretation on a single verse of Genesis is a far more approachable task than the refutation of a principle defended with a dozen carefully selected quotations from disparate parts of the scripture juxtaposed on the page.</p>
+        <p>Moreover, it is a form of rhetorical apophasisto claim that the Biblical text has been cited so extensively as to leave ‘little room’ for one’s own words: it implies that what exegetical prose has been included derives naturally from the scripture cited (Milton 9). Milton even hints at this implication in claiming that he leaves ‘as little room as possible’ for his own words, though ‘contextu scripturarum natis’ [they arise from the weaving together of the passages] (Milton 8-9). The word ‘natis’ is a passive participle literally meaning ‘born’, while ‘contextu’ is the ablative supine ‘from the weaving together’: through this phrasing – passive and lacking an indicative verb – Milton omits his own agency, subtly suggesting that his words develop organically from the text, rather than primarily from his own input. Thus, though Milton distances himself from ‘vagis cogitationibus atque argutiis’ [the vague cogitations and sophistries] and ‘subtilius de Deo comminiscendi’ [the contriving of ever subtler ideas about God]<a href="#footnote7"><sup>[7]</sup><span class="footnote" id="asterisk7"></span></a> of typical mortal thinking, it appears that Milton is partaking in a subtlety of his own (Milton 28-9).</p>
     </div>
     <div class="section_break">
         <hr>
     </div>
     <div class="main">
         <h2>IV. Non Novum Quicquam? Milton's Radicalism in Practice<span class="footnote" id="iv-non-novum-quicquam"></span></h2>
-        <div class="textbox">
-            <p>However suspect Milton’s means may be, however subtly he may conceive the absoluteness of his textual radicalism, he arrives at an approach to the conception of God that is truly radical, both in the sense of coming from the textual roots of Christianity and in the sense of its strong deviation from the mainstream of Reformation thought. He argues that we should conceive of God ‘as he shows himself and describes himself in sacred literature’: though ‘God is always either described or outlined not as he really is’, nevertheless it is ‘our duty to imagine him in our mind exactly as he—in adapting [accomodans] himself to our grasp—wants to be imagined.’ (Milton 28-29). A similar idea of divine accommodation is a staple of Calvin’s thinking:</p>
-        </div>
-        <div class="textbox quote">
+        <p>However suspect Milton’s means may be, however subtly he may conceive the absoluteness of his textual radicalism, he arrives at an approach to the conception of God that is truly radical, both in the sense of coming from the textual roots of Christianity and in the sense of its strong deviation from the mainstream of Reformation thought. He argues that we should conceive of God ‘as he shows himself and describes himself in sacred literature’: though ‘God is always either described or outlined not as he really is’, nevertheless it is ‘our duty to imagine him in our mind exactly as he—in adapting [accomodans] himself to our grasp—wants to be imagined.’ (Milton 28-29). A similar idea of divine accommodation is a staple of Calvin’s thinking:</p>
+        <div class="quote">
             <p>God is wont in a measure to “lisp” in speaking to us[.] Thus such forms of speaking do not so much express clearly what God is like as accommodate the knowledge of him to our slight capacity. To do this he must descend far beneath his loftiness. (Calvin 122)</p>
         </div>
-        <div class="textbox">
-            <p>However, Calvin uses this concept to refute the ‘Anthropomorphites…who imagined a corporeal God from the fact that Scripture often ascribes to him a mouth, ears, eyes, hands, and feet’. Milton, by contrast, argues that ‘if God assigned himself a thoroughly human body and aspect, why should we be afraid to assign him what he assigned himself?’ (Milton 31). Like Calvin, Milton emphasizes the inability of the human mind to conceive God as He really is, but where Calvin determines on this basis to avoid conceiving of God in such terms as scripture provides, Milton determines to do precisely that. Kolbrener describes this as a ‘severe biblical textualism’, an accurate term for such radical dedication to the scriptures themselves. This dedication is entirely in keeping with Milton’s stated intentions.</p>
-        </div>
-        <div class="textbox indent">
-            <p>However, Kolbrener draws the misguided conclusion that Milton ‘insists on the <em>literal</em> truth of biblical passages’ and ‘evidences a scepticism towards a truth that completely transcends language’ (Kolbrener 75, 78). It is true that Milton ‘refuse[s] passage into some allegorical beyond’, but he does not, as Kolbrener claims, accept the text as literally true. Rather, Milton accepts the divide between what scripture expresses and what is true but does not attempt to cross it, by allegorical or any other means, precisely because the truth transcends language and therefore the divide cannot be crossed by interpreting the words.</p>
-        </div>
-        <div class="textbox indent">
-            <p>Kolbrener attempts to categorize <em>De Doctrina Christiana</em> according to a misconceived dichotomy between the literal and allegorical senses. John Barton undermines this dichotomy to some extent: he re-examines Origen, ‘the early allegorizer par excellence’, asserting that Origen was able to ‘identify and expound the literal sense’ but believed that ‘in many cases the literal sense is not the true sense of a given passage’ but the ‘surface meaning, beneath which the true sense lay encoded’ (Barton 93–94). However, Milton’s treatise transcends not only the dichotomy between literal and allegorical, but also that between surface meaning and encoded true sense. For Milton, there is no true sense contained or encoded in scripture for us to decipher. He argues that scripture is not literally true but should nevertheless be read literally, without attempting to reach the truth through it. Barton comes close to this conclusion in his argument for the ‘plain sense’ of scripture: he contends that ‘Critical inquiry does often involve taking the biblical text literally, but not taking to be literally true’ (Barton 95). However, his method of inquiry remains oriented toward ‘layers of meaning well beyond the literal’ and ‘the true…meaning of the text’ (Barton 116). Milton appears to advocate instead an acceptance of the literal meaning, whether true or untrue.</p>
-        </div>
-        <div class="textbox indent">
-            <p>Kolbrener misunderstands this, quoting Sanford Budick, who ‘argues [that for Milton] “human knowledge, including even knowledge of the divine,” lies “in the right perception and comprehension of images”’ (Kolbrener 76). On the contrary, Milton’s answer to divine accommodation lies in the obedient perception of simplified images:</p>
-        </div>
-        <div class="textbox quote">
+        <p>However, Calvin uses this concept to refute the ‘Anthropomorphites…who imagined a corporeal God from the fact that Scripture often ascribes to him a mouth, ears, eyes, hands, and feet’. Milton, by contrast, argues that ‘if God assigned himself a thoroughly human body and aspect, why should we be afraid to assign him what he assigned himself?’ (Milton 31). Like Calvin, Milton emphasizes the inability of the human mind to conceive God as He really is, but where Calvin determines on this basis to avoid conceiving of God in such terms as scripture provides, Milton determines to do precisely that. Kolbrener describes this as a ‘severe biblical textualism’, an accurate term for such radical dedication to the scriptures themselves. This dedication is entirely in keeping with Milton’s stated intentions.</p>
+        <p>However, Kolbrener draws the misguided conclusion that Milton ‘insists on the <em>literal</em> truth of biblical passages’ and ‘evidences a scepticism towards a truth that completely transcends language’ (Kolbrener 75, 78). It is true that Milton ‘refuse[s] passage into some allegorical beyond’, but he does not, as Kolbrener claims, accept the text as literally true. Rather, Milton accepts the divide between what scripture expresses and what is true but does not attempt to cross it, by allegorical or any other means, precisely because the truth transcends language and therefore the divide cannot be crossed by interpreting the words.</p>
+        <p>Kolbrener attempts to categorize <em>De Doctrina Christiana</em> according to a misconceived dichotomy between the literal and allegorical senses. John Barton undermines this dichotomy to some extent: he re-examines Origen, ‘the early allegorizer par excellence’, asserting that Origen was able to ‘identify and expound the literal sense’ but believed that ‘in many cases the literal sense is not the true sense of a given passage’ but the ‘surface meaning, beneath which the true sense lay encoded’ (Barton 93–94). However, Milton’s treatise transcends not only the dichotomy between literal and allegorical, but also that between surface meaning and encoded true sense. For Milton, there is no true sense contained or encoded in scripture for us to decipher. He argues that scripture is not literally true but should nevertheless be read literally, without attempting to reach the truth through it. Barton comes close to this conclusion in his argument for the ‘plain sense’ of scripture: he contends that ‘Critical inquiry does often involve taking the biblical text literally, but not taking to be literally true’ (Barton 95). However, his method of inquiry remains oriented toward ‘layers of meaning well beyond the literal’ and ‘the true…meaning of the text’ (Barton 116). Milton appears to advocate instead an acceptance of the literal meaning, whether true or untrue.</p>
+        <p>Kolbrener misunderstands this, quoting Sanford Budick, who ‘argues [that for Milton] “human knowledge, including even knowledge of the divine,” lies “in the right perception and comprehension of images”’ (Kolbrener 76). On the contrary, Milton’s answer to divine accommodation lies in the obedient perception of simplified images:</p>
+        <div class="quote">
             <p>[I]f God wants us to apprehend him as he offers himself for us to know, yet we clutch at another idea of God, we are not following God’s wishes but foiling God in his purpose. (Milton 31-33)</p>
         </div>
-        <div class="textbox">
-            <p>It is not insignificant that Charles Sumner translates ‘morem gerimus Deo’ as ‘rendering him submissive obedience’, rather than ‘following God’s wishes’ as Hale and Cullington do (Milton, <em>A Treatise on Christian Doctrine</em> 24). Though the latter is more literal, the former captures an implicit concept of crucial significance. The lexis with which Milton explains his suggested approach to divine accommodation repeatedly refers to the desires of God: we must conceive of God as He ‘vult’ [wants] to be conceived, according to the scriptures that He ‘voluisse’ [wanted] written about him and contain nothing that He ‘noluisset’ [did not want] us to ponder about Him (Milton 29). To conceive of God in precisely those terms that scripture gives us is therefore to do what God wants: it is an act of obedience.</p>
-        </div>
-        <div class="textbox indent">
-            <p>Obedience is notoriously central to Milton’s theological thinking: contemporaneously with the composition of <em>De Doctrina Christiana</em>, he was writing <em>Paradise Lost</em>, the subject of which is ‘Man’s first disobedience’, namely the Fall of Adam (<em>PL</em> I.1).<a href="#footnote8"><sup>[8]</sup><span class="footnote" id="asterisk8"></span></a> With this in mind, let us consider again Milton’s warning against conceiving God ‘more hominum qui subtilius de Deo comminiscendi finem nullum faciunt’ [as men do, who never stop contriving subtler ideas about God]<a href="#footnote9"><sup>[9]</sup><span class="footnote" id="asterisk9"></span></a> (Milton 28). It was the disobedience of Man that caused the Fall, egged on by the ‘subtle fiend’ (PL X. 20). The subtleties of our fallen reason now incline us to another disobedience, the attempt to circumvent the scriptures to reach a hidden understanding of God.</p>
-        </div>
-        <div class="textbox indent">
-            <p>Thus, I am inclined to credit neither Milton’s declaration of independence from the exegetical tradition – relying solely on the scriptures themselves – nor his claim to teach nothing new in <em>De Doctrina Christiana</em>. Milton’s radical dedication to exegesis <em>sola scriptura</em>, to the point of denigrating all exegesis before him and even his own prose, is fallacious since, if sincere, it would undermine the entire enterprise of the treatise and, being rhetorical, subtly conceals his true method of argumentation: precisely through the very act of compiling and juxtaposing Biblical passages. However, his extreme textual focus leads him to construct a genuinely innovative doctrine of divine accommodation, which remains entirely faithful to the text without adopting fully either a traditional allegorical or literal approach. The ‘novum quicquam’ or ‘new thing’ in <em>De Doctrina Christiana</em> is the acceptance of the limitations of human understanding of the divine, without any attempt to escape those same limitations.</p>
-        </div>
+        <p>It is not insignificant that Charles Sumner translates ‘morem gerimus Deo’ as ‘rendering him submissive obedience’, rather than ‘following God’s wishes’ as Hale and Cullington do (Milton, <em>A Treatise on Christian Doctrine</em> 24). Though the latter is more literal, the former captures an implicit concept of crucial significance. The lexis with which Milton explains his suggested approach to divine accommodation repeatedly refers to the desires of God: we must conceive of God as He ‘vult’ [wants] to be conceived, according to the scriptures that He ‘voluisse’ [wanted] written about him and contain nothing that He ‘noluisset’ [did not want] us to ponder about Him (Milton 29). To conceive of God in precisely those terms that scripture gives us is therefore to do what God wants: it is an act of obedience.</p>
+        <p>Obedience is notoriously central to Milton’s theological thinking: contemporaneously with the composition of <em>De Doctrina Christiana</em>, he was writing <em>Paradise Lost</em>, the subject of which is ‘Man’s first disobedience’, namely the Fall of Adam (<em>PL</em> I.1).<a href="#footnote8"><sup>[8]</sup><span class="footnote" id="asterisk8"></span></a> With this in mind, let us consider again Milton’s warning against conceiving God ‘more hominum qui subtilius de Deo comminiscendi finem nullum faciunt’ [as men do, who never stop contriving subtler ideas about God]<a href="#footnote9"><sup>[9]</sup><span class="footnote" id="asterisk9"></span></a> (Milton 28). It was the disobedience of Man that caused the Fall, egged on by the ‘subtle fiend’ (PL X. 20). The subtleties of our fallen reason now incline us to another disobedience, the attempt to circumvent the scriptures to reach a hidden understanding of God.</p>
+        <p>Thus, I am inclined to credit neither Milton’s declaration of independence from the exegetical tradition – relying solely on the scriptures themselves – nor his claim to teach nothing new in <em>De Doctrina Christiana</em>. Milton’s radical dedication to exegesis <em>sola scriptura</em>, to the point of denigrating all exegesis before him and even his own prose, is fallacious since, if sincere, it would undermine the entire enterprise of the treatise and, being rhetorical, subtly conceals his true method of argumentation: precisely through the very act of compiling and juxtaposing Biblical passages. However, his extreme textual focus leads him to construct a genuinely innovative doctrine of divine accommodation, which remains entirely faithful to the text without adopting fully either a traditional allegorical or literal approach. The ‘novum quicquam’ or ‘new thing’ in <em>De Doctrina Christiana</em> is the acceptance of the limitations of human understanding of the divine, without any attempt to escape those same limitations.</p>
     </div>
     <div class="section_break">
         <hr>
     </div>
     <div class="main">
-        <h2>Notes:<span class="footnote" id="notes"></span></h2>
-        <div class="textbox endnote">
+        <h1 class="section_title">Notes:<span class="footnote" id="notes"></span></h1>
+        <div class="endnote">
             <p><a href="#asterisk1"><sup>[1]</sup><span class="footnote" id="footnote1"></span></a> Hereafter, citations from <em>The Complete Works of John Milton</em> are abbreviated as 'Milton'.</p>
         </div>
-        <div class="textbox endnote">
+        <div class="endnote">
             <p><a href="#asterisk2"><sup>[2]</sup><span class="footnote" id="footnote2"></span></a> My emphasis.</p>
         </div>
-        <div class="textbox endnote">
+        <div class="endnote">
             <p><a href="#asterisk3"><sup>[3]</sup><span class="footnote" id="footnote3"></span></a> My translation.</p>
         </div>
-        <div class="textbox endnote">
+        <div class="endnote">
             <p><a href="#asterisk4"><sup>[4]</sup><span class="footnote" id="footnote4"></span></a> As Hale phrases it, 'Latin was the air they breathed' in European education and culture (Hale).</p>
         </div>
-        <div class="textbox endnote">
+        <div class="endnote">
             <p><a href="#asterisk5"><sup>[5]</sup><span class="footnote" id="footnote5"></span></a> According to William Kerrigan et al. (Milton et al. 1137)</p>
         </div>
-        <div class="textbox endnote">
+        <div class="endnote">
             <p><a href="#asterisk6"><sup>[6]</sup><span class="footnote" id="footnote6"></span></a> See for example the catalogue of fallen angels and their pagan aliases (<em>PL</em> I. 376-521)</p>
         </div>
-        <div class="textbox endnote">
+        <div class="endnote">
             <p><a href="#asterisk7"><sup>[7]</sup><span class="footnote" id="footnote7"></span></a> My translation.</p>
         </div>
-        <div class="textbox endnote">
+        <div class="endnote">
             <p><a href="#asterisk8"><sup>[8]</sup><span class="footnote" id="footnote8"></span></a> All quotations from <em>Paradise Lost</em> are taken from <em>The Complete Poetry and Essential Prose</em> and are abbreviated <em>PL</em>, followed by Book and line references.</p>
         </div>
-        <div class="textbox endnote">
+        <div class="endnote">
             <p><a href="#asterisk9"><sup>[9]</sup><span class="footnote" id="footnote9"></span></a> My translation.</p>
         </div>
     </div>
@@ -222,40 +185,41 @@
         <hr>
     </div>
     <div class="main">
-        <h2>Works Cited:<span class="footnote" id="works-cited"></span></h2>
-        <div class="textbox bibliography">
+        <h1 class="section_title">Works Cited:<span class="footnote" id="works-cited"></span></h1>
+        <div class="bibliography">
             <p>Barton, John. <em>The Nature of Biblical Criticism</em>. 1st ed., Westminster John Knox Press, 2007.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Bauman, Michael. <em>Scipture Index to John Milton's De Doctrina Christiana</em>. Medieval and Renaissance Texts Society, 1989.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Hale, John K. "Why Did Milton Write His Theology in Latin?" <em>OUPblog</em>, 12 Sept. 2012, <a href="https://blog.oup.com/2012/09/why-did-milton-write-theology-in-latin/">https://blog.oup.com/2012/09/why-did-milton-write-theology-in-latin/</a>.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p><em>John Calvin: Works and Correspondence. Electronic Edition. :: Institutes of the Christian Religion: Books I.I to III.XIX :: INSTITUTES OF THE CHRISTIAN RELIGION</em>. Accessed 16 Mar. 2019.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Kolbrener, William. <em>Milton’s Warring Angels: A Study of Critical Engagements</em>. Cambridge University Press, 1997.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Lieb, Michael. <em>Theological Milton: Deity, Discourse and Heresy in the Miltonic Canon</em>. Duquesne University Press, 2006.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Milton, John. <em>A Treatise on Christian Doctrine: Compiled from the Holy Scriptures Alone</em>. Translated by Charles Richard Sumner, Cummings, Hilliard, 1825.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>—. <em>The Complete Poetry and Essential Prose of John Milton</em>. Modern Library ed., 1st ed., Modern Library, 2007.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>—. <em>The Complete Works of John Milton</em>. Edited by John K. Hale and J. Donald Cullington, vol. 8, Oxford University Press, 2012.</p>
         </div>
-        <div class="textbox bibliography">
+        <div class="bibliography">
             <p>Rogers, John. <em>ENGL 220 – Lecture 10 – God and Mammon: The Wealth of Literary Memory | Open Yale Courses</em>. <a href="https://oyc.yale.edu/english/engl-220/lecture-10">https://oyc.yale.edu/english/engl-220/lecture-10</a>. Accessed 27 Mar. 2019.</p>
         </div>
     </div>
-    <div class="section_break"></div>
-	<div w3-include-html="/footer.html"></div>
+    <!--Footer Include-->
+    <div class="section_break" id="contact"></div>
+    <div w3-include-html="/footer.html"></div>
 </body>
 <script>includeHTML();</script>
 </html>
