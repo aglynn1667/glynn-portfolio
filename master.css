@@ -78,6 +78,18 @@ i {
     font-size: 0.5rem;
 }
 
+q {
+    quotes: "‘" "’" "“" "”";
+}
+
+q:before {
+    content: open-quote;
+}
+
+q:after {
+    content: close-quote;
+}
+
 /* Context Nav Tisms */
 
 .context-nav {
