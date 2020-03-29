@@ -75,11 +75,23 @@
             max-width: 100%;
             padding: 1rem;
             flex: 1 1 480px;
+            object-fit: contain;
+        }
+
+        @media screen and (max-width: 480px) {
+            #me {
+                width: 100%;
+                padding: 1rem 0 0 0;
+            }
         }
 
         .introduction {
             padding-left: 1rem;
             padding-right: 1rem;
+        }
+
+        #first {
+            padding-top: 0;
         }
     </style>
     <div class="main" id="first">
@@ -114,11 +126,24 @@
             display: block;
         }
 
+        @media screen and (max-width: 480px) {
+            .prior {
+                padding-bottom: 3rem;
+            }
+        }
+
         .comp-tisms {
-            min-width: 25rem;
+            flex: 1 1 20rem;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
+        }
+
+        @media screen and (max-width: 480px) {
+            .comp-tisms {
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
         }
 
         .company {
@@ -159,7 +184,7 @@
     </style>
     <div class="main">
         <h1 class="section_title">Organ Scholar<span class="footnote" id="organ-scholar"></span></h1>
-        <div class="job">
+        <div class="job prior">
             <div class="comp-tisms">
                 <p class="company">Rockefeller Memorial Chapel</p>
                 <p class="location">(Chicago, IL)</p>
@@ -176,7 +201,7 @@
                 <li>Performed in recitals</li>
             </ul>
         </div>
-        <div class="job">
+        <div class="job prior">
             <div class="comp-tisms">
                 <p class="company">Royal College of Organists</p>
                 <p class="location">(London, UK)</p>
@@ -234,6 +259,16 @@
             text-align: center;
             font-size: 1.25rem;
         }
+
+        @media screen and (max-width: 480px) {
+            .stageshot {
+                padding-top: 1rem;
+            }
+            
+            .caption {
+                font-size: 1rem;
+            }
+        }
     </style>
     <div class="main">
         <div class="talent">
@@ -277,7 +312,7 @@
     <!--Choral Scholar-->
     <div class="main">
         <h1 class="section_title">Choral Scholar<span class="footnote" id="choral-scholar"></span></h1>
-        <div class="job">
+        <div class="job prior">
             <div class="comp-tisms">
                 <p class="company">Fisher Consort</p>
                 <p class="location">(London, UK)</p>
@@ -288,7 +323,7 @@
                 <p class="date-end">&ensp;</p>
             </div>
         </div>
-        <div class="job">
+        <div class="job prior">
             <div class="comp-tisms">
                 <p class="company">Robinson Consort</p>
                 <p class="location">(Cambridge, UK)</p>
@@ -299,7 +334,7 @@
                 <p class="date-end">2018</p>
             </div>
         </div>
-        <div class="job">
+        <div class="job prior">
             <div class="comp-tisms">
                 <p class="company">Robinson College Chapel Choir</p>
                 <p class="location">(Cambridge, UK)</p>
@@ -363,6 +398,13 @@
             text-align: left;
             min-width: 10rem;
             margin: 0;
+        }
+
+        @media screen and (max-width: 480px) {
+            .instrumentation {
+                padding-left: 1rem;
+                min-width: 13rem;
+            }
         }
 
         .date-tism {

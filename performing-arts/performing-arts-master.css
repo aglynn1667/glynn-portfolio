@@ -126,6 +126,10 @@ q:after {
         background-color: hsla(0, 28%, 28%, 1);
     }
 
+    .context-nav a:active {
+        background-color: hsla(210, 28%, 28%, 1);
+    }
+
     .context-nav .category {
         text-indent: -0.5rem;
         font-weight: normal;
@@ -143,12 +147,6 @@ q:after {
         padding-left: 2rem;
     }
 
-}
-
-@media only screen and (max-height: 590px) {
-    #back-to-top {
-        display: none;
-    }
 }
 
 .category {
@@ -176,6 +174,21 @@ q:after {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media screen and (max-width: 1365px) {
+    .main {
+        max-width: 75%;
+        margin-left: 22.5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        max-width: 100%;
+        margin-left: 0;
+        padding: 1rem 0;
+    }
+}
+
 .main .fas {
     float: right;
     padding-top: 0.1rem;
@@ -186,7 +199,13 @@ q:after {
 }
 
 #first {
-    margin-top: 10.5rem;
+    margin-top: 6.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    #first {
+        margin-top: 10rem;
+    }
 }
 
 .section_title {
@@ -210,6 +229,12 @@ sup {
 
 .quote {
     padding: 0 3rem;
+}
+
+@media screen and (min-width: 480px) {
+    .quote {
+        padding: 0 3rem;
+    }
 }
 
 .attribution {
