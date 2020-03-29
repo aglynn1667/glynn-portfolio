@@ -3,7 +3,7 @@
 
         header {
             max-width: 100%;
-            max-height: 9rem;
+            max-height: 16rem;
             position: fixed;
             top: 0;
             left: 0;
@@ -32,7 +32,11 @@
             padding-bottom: 0.5rem;
         }
 
-        @media screen and (min-width: 480px) {
+        @media screen and (min-width: 768px) {
+            header {
+                max-height: 9rem;
+            }
+            
             #navLinks {
                 display: flex;
                 flex-direction: row;
@@ -51,6 +55,11 @@
         #navLinks a {
             font-size: 1.2rem;
             padding: 0.5rem 1rem;
+
+        }
+
+        #navLinks a:active {
+            background-color: hsla(210, 25%, 25%, 1);
         }
 
         /* Style navigation menu links */
@@ -72,12 +81,16 @@
             right: 0.6rem;
             top: 0;
             font-size: 1.8rem;
-            margin-top: 1.7rem;
-            margin-right: 1.9rem;
-            padding: 0;
+            margin-top: 0.7rem;
+            margin-right: 0.9rem;
+            padding: 1rem;
         }
 
-        @media screen and (min-width: 480px) {
+        nav a.icon:active {
+            background-color:hsla(210, 25%, 25%, 1);
+        }
+
+        @media screen and (min-width: 768px) {
             nav a.icon {
                 display: none;
             }
@@ -97,16 +110,6 @@
             position: relative;
             bottom: 1rem;
             left: 0.5rem;
-        }
-
-        #currentcaret {
-            float: right;
-            padding-right: 4rem;
-        }
-
-        #contactcaret {
-            float: right;
-            padding-right: 4rem;
         }
     </style>
     <header>

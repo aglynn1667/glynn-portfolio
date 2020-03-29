@@ -3,7 +3,7 @@
     /* Footer Tisms */
 
     footer {
-        max-height: 9rem;
+        height: 9rem;
         width: 100%;
         flex-shrink: 0;
         z-index: 1;
@@ -17,8 +17,7 @@
         margin-right: 14%;
         padding-top: 1rem;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         justify-content: space-between;
     }
 
@@ -70,6 +69,61 @@
     .spacer:hover, .copy:hover{
         background-color: initial;
     }
+
+    @media screen and (max-width: 480px) {
+
+        footer {
+            height: 26rem;
+            display: flex;
+        }
+
+        .footer-elements {
+            flex-flow: column-reverse nowrap;
+            justify-content: flex-end;
+            width: 100%;
+            margin: 0;
+            padding: 1rem 0 0.5rem 0;
+        }
+
+        footer a, footer p {
+            padding: 1rem;
+            text-align: left;
+            font-size: 1.4rem;
+            width: 100%;
+        }
+
+        footer img {
+            display: none;
+        }
+
+        .contact-tisms {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 2rem;
+        }
+
+        .copy-tisms {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        #back-to-top {
+            text-align: left;
+        }
+
+        .fa-arrow-alt-circle-up {
+            float: left;
+            padding-left: 0;
+            padding-right: 0.5rem;
+        }
+
+        .spacer:hover, .copy:hover{
+            background-color: initial;
+        }
+    }
+
 </style>
 <footer>
     <div class="footer-elements">
