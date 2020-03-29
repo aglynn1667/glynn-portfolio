@@ -135,7 +135,73 @@
             display: none;
         }
 
-        @media only screen and (min-width: 1180px) {
+        @media only screen and (min-width: 768px) {
+
+            .sidebar {
+                display: flex;
+                box-sizing: border-box;
+                padding-top: 9.5rem;
+                padding-bottom: 0.5rem;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: fixed;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                height: 100%;
+                width: 20%;
+                background-color: hsla(210, 22%, 22%, 1);
+                border: none;
+                z-index: 3;
+                box-shadow: 0.1rem 0 0.4rem hsla(210, 15%, 15%, 1);
+            }
+
+            .sidebar a {
+                padding: 0.5rem 1rem;
+                display: block;
+                color: hsla(217, 52%, 90%, 1);
+            }
+
+            .sidebar a:hover {
+                background-color: hsla(210, 28%, 28%, 1);
+            }
+
+            .sidebar .category {
+                text-indent: -0.5rem;
+                font-weight: normal;
+                font-size: 1.1rem;
+                background-color: hsla(210, 23%, 23%, 1);
+                border: 1px solid hsla(210, 20%, 20%, 1);
+                box-shadow: 0.1rem 0.1rem 0.4rem hsla(210, 15%, 15%, 1);
+            }
+
+            .sidebar .category:hover {
+                background-color: hsla(210, 30%, 30%, 1);
+            }
+
+            #email-tism {
+                flex: none;
+                overflow-x: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .sidebar .subdiv {
+                padding-left: 2rem;
+            }
+
+            /* Hide scrollbar for Chrome, Safari and Opera */
+            .sidebar::-webkit-scrollbar {
+                display: none;
+            }
+
+            /* Hide scrollbar for IE and Edge */
+            .sidebar {
+            -ms-overflow-style: none;
+            }
+
+        }
+
+        @media only screen and (min-width: 1366px) {
 
             .sidebar {
                 display: flex;
@@ -202,7 +268,7 @@
     </style>
     <div class="sidebar">
         <a class="category">Contact</a>
-        <a href="mailto:ag@glynnportfolio.com"><i class="fas fa-envelope"></i>ag@glynnportfolio.com</a>
+        <a href="mailto:ag@glynnportfolio.com" id="email-tism"><i class="fas fa-envelope"></i>ag@glynnportfolio.com</a>
         <a href="tel:1-312-366-0097"><i class="fas fa-mobile-alt"></i>(312) 366-0097</a>
         <a href="https://www.linkedin.com/in/aaron-glynn"><i class="fas fa-user"></i>LinkedIn<sup class="reg">&reg;</sup> Profile</a>
         <a class="category" href="/index.html">Curriculum Vitae</a>

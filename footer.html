@@ -70,7 +70,7 @@
         background-color: initial;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
 
         footer {
             height: 26rem;
@@ -124,6 +124,26 @@
         }
     }
 
+    @media screen and (max-width: 1023px) {
+        .footer-elements {
+            max-height: 9rem;
+            margin-left: 20%;
+            margin-right: 0;
+        }
+
+        #signature {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1365px) {
+        .footer-elements {
+            max-height: 9rem;
+            margin-left: 20%;
+            margin-right: 0;
+        }
+    }
+
 </style>
 <footer>
     <div class="footer-elements">
@@ -132,7 +152,7 @@
             <a href="tel:1-312-366-0097"><i class="fas fa-mobile-alt"></i>(312) 366-0097</a>
             <a href="https://www.linkedin.com/in/aaron-glynn"><i class="fas fa-user"></i>LinkedIn<sup class="reg">&reg;</sup> Profile</a>
         </div>
-        <img src="/signature.png">
+        <img id="signature" src="/signature.png">
         <div class="copy-tisms">
             <a id="back-to-top" href="#start"><i class="fas fa-arrow-alt-circle-up"></i>Back to Top</a>
             <a class="spacer">&nbsp;</a>
