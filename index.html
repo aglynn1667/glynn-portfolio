@@ -55,7 +55,7 @@
             justify-content: flex-start;
         }
 
-        @media screen and (max-width: 480px) {
+        @media screen and (min-width: 480px) {
             .top {
                 width: 100%;
                 overflow: hidden;
@@ -66,7 +66,13 @@
         }
 
         .top-tism {
-            flex: 1 1 200px;
+            flex: initial;
+        }
+
+        @media screen and (min-width: 480px) {
+            .top-tism {
+                flex: 1 1 200px;
+            }
         }
 
         .greeting {
@@ -82,17 +88,18 @@
         }
 
         #me {
-            width: 480px;
-            max-width: 100%;
-            padding: 1rem;
-            flex: 1 1 480px;
-            object-fit: contain;
+            width: 100%;
+            padding: 1rem 0 0 0;
         }
+        
 
-        @media screen and (max-width: 480px) {
+        @media screen and (min-width: 480px) {
             #me {
-                width: 100%;
-                padding: 1rem 0 0 0;
+                width: 480px;
+                max-width: 100%;
+                padding: 1rem;
+                flex: 1 1 480px;
+                object-fit: contain;
             }
         }
 
