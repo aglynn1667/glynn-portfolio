@@ -1,151 +1,187 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Requiem: VIII. Lacrimosa</title>
-<link href="viii-lacrimosa.css" type="text/css" rel="stylesheet">
-<link rel="apple-touch-icon" sizes="180x180" href="/performing-arts/favicon-pa/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/performing-arts/favicon-pa/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/performing-arts/favicon-pa/favicon-16x16.png">
-<link rel="manifest" href="/performing-arts/favicon-pa/site.webmanifest">
-<script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
-<script src="/include.js"></script>
+    <meta charset="UTF-8">
+    <!--Make page same width as device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requiem: VIII. Lacrimosa</title>
+    <!--Style Sheet-->
+    <link href="/performing-arts/performing-arts-master.css" type="text/css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/performing-arts/favicon-pa/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/performing-arts/favicon-pa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/performing-arts/favicon-pa/favicon-16x16.png">
+    <link rel="manifest" href="/performing-arts/favicon-pa/site.webmanifest">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+    <!--Enable Inclusions-->
+    <script src="/include.js"></script>
+    <!--JS for main nav-->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function navDrop() {
+            var x = document.getElementById("navLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
 </head>
+<!--Body begins here-->
 <body>
-    <div class="invisible-header" id="start"></div>
-    <header>
-        <a href="/index.html" id="home">
-            <div class="banner">
-                <h1>Aaron Glynn</h1>
-            </div>
-        </a>
-        <nav>
-            <div class="dropdown">Movements: List&ensp;&#9662;
-                <div class="dropdown-content">
-                    <div class="contents-table">
-                        <a href="/performing-arts/i-introit/i-introit.html">
-                            <div class="item i">
-                                <p class="content">I. Introit</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/x-domine-iesu-christe/x-domine-iesu-christe.html">
-                            <div class="item x">
-                                <p class="content">X. Domine Iesu Christe</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/ii-kyrie/ii-kyrie.html">
-                            <div class="item ii">
-                                <p class="content">II. Kyrie</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/xi-hostias/xi-hostias.html">
-                            <div class="item xi">
-                                <p class="content">XI. Hostias</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/iii-dies-irae/iii-dies-irae.html">
-                            <div class="item iii">
-                                <p class="content">III. Dies Irae</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/xii-sanctus/xii-sanctus.html">
-                            <div class="item xii">
-                                <p class="content">XII. Sanctus</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/iv-tuba-mirum/iv-tuba-mirum.html">
-                            <div class="item iv">
-                                <p class="content">IV. Tuba Mirum</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/xiii-benedictus/xiii-benedictus.html">
-                            <div class="item">
-                                <p class="content">XIII. Benedictus</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/v-rex-tremendae/v-rex-tremendae.html">
-                            <div class="item v">
-                                <p class="content">V. Rex Tremendae</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/xiv-agnus-dei/xiv-agnus-dei.html">
-                            <div class="item xiv">
-                                <p class="content">XIV. Agnus Dei</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/vi-ingemisco/vi-ingemisco.html">
-                            <div class="item vi">
-                                <p class="content">VI. Ingemisco</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/xv-lux-aeterna/xv-lux-aeterna.html">
-                            <div class="item xv">
-                                <p class="content">XV. Lux Aeterna</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/vii-confutatis/vii-confutatis.html">
-                            <div class="item vii">
-                                <p class="content">VII. Confutatis</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/xvi-libera-me/xvi-libera-me.html">
-                            <div class="item xvi">
-                                <p class="content">XVI. Libera Me</p>
-                            </div>
-                        </a>
-                        <a class="dummy">
-                            <div class="item viii">
-                                <p class="content">VIII. Lacrimosa</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/xvii-in-paradisum/xvii-in-paradisum.html">
-                            <div class="item xvii">
-                                <p class="content">XVII. In Paradisum</p>
-                            </div>
-                        </a>
-                        <a href="/performing-arts/ix-interlude/ix-interlude">
-                            <div class="item ix">
-                                <p class="content">IX. Interlude</p>
-                            </div>
-                        </a>
-                    </div>
+    <div w3-include-html="/performing-arts/universals-pa.html"></div>
+    <!--Context Nav-->
+    <div class="context-nav">
+        <a class="category">Requiem</a>
+        <a href="/performing-arts/i-introit/i-introit.html">I. Introit</i></a>
+        <a href="/performing-arts/ii-kyrie/ii-kyrie.html">II. Kyrie</a>
+        <a href="/performing-arts/iii-dies-irae/iii-dies-irae.html">III. Dies Irae</a>
+        <a href="/performing-arts/iv-tuba-mirum/iv-tuba-mirum.html">IV. Tuba Mirum</a>
+        <a href="/performing-arts/v-rex-tremendae/v-rex-tremendae.html">V. Rex Tremendae</a>
+        <a href="/performing-arts/vi-ingemisco/vi-ingemisco.html">VI. Ingemisco</a>
+        <a href="/performing-arts/vii-confutatis/vii-confutatis.html">VII. Confutatis</a>
+        <a>VIII. Lacrimosa<i class="fas fa-glasses" style="float: right;"></i></a>
+        <a href="#start" style="padding-left: 3rem;">i. The Score</a>
+        <a href="#text" style="padding-left: 3rem;">ii. The Text</a>
+        <a href="/performing-arts/ix-interlude/ix-interlude.html">IX. Interlude</a>
+        <a href="/performing-arts/x-domine-iesu-christe/x-domine-iesu-christe.html">X. Domine Iesu Christe</a>
+        <a href="/performing-arts/xi-hostias/xi-hostias.html">XI. Hostias</a>
+        <a href="/performing-arts/xii-sanctus/xii-sanctus.html">XII. Sanctus</a>
+        <a href="/performing-arts/xiii-benedictus/xiii-benedictus.html">XIII. Benedictus</a>
+        <a href="/performing-arts/xiv-agnus-dei/xiv-agnus-dei.html">XIV. Agnus Dei</a>
+        <a href="/performing-arts/xv-lux-aeterna/xv-lux-aeterna.html">XV. Lux Aeterna</a>
+        <a href="/performing-arts/xvi-libera-me/xvi-libera-me.html">XVI. Libera Me</a>
+        <a href="/performing-arts/xvii-in-paradisum/xvii-in-paradisum.html">XVII. In Paradisum</a>
+    </div>
+    <!--Page Content-->
+    <style>        
+        .title, .subtitle {
+            text-align: center;
+            display: block;
+        }
+
+        .title {
+            padding: 1rem 0 2rem 0;
+            height: 2rem;
+        }
+
+        .subtitle {
+            height: 2rem;
+            padding: 0 0 2rem 0;
+        }
+
+        .score {
+            display: grid;
+            background-color: white;
+            grid-row-gap: 0;
+            grid-template-rows: repeat(9, auto);
+            grid-template-areas: "p1" "hr" "p2" "hr" "p3" "hr" "p4" "hr" "p5";
+        }
+
+        @media screen and (min-width: 1024px) {
+            .score {
+                grid-row-gap: 2rem
+            }
+        }
+
+        .main img {
+            max-width: 100%;
+            border: 1rem solid white;
+            box-sizing: border-box;
+        }
+
+        .text {
+            padding: 2rem 0;
+        }
+
+        .text p {
+            padding: 0 1rem;
+        }
+
+        .mov-text {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .latin {
+            display: inline-block;
+            max-width: 20rem;
+        }
+        .english {
+            display: inline-block;
+            max-width: 20rem;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .next {
+            display: block;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .previous {
+            display: block;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .next:hover, .previous:hover {
+            background-color: hsla(0, 28%, 28%, 1);
+        }
+    </style>
+    <div class="main" id="first">
+        <div class="top">
+            <span class="footnote" id="start"></span>
+            <h1 class="title">Requiem</h1>
+            <h2 class="subtitle">VIII. Lacrimosa</h2>
+        </div>
+        <div class="score">
+            <img src="lacrimosa1.png" class="p1">
+            <hr>
+            <img src="lacrimosa2.png" class="p2">
+            <hr>
+            <img src="lacrimosa3.png" class="p3">
+            <hr>
+            <img src="lacrimosa4.png" class="p4">
+            <hr>
+            <img src="lacrimosa5.png" class="p5">
+        </div>
+        <div class="text">
+            <div class="mov-text">
+                <div class="latin">
+                    <h2>VIII. Lacrimosa<span class="footnote" id="text"></span></h2>
+                    <p>Lacrimosa dies illa,
+                        <br>Qua resurget ex favilla
+                        <br>Judicandus homo reus.
+                        <br>Huic ergo parce, Deus.</p>
+                    <p>Pie Jesu Domine,
+                        <br>Dona eis Requiem.</p>
+                </div>
+                <div class="english">
+                    <h2>&nbsp;</h2>
+                    <p>Tearful will be that day, on which from the ashes will rise the guilty man who is to be judged. Therefore spare him, O God.</p>
+                    <p>Merciful Lord Jesus, grant them rest.</p>
                 </div>
             </div>
-            <a class="box b" href="/index.html"><div>Curriculum Vitae</div></a>
-            <a class="box c" href="/writing-portfolio/writing-portfolio.html"><div>Writing Portfolio</div></a>
-            <div class="dropcontact">Contact&ensp;&#9662;
-                <div w3-include-html="/contact-menu.html"></div>
-            </div>
-            <a class="box e" href="/performing-arts/performing-arts.html"><div>Performing Arts</div></a>
-        </nav>
-    </header>
-    <div class="score">
-        <h1 class="h1">Requiem</h1>
-        <h2 class="h2">VIII. Lacrimosa</h2>
-        <img src="lacrimosa1.png" class="p1" width=880px>
-        <img src="lacrimosa2.png" class="p2" width=880px>
-        <img src="lacrimosa3.png" class="p3" width=880px>
-        <img src="lacrimosa4.png" class="p4" width=880px>
-        <img src="lacrimosa5.png" class="p5" width=880px>
+        </div>
+        <div class="buttons">
+            <a class="previous" href="/performing-arts/vii-confutatis/vii-confutatis.html">&#8810; Previous</a>
+            <a class="next" href="/performing-arts/ix-interlude/ix-interlude.html">Next &#8811;</a>
+        </div>
     </div>
-    <div class="main">
-        <h2 class="title">VIII. Lacrimosa: the Text<span class="footnote" id="text"></span></h2>
-        <p class="latin">Lacrimosa dies illa,
-        <br>Qua resurget ex favilla
-        <br>Iudicandus homo reus.
-        <br>Huic ero parce, Deus.</p>
-        <p class="latin2">Pie Iesu Domine,
-        <br>Dona eis Requiem.</p>
-        <p class="english">Tearful will be that day, on which from the ashes will rise the guilty man who is to be judged. Therefore spare him, O God.</p>
-        <p class="english2">Merciful Lord Jesus, grant them rest.</p>
-    </div>
-    <div class="buttons">
-        <a href=/performing-arts/vii-confutatis/vii-confutatis.html><div class="button previous">&#8810; Previous</div></a>
-        <div class="midspace"></div>
-        <a href="/performing-arts/ix-interlude/ix-interlude.html"><div class="button next">Next &#8811;</div></a>
-    </div>
-    <div class="section_break"></div>
-    <div w3-include-html="/footerpa.html"></div>
+    <!--Footer Tisms-->
+    <div class="section_break" id="contact"></div>
+    <div w3-include-html="/performing-arts/footer-pa.html"></div>
 </body>
 <script>includeHTML();</script>
 </html>
