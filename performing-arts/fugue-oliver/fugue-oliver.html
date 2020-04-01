@@ -1,83 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Whose Is This Fugue?</title>
-<link href="fugue-oliver.css" type="text/css" rel="stylesheet">
-<link rel="apple-touch-icon" sizes="180x180" href="/performing-arts/favicon-pa/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/performing-arts/favicon-pa/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/performing-arts/favicon-pa/favicon-16x16.png">
-<link rel="manifest" href="/performing-arts/favicon-pa/site.webmanifest">
-<script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
-<script src="/include.js"></script>
+    <meta charset="UTF-8">
+    <!--Make page same width as device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fugue on a Theme by Oliver</title>
+    <!--Style Sheet-->
+    <link href="/performing-arts/performing-arts-master.css" type="text/css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/performing-arts/favicon-pa/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/performing-arts/favicon-pa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/performing-arts/favicon-pa/favicon-16x16.png">
+    <link rel="manifest" href="/performing-arts/favicon-pa/site.webmanifest">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+    <!--Enable Inclusions-->
+    <script src="/include.js"></script>
+    <!--JS for main nav-->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function navDrop() {
+            var x = document.getElementById("navLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
 </head>
+<!--Body begins here-->
 <body>
-    <div class="invisible-header" id="start"></div>
-    <header>
-        <a href="/index.html" id="home">
-            <div class="banner">
-                <h1>Aaron Glynn</h1>
-            </div>
-        </a>
-        <nav>
-            <div class="dropdown">On This Page&ensp;&#9662;
-                <div class="dropdown-content">
-                    <div class="contents-table">
-                        <a href="#start">
-                            <div class="item i">
-                                <p class="content"><i class="fas fa-music"></i>Fugue on a Theme by Oliver</p>
-                            </div>
-                        </a>
-                        <a href="#text">
-                            <div class="item ii">
-                                <p class="content"><i class="fas fa-pencil-alt"></i>Notes on the Piece</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a class="box b" href="/index.html"><div>Curriculum Vitae</div></a>
-            <a class="box c" href="/writing-portfolio/writing-portfolio.html"><div>Writing Portfolio</div></a>
-            <div class="dropcontact">Contact&ensp;&#9662;
-                <div w3-include-html="/contact-menu.html"></div>
-            </div>
-            <a class="box e" href="/performing-arts/performing-arts.html"><div>Performing Arts</div></a>
-        </nav>
-    </header>
-    <div class="score">
-        <h1 class="h1">Fugue on a Theme by Oliver</h1>
-        <h2 class="h2">for String Quartet</h2>
-        <img src="fugue-oliver1.png" class="p 1" width=880px>
-        <img src="fugue-oliver2.png" class="p 2" width=880px>
-        <img src="fugue-oliver3.png" class="p 3" width=880px>
-        <img src="fugue-oliver4.png" class="p 4" width=880px>
-        <img src="fugue-oliver5.png" class="p 5" width=880px>
-        <img src="fugue-oliver6.png" class="p 6" width=880px>
-        <img src="fugue-oliver7.png" class="p 7" width=880px>
-        <img src="fugue-oliver8.png" class="p 8" width=880px>
-        <img src="fugue-oliver9.png" class="p 9" width=880px>
-        <img src="fugue-oliver10.png" class="p 10" width=880px>
-        <img src="fugue-oliver11.png" class="p 11" width=880px>
-        <img src="fugue-oliver12.png" class="p 12" width=880px>
-        <img src="fugue-oliver13.png" class="p 13" width=880px>
-        <img src="fugue-oliver14.png" class="p 14" width=880px>
-        <img src="fugue-oliver15.png" class="p 15" width=880px>
-        <img src="fugue-oliver16.png" class="p 16" width=880px>
-        <img src="fugue-oliver17.png" class="p 17" width=880px>
-        <img src="fugue-oliver18.png" class="p 18" width=880px>
-        <img src="fugue-oliver19.png" class="p 19" width=880px>
-        <img src="fugue-oliver20.png" class="p 20" width=880px>
-        <img src="fugue-oliver21.png" class="p 21" width=880px>
-        <img src="fugue-oliver22.png" class="p 22" width=880px>
+    <div w3-include-html="/performing-arts/universals-pa.html"></div>
+    <!--Context Nav-->
+    <div class="context-nav">
+        <a class="category">Fugue on a Theme by Oliver</a>
+        <a href="#start">The Score</a>
+        <a href="#text">Note on the Piece</a>
+    </div>
+    <!--Page Content-->
+    <style>        
+        .title, .subtitle {
+            text-align: center;
+            display: block;
+        }
+
+        .title {
+            padding: 1rem 0 2rem 0;
+            height: 2rem;
+        }
+
+        .subtitle {
+            height: 2rem;
+            padding: 0 0 2rem 0;
+        }
+
+        .score {
+            display: grid;
+            background-color: white;
+            grid-row-gap: 0;
+            grid-template-rows: repeat(11, auto);
+            grid-template-areas: "p1" "hr" "p2" "hr" "p3" "hr" "p4" "hr" "p5" "hr" "p6" "hr" "p7" "hr" "p8" "hr" "p9" "hr" "p10" "hr" "p11" "hr" "p12" "hr" "p13" "hr" "p14" "hr" "p15" "hr" "p16" "hr" "p17" "hr" "p18" "hr" "p19" "hr" "p20" "hr" "p21" "hr" "p22";
+        }
+
+        @media screen and (min-width: 1024px) {
+            .score {
+                grid-row-gap: 2rem
+            }
+        }
+
+        .main img {
+            max-width: 100%;
+            border: 1rem solid white;
+            box-sizing: border-box;
+        }
+
+        .text {
+            padding: 2rem 0;
+        }
+
+        .text p {
+            padding: 0 1rem;
+        }
+    </style>
+    <div class="main" id="first">
+        <div class="top">
+            <span class="footnote" id="start"></span>
+            <h1 class="title">Fugue on a Theme by Oliver</h1>
+            <h2 class="subtitle">for String Quartet</h2>
+        </div>
+        <div class="score">
+            <img src="fugue-oliver1.png" class="p1">
+            <hr>
+            <img src="fugue-oliver2.png" class="p2">
+            <hr>
+            <img src="fugue-oliver3.png" class="p3">
+            <hr>
+            <img src="fugue-oliver4.png" class="p4">
+            <hr>
+            <img src="fugue-oliver5.png" class="p5">
+            <hr>
+            <img src="fugue-oliver6.png" class="p6">
+            <hr>
+            <img src="fugue-oliver7.png" class="p7">
+            <hr>
+            <img src="fugue-oliver8.png" class="p8">
+            <hr>
+            <img src="fugue-oliver9.png" class="p9">
+            <hr>
+            <img src="fugue-oliver10.png" class="p10">
+            <hr>
+            <img src="fugue-oliver11.png" class="p11">
+            <hr>
+            <img src="fugue-oliver12.png" class="p12">
+            <hr>
+            <img src="fugue-oliver13.png" class="p13">
+            <hr>
+            <img src="fugue-oliver14.png" class="p14">
+            <hr>
+            <img src="fugue-oliver15.png" class="p15">
+            <hr>
+            <img src="fugue-oliver16.png" class="p16">
+            <hr>
+            <img src="fugue-oliver17.png" class="p17">
+            <hr>
+            <img src="fugue-oliver18.png" class="p18">
+            <hr>
+            <img src="fugue-oliver19.png" class="p19">
+            <hr>
+            <img src="fugue-oliver20.png" class="p20">
+            <hr>
+            <img src="fugue-oliver21.png" class="p21">
+            <hr>
+            <img src="fugue-oliver22.png" class="p22">
+        </div>
         <div class="text">
-            <h2 class="text-title">The Fall of Gil-galad:<span class="footnote" id="text"></span></h2>
+            <h2>The Fall of Gil-galad<span class="footnote" id="text"></span></h2>
             <p>The subject of the fugue is the melody of &lsquo;The Fall of Gil-galad&rsquo;, sung by Samwise Gamgee in the BBC's 1981 radio adaptation of J.R.R. Tolkien's <em>The Lord of the Rings</em>.</p>
             <p>The music for the series was written by Stephen Oliver, and this particular melody was sung by Bill Nighy, who voiced Gamgee.</p>
         </div>
     </div>
-    <br><br><br>
-    <div class="section_break"></div>
-    <div w3-include-html="/footerpa.html"></div>
+    <!--Footer Tisms-->
+    <div class="section_break" id="contact"></div>
+    <div w3-include-html="/performing-arts/footer-pa.html"></div>
 </body>
 <script>includeHTML();</script>
 </html>

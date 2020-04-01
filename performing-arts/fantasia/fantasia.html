@@ -1,66 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Fantasia in C&#9839;</title>
-<link href="fantasia.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <!--Make page same width as device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasia in C&sharp;</title>
+    <!--Style Sheet-->
+    <link href="/performing-arts/performing-arts-master.css" type="text/css" rel="stylesheet">
+    <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="/performing-arts/favicon-pa/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/performing-arts/favicon-pa/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/performing-arts/favicon-pa/favicon-16x16.png">
     <link rel="manifest" href="/performing-arts/favicon-pa/site.webmanifest">
+    <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+    <!--Enable Inclusions-->
     <script src="/include.js"></script>
+    <!--JS for main nav-->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function navDrop() {
+            var x = document.getElementById("navLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
 </head>
+<!--Body begins here-->
 <body>
-    <div class="invisible-header"></div>
-    <header>
-        <a href="/index.html" id="home">
-            <div class="banner">
-                <h1>Aaron Glynn</h1>
-            </div>
-        </a>
-        <nav>
-            <div class="dropdown">On This Page&ensp;&#9662;
-                <div class="dropdown-content">
-                    <div class="contents-table">
-                        <a href="#start">
-                            <div class="item i">
-                                <p class="content"><i class="fas fa-music"></i>Quasifuga in B<small>&#9837;</small></p>
-                            </div>
-                        </a>
-                        <a href="#text">
-                            <div class="item ii">
-                                <p class="content"><i class="fas fa-pencil-alt"></i>Notes on the Piece</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <a class="box b" href="/index.html"><div>Curriculum Vitae</div></a>
-            <a class="box c" href="/writing-portfolio/writing-portfolio.html"><div>Writing Portfolio</div></a>
-            <div class="dropcontact">Contact&ensp;&#9662;
-                <div w3-include-html="/contact-menu-alt.html"></div>
-            </div>
-            <a class="box e" href="/performing-arts/performing-arts.html"><div>Performing Arts</div></a>
-        </nav>
-    </header>
-    <br><br>
-    <div class="score">
-        <h1 class="h1">Fantasia in C<small>&#9839;</small><span class="tism" id="start"></span></h1>
-        <h2 class="h2">for Piano</h2>
-        <img src="fantasia1.png" class="p1" width=880px>
-        <img src="fantasia2.png" class="p2" width=880px>
-        <img src="fantasia3.png" class="p3" width=880px>
-        <img src="fantasia4.png" class="p4" width=880px>
-        <img src="fantasia5.png" class="p5" width=880px>
-        <img src="fantasia6.png" class="p6" width=880px>
+    <div w3-include-html="/performing-arts/universals-pa.html"></div>
+    <!--Context Nav-->
+    <div class="context-nav">
+        <a class="category">Fantasia in C&sharp;</a>
+        <a href="#start">The Score</a>
+        <a href="#text">Note on the Piece</a>
+    </div>
+    <!--Page Content-->
+    <style>        
+        .title, .subtitle {
+            text-align: center;
+            display: block;
+        }
+
+        .title {
+            padding: 1rem 0 2rem 0;
+            height: 2rem;
+        }
+
+        .subtitle {
+            height: 2rem;
+            padding: 0 0 2rem 0;
+        }
+
+        .score {
+            display: grid;
+            background-color: white;
+            grid-row-gap: 0;
+            grid-template-rows: repeat(11, auto);
+            grid-template-areas: "p1" "hr" "p2" "hr" "p3" "hr" "p4" "hr" "p5" "hr" "p6";
+        }
+
+        @media screen and (min-width: 1024px) {
+            .score {
+                grid-row-gap: 2rem
+            }
+        }
+
+        .main img {
+            max-width: 100%;
+            border: 1rem solid white;
+            box-sizing: border-box;
+        }
+
+        .text {
+            padding: 2rem 0;
+        }
+
+        .text p {
+            padding: 0 1rem;
+        }
+    </style>
+    <div class="main" id="first">
+        <div class="top">
+            <span class="footnote" id="start"></span>
+            <h1 class="title">Fantasia in C&sharp;</h1>
+            <h2 class="subtitle">for Piano</h2>
+        </div>
+        <div class="score">
+            <img src="fantasia1.png" class="p1">
+            <hr>
+            <img src="fantasia2.png" class="p2">
+            <hr>
+            <img src="fantasia3.png" class="p3">
+            <hr>
+            <img src="fantasia4.png" class="p4">
+            <hr>
+            <img src="fantasia5.png" class="p5">
+            <hr>
+            <img src="fantasia6.png" class="p6">
+        </div>
         <div class="text">
-            <h2 id="whose">Fantasia in C<small>&#9839;</small><span class="footnote" id="text"></span></h2>
+            <h2>Fantasia in C&sharp;<span class="footnote" id="text"></span></h2>
             <p>This is the first of my compositions that came close to forming a coherent whole. It is crude, somewhat shapeless, and bordering on musical illiteracy. I am also immensely fond of it.</p>
         </div>
     </div>
-    <div class="section_break"></div>
-    <div w3-include-html="/footerpa.html"></div>
+    <!--Footer Tisms-->
+    <div class="section_break" id="contact"></div>
+    <div w3-include-html="/performing-arts/footer-pa.html"></div>
 </body>
 <script>includeHTML();</script>
 </html>
