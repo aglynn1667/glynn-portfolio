@@ -28,35 +28,42 @@
             }
         }
     </script>
-</head>
-<!--Body begins here-->
-<body>
-    <div w3-include-html="/performing-arts/universals-pa.html"></div>
-    <!--Context Nav-->
-    <div class="context-nav">
-        <a class="category">Requiem</a>
-        <a href="/performing-arts/i-introit/i-introit.html">I. Introit</i></a>
-        <a href="/performing-arts/ii-kyrie/ii-kyrie.html">II. Kyrie</a>
-        <a href="/performing-arts/iii-dies-irae/iii-dies-irae.html">III. Dies Irae</a>
-        <a href="/performing-arts/iv-tuba-mirum/iv-tuba-mirum.html">IV. Tuba Mirum</a>
-        <a href="/performing-arts/v-rex-tremendae/v-rex-tremendae.html">V. Rex Tremendae</a>
-        <a href="/performing-arts/vi-ingemisco/vi-ingemisco.html">VI. Ingemisco</a>
-        <a href="/performing-arts/vii-confutatis/vii-confutatis.html">VII. Confutatis</a>
-        <a href="/performing-arts/viii-lacrimosa/viii-lacrimosa.html">VIII. Lacrimosa</a>
-        <a href="/performing-arts/ix-interlude/ix-interlude.html">IX. Interlude</a>
-        <a>X. Domine Iesu Christe<i class="fas fa-glasses" style="float: right;"></i></a>
-        <a href="#start" style="padding-left: 3rem;">i. The Score</a>
-        <a href="#text" style="padding-left: 3rem;">ii. The Text</a>
-        <a href="/performing-arts/xi-hostias/xi-hostias.html">XI. Hostias</a>
-        <a href="/performing-arts/xii-sanctus/xii-sanctus.html">XII. Sanctus</a>
-        <a href="/performing-arts/xiii-benedictus/xiii-benedictus.html">XIII. Benedictus</a>
-        <a href="/performing-arts/xiv-agnus-dei/xiv-agnus-dei.html">XIV. Agnus Dei</a>
-        <a href="/performing-arts/xv-lux-aeterna/xv-lux-aeterna.html">XV. Lux Aeterna</a>
-        <a href="/performing-arts/xvi-libera-me/xvi-libera-me.html">XVI. Libera Me</a>
-        <a href="/performing-arts/xvii-in-paradisum/xvii-in-paradisum.html">XVII. In Paradisum</a>
-    </div>
-    <!--Page Content-->
     <style>        
+        .roman {
+            display: inline-block;
+            width: 2.4rem;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        .roman-lower {
+            display: inline-block;
+            width: 1rem;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        #offertory {
+            flex: none;
+            overflow-x: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        #offertory-tism {
+            display: none;
+        }
+
+        @media screen and (min-width: 1740px) {
+            #offertory-tism {
+                display: initial;
+                min-width: 1rem;
+                padding-right: 0;
+            }
+        }
+        
         .title, .subtitle {
             text-align: center;
             display: block;
@@ -139,6 +146,34 @@
             background-color: hsla(0, 28%, 28%, 1);
         }
     </style>
+</head>
+<!--Body begins here-->
+<body>
+    <div w3-include-html="/performing-arts/universals-pa.html"></div>
+    <!--Context Nav-->
+    <div class="context-nav">
+        <a class="category">Requiem</a>
+        <a href="/performing-arts/i-introit/i-introit.html"><span class="roman">I.</span>Introit</a>
+        <a href="/performing-arts/ii-kyrie/ii-kyrie.html"><span class="roman">II.</span>Kyrie</a>
+        <a href="/performing-arts/iii-dies-irae/iii-dies-irae.html"><span class="roman">III.</span>Dies Irae</a>
+        <a href="/performing-arts/iv-tuba-mirum/iv-tuba-mirum.html"><span class="roman">IV.</span>Tuba Mirum</a>
+        <a href="/performing-arts/v-rex-tremendae/v-rex-tremendae.html"><span class="roman">V.</span>Rex Tremendae</a>
+        <a href="/performing-arts/vi-ingemisco/vi-ingemisco.html"><span class="roman">VI.</span>Ingemisco</a>
+        <a href="/performing-arts/vii-confutatis/vii-confutatis.html"><span class="roman">VII.</span>Confutatis</a>
+        <a href="/performing-arts/viii-lacrimosa/viii-lacrimosa.html"><span class="roman">VIII.</span>Lacrimosa</a>
+        <a href="/performing-arts/ix-interlude/ix-interlude.html"><span class="roman">IX.</span>Interlude</a>
+        <a href="/performing-arts/x-domine-iesu-christe/x-domine-iesu-christe.html" id="offertory"><span class="roman">X.</span>Domine Iesu Christe<i class="fas fa-glasses" style="float: right;" id="offertory-tism"></i></a>
+        <a href="#start" style="padding-left: 4.5rem;"><span class="roman-lower">i.</span>The Score</a>
+        <a href="#text" style="padding-left: 4.5rem;"><span class="roman-lower">ii.</span>The Text</a>
+        <a href="/performing-arts/xi-hostias/xi-hostias.html"><span class="roman">XI.</span>Hostias</a>
+        <a href="/performing-arts/xii-sanctus/xii-sanctus.html"><span class="roman">XII.</span>Sanctus</a>
+        <a href="/performing-arts/xiii-benedictus/xiii-benedictus.html"><span class="roman">XIII.</span>Benedictus</a>
+        <a href="/performing-arts/xiv-agnus-dei/xiv-agnus-dei.html"><span class="roman">XIV.</span>Agnus Dei</a>
+        <a href="/performing-arts/xv-lux-aeterna/xv-lux-aeterna.html"><span class="roman">XV.</span>Lux Aeterna</a>
+        <a href="/performing-arts/xvi-libera-me/xvi-libera-me.html"><span class="roman">XVI.</span>Libera Me</a>
+        <a href="/performing-arts/xvii-in-paradisum/xvii-in-paradisum.html"><span class="roman">XVII.</span>In Paradisum</a>
+    </div>
+    <!--Page Content-->
     <div class="main" id="first">
         <div class="top">
             <span class="footnote" id="start"></span>
