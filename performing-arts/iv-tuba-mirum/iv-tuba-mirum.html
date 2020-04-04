@@ -69,7 +69,7 @@
 
         .score {
             display: grid;
-            background-color: white;
+            background-color: #ebd6bb;
             grid-row-gap: 0;
             grid-template-rows: repeat(25, auto);
             grid-template-areas: "p1" "hr" "p2" "hr" "p3" "hr" "p4" "hr" "p5" "hr" "p6" "hr" "p7" "hr" "p8" "hr" "p9" "hr" "p10" "hr" "p11" "hr" "p12" "hr" "p13";
@@ -77,14 +77,21 @@
 
         @media screen and (min-width: 1024px) {
             .score {
-                grid-row-gap: 2rem
+                grid-row-gap: 1rem;
             }
         }
 
-        .main img {
+        .score img {
             max-width: 100%;
-            border: 1rem solid white;
+            border-top: 2rem solid #ebd6bb;
+            border-bottom: 2rem solid #ebd6bb;
+            border-left: 1rem solid #ebd6bb;
+            border-right: 1rem solid #ebd6bb;
             box-sizing: border-box;
+        }
+
+        .score hr {
+            border: 1px solid #0d0000;
         }
 
         .text {
