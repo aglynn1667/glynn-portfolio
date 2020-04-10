@@ -159,6 +159,22 @@ q:after {
   -ms-overflow-style: none;
 }
 
+.roman {
+    display: inline-block;
+    width: 2.4rem;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.roman-lower {
+    display: inline-block;
+    width: 1rem;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
 /* Body Tisms */
 
 .main {

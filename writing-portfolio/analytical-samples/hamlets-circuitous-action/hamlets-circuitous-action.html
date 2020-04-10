@@ -46,6 +46,24 @@
         .attribution {
             margin-left: 5rem;
         }
+
+        .context-nav a {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .roman {
+            display: block;
+            flex: 0 0 1.5rem;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        .follow {
+            display: block;
+            flex: 0 1 auto;
+        }
     </style>
 </head>
 <!--Body begins here-->
@@ -56,8 +74,8 @@
     <div class="context-nav">
         <a class="category">Hamlet's Ciruitious Action</a>
         <a href="#start">Introduction</a>
-        <a href="#i-inaction">I. Inaction</a>
-        <a href="#ii-substitutes-for-action">II. Substitutes for Action</a>
+        <a href="#i-inaction"><span class="roman">I.</span><span class="follow">Inaction</span></a>
+        <a href="#ii-substitutes-for-action"><span class="roman">II.</span><span class="follow">Substitutes for Action</span></a>
         <a href="#works-cited">Works Cited</a>
     </div>
     <!--Page Content-->
