@@ -57,7 +57,6 @@ const clearKey = () => {
     second.innerHTML = '';
     operator.innerHTML = '';
     result.innerHTML = '';
-    screen.style.fontSize = '50px';
 };
 
 clear.onclick = clearKey;
@@ -157,12 +156,7 @@ const calculate = () => {
         finalValue = operand1 / operand2;
     };
     result.innerHTML = arabicToRoman(finalValue);
-    if (arabicToRoman(finalValue) === 'Error: result > 3999' || result.innerHTML === 'Error: result < 1') {
-        screen.innerHTML = arabicToRoman(finalValue);
-        screen.style.fontSize = '20px';
-    } else {
-        screen.innerHTML = arabicToRoman(finalValue);
-        screen.style.borderRadius = '5px';
+    screen.innerHTML = arabicToRoman(finalValue);
     };
 };
 
