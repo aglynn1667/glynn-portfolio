@@ -1,0 +1,187 @@
+/* General */
+html {
+    height: 100%;
+    background: black;
+    color: white;
+    font-family: optima;
+}
+
+/* orange #fe9500
+grey 333333
+light grey a5a5a5
+white f0f0f0
+*/
+
+button {
+    border: none;
+    background-color: #333333;
+    color: #f0f0f0;
+}
+
+.operator {
+    background-color: #fe9500;
+}
+
+#equals, #clear {
+    background-color: #1e1e1e;
+}
+
+@media only screen and (min-height: 568px) {
+
+    button {
+        border-radius: 25px;
+        font-size: 20px;
+        margin: 4%;
+        padding: 0px;
+        width: 27%;
+        height: 50px;
+    }
+
+    button:active {
+        background-color: #f0f0f0;
+    }
+
+    #equals {
+        width: 62%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #screen {
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 20px 10px 0px 10px;
+        padding: 50px 10px 0px 10px;
+        font-size: 50px;
+        text-align: right;
+        overflow: scroll;
+    }
+
+}
+
+@media only screen and (min-height: 667px) {
+
+    button {
+        border-radius: 30px;
+        font-size: 20px;
+        margin: 4%;
+        padding: 0px;
+        width: 27%;
+        height: 60px;
+    }
+
+    button:active {
+        background-color: #f0f0f0;
+    }
+
+    #equals {
+        width: 62%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #screen {
+        height: 120px;
+        border: 1px solid black;
+        border-radius: 24px;
+        margin: 24px 12px 0px 12px;
+        padding: 60px 12px 0px 12px;
+        font-size: 60px;
+        text-align: right;
+        overflow: scroll;
+    }
+
+}
+
+@media only screen and (min-height: 736px) {
+
+    button {
+        border-radius: 33px;
+        font-size: 22px;
+        margin: 4%;
+        padding: 0px;
+        width: 27%;
+        height: 66px;
+    }
+
+    button:active {
+        background-color: #f0f0f0;
+    }
+
+    #equals {
+        width: 62%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #screen {
+        height: 132px;
+        border: 1px solid black;
+        border-radius: 26px;
+        margin: 26px 13px 0px 13px;
+        padding: 66px 13px 0px 13px;
+        font-size: 66px;
+        text-align: right;
+        overflow: scroll;
+    }
+
+}
+
+@media only screen and (min-height: 812px) {
+
+    button {
+        border-radius: 37.5px;
+        font-size: 25px;
+        margin: 4%;
+        padding: 0px;
+        width: 27%;
+        height: 75px;
+    }
+
+    button:active {
+        background-color: #f0f0f0;
+    }
+
+    #equals {
+        width: 62%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #screen {
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 30px;
+        margin: 30px 15px 30px 15px;
+        padding: 75px 15px 25px 15px;
+        font-size: 70px;
+        text-align: right;
+        overflow: scroll;
+    }
+
+}
+
+#first, #operator, #second, #result {
+    display: none;
+}
+
+#clear, #backspace {
+  font-style: italic;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--Make page same width as device-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Roman Numeral Calculator</title>
+        <!--Style Sheet-->
+        <link href="roman.css" type="text/css" rel="stylesheet">
+        <script type='text/javascript' src='./roman.js' defer></script>
+    </head>
+    <body>
+        <div class="calc">
+            <div id="screen"></div>
+            <div class="row">
+                <button type = "button" id = 'I' class="numeral">I</button>
+                <button type = "button" id = 'V' class="numeral">V</button>
+                <button type = "button" id = 'plus' class="operator">+</button>
+            </div>
+            <div class="row">
+                <button type = "button" id = 'X' class="numeral">X</button>
+                <button type = "button" id = 'L' class="numeral">L</button>
+                <button type = "button" id = 'minus' class="operator">-</button>
+            </div>
+            <div class="row">
+                <button type = "button" id='C' class="numeral">C</button>
+                <button type = "button" id='D' class="numeral">D</button>
+                <button type = "button" id='multiply' class="operator">&#215;</button>
+            </div>
+            <div class="row">
+                <button type = "button" id='M' class="numeral">M</button>
+                <button type = 'button' id='backspace'>del</button>
+                <button type = "button" id='divide' class="operator">&#247;</button>
+            </div>
+            <div class="row">
+                <button type = 'button' id = 'clear'>cl</button>
+                <button type = "button" id = "equals">=</button>
+            </div>
+        </div>
+        <p id='first'></p>
+        <p id='operator'></p>
+        <p id='second'></p>
+        <p id='result'></p>
+    </body>
+</html>
