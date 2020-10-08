@@ -103,9 +103,9 @@ const arabicToRoman = n => {
     n = Math.round(n);
     // return error for values over 3999
     if (n > 3999) {
-        return 'Error: result > 3999';
+        return 'Err: > 3999';
     } else if (n < 1) {
-        return 'Error: result < 1';
+        return 'Err: < 1';
     };
     // convert to string
     const nString = String(n);
