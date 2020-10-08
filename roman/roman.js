@@ -157,7 +157,6 @@ const calculate = () => {
     };
     result.innerHTML = arabicToRoman(finalValue);
     screen.innerHTML = arabicToRoman(finalValue);
-    };
 };
 
 const compute = () => {
