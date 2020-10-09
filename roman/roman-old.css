@@ -178,7 +178,7 @@ button {
 
 }
 
-#savedOperand, #operator, #newOperand, #result {
+#first, #operator, #second, #result {
     display: none;
 }
 

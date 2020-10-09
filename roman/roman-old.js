@@ -3,11 +3,10 @@ let screen = document.getElementById('screen');
 let equals = document.getElementById('equals');
 let backspace = document.getElementById('backspace');
 let clear = document.getElementById('clear');
-let savedOperand = document.getElementById('savedOperand');
+let first = document.getElementById('first');
 let operator = document.getElementById('operator');
-let newOperand = document.getElementById('newOperand');
+let second = document.getElementById('second');
 let result = document.getElementById('result');
-let isNewValue = true;
 
 screen.innerHTML = '';
 const numerals = ['I', 'V', 'X', 'L', 'C', 'D', 'M'];
@@ -17,12 +16,7 @@ numerals.forEach(function(numeral) {
 });
 
 const keyPress = key => {
-    if (isNewValue) {
-        screen.innerHTML = key.target.innerHTML;
-        isNewValue = false;
-    } else {
-        screen.innerHTML += key.target.innerHTML;
-    };
+    screen.innerHTML += key.target.innerHTML;
 };
 
 const keyAssign = key => {
@@ -38,14 +32,10 @@ operators.forEach(function(operator){
 });
 
 const opKeyPress = opKey => {
-    // if screen has value
-    if (screen.innerHTML.length > 0) {
-        // save screen value to savedOperand
-        savedOperand.innerHTML = screen.innerHTML;
-        // set operator
+    if (screen.innerHTML.length > 0 && first.innerHTML.length === 0) {
+        first.innerHTML = screen.innerHTML;
         operator.innerHTML = opKey.target.id;
-        // configure for new input value
-        isNewValue = true;
+        screen.innerHTML = '';
     };
 };
 
@@ -63,8 +53,8 @@ backspace.onclick = delKey;
 
 const clearKey = () => {
     screen.innerHTML = '';
-    savedOperand.innerHTML = '';
-    newOperand.innerHTML = '';
+    first.innerHTML = '';
+    second.innerHTML = '';
     operator.innerHTML = '';
     result.innerHTML = '';
 };
@@ -153,8 +143,8 @@ const arabicToRoman = n => {
 // Execute Calculation
 
 const calculate = () => {
-    let operand1 = romanToArabic(savedOperand.innerHTML);
-    let operand2 = romanToArabic(newOperand.innerHTML);
+    let operand1 = romanToArabic(first.innerHTML);
+    let operand2 = romanToArabic(second.innerHTML);
     let finalValue;
     if (operator.innerHTML === 'plus') {
         finalValue = operand1 + operand2;
@@ -165,15 +155,13 @@ const calculate = () => {
     } else if (operator.innerHTML === 'divide') {
         finalValue = operand1 / operand2;
     };
-    savedOperand.innerHTML = arabicToRoman(finalValue);
+    result.innerHTML = arabicToRoman(finalValue);
     screen.innerHTML = arabicToRoman(finalValue);
-    newOperand.innerHTML = '';
 };
 
 const compute = () => {
-    newOperand.innerHTML = screen.innerHTML;
+    second.innerHTML = screen.innerHTML;
     calculate();
-    isNewValue = true;
 }
 
 equals.onclick = compute;
