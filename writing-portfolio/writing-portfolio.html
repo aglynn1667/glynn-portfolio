@@ -43,19 +43,85 @@
     <!--Page Content-->
     <style>
         /* Introduction tisms */
-        .introduction {
-            padding-left: 1rem;
+        .top {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
         }
 
-        @media screen and (max-width: 480px) {
-            .introduction {
-                padding-right: 1rem;
+        @media screen and (min-width: 480px) {
+            .top {
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
             }
+        }
+
+        .top-tism {
+            flex: initial;
+        }
+
+        @media screen and (min-width: 480px) {
+            .top-tism {
+                flex: 1 1 200px;
+            }
+        }
+
+        .greeting {
+            padding-left: 1rem;
+            flex: 0;
+        }
+
+        .top-text {
+            display: flex;
+            width: auto;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #me {
+            width: 100%;
+            padding: 1rem 0 0 0;
+            flex: initial;
+        }
+        
+
+        @media screen and (min-width: 480px) {
+            #me {
+                width: 480px;
+                max-width: 100%;
+                max-height: 380px;
+                padding: 1rem;
+                flex: 1 1 480px;
+                object-fit: contain;
+            }
+        }
+
+        .introduction {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        #first {
+            padding-top: 0;
         }
     </style>
     <div class="main" id="first">
-        <h1 class="section_title">Writing Portfolio<span class="footnote" id="start"></span></h1>
-        <p class="introduction">I have extensive writing experience, both analytical research and creative work.<br><br>Please find examples listed below.</p>
+        <span class="footnote" id="start"></span>
+        <div class="top">
+            <div class="top-tism">
+                <h1 class="greeting">Writing Portfolio<span class="footnote" id="start"></span></h1>
+                <div class="top-text">
+                    <p class="introduction">I have extensive writing experience, both analytical research and creative work.</p>
+                    <p class="introduction">Please find examples listed below.</p>
+                    <img src="me.jpg" class="image" id="me">
+                </div>
+            </div>
+        </div>
     </div>
     <div class="section_break">
         <hr>
