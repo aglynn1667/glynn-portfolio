@@ -37,10 +37,10 @@
         <a class="category">Curriculum Vitae</a>
         <a href="#start">Introduction</a>
         <a href="#endorsement">Endorsement</a>
-        <a href="#education">Education</a>
         <a href="#work-experience">Work Experience</a>
+        <a href="#education">Education</a>
         <a href="#presentations">Presentations</a>
-        <a href="#skills">Skills</a>
+        <a href="#skills">IT Skills</a>
         <a href="#contact">Contact Info</a>
     </div>
     <!--Page Content-->
@@ -206,6 +206,145 @@
         <a class="rec-link" href="https://www.linkedin.com/in/aaron-glynn">View on my LinkedIn<sup class="reg">&reg;</sup> Profile <i class="fas fa-link"></i></a>
     </div>
     <div class="section_break"><hr></div>
+    <!--Work Experience-->
+    <style>
+        /* Work Experience */
+
+        .job {
+            display: flex;
+            max-width: 100%;
+            padding: 0 1.5rem;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .job p {
+            display: block;
+        }
+
+        .position {
+            min-width: 14rem;
+            font-weight: bold;
+        }
+
+        .comp-tisms {
+            flex: 1 1 20rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+
+        .company {
+            min-width: 12rem;
+            font-style: italic;
+        }
+
+        .location {
+            min-width: 8rem;
+        }
+
+        @media screen and (max-width: 480px) {
+            .comp-tisms {
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <div class="main">
+        <h1 class="section_title">Work Experience<span class="footnote" id="work-experience"></span></h1>
+        <div class="job">
+            <p class="position">Research Assistant</p>
+            <div class="comp-tisms">
+                <p class="company">University of Louisville</p>
+                <p class="location">(Louisville, KY)</p>
+            </div>
+            <div class="dates">
+                <p class="date-start">Nov 2020</p>
+                <p class="date-dash">&ndash;</p>
+                <p class="date-end">Present</p>
+            </div>
+            <ul class="deets">
+                <li>Lead medical writing unit at Division of Infectious Diseases</li>
+                <ul>
+                    <li>Collaborate with researchers during writing process</li>
+                    <li>Pull sources, proofread, take minutes and dictation</li>
+                </ul>
+                <li>Proof and copyedit research papers for Journals published by Division of Infectious Diseases:</li>
+                <ul>
+                    <li>Journal of Respiratory Infections (<a href="https://ir.library.louisville.edu/jri/">view website</a>)</li>
+                    <li>Journal of Refugee and Global Health (<a href=https://ir.library.louisville.edu/rgh/">view website</a>)</li>
+                </ul>
+                <li>Manage social media and email accounts for Division of Infectious Diseases</li>
+                <ul>
+                    <li>Twitter, ResearchGate</li>
+                    <li>Email contact with potential and current research study participants</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="job">
+            <p class="position">Researcher</p>
+            <div class="comp-tisms">
+                <p class="company">Potential Energy Coalition</p>
+                <p class="location">(New York, NY)</p>
+            </div>
+            <div class="dates">
+                <p class="date-start">Dec 2019</p>
+                <p class="date-dash">&ndash;</p>
+                <p class="date-end">Jun 2020</p>
+            </div>
+            <ul class="deets">
+                <li>Conducted research to facilitate improved communications on climate change</li>
+                <li>Collected quantitative and qualitative data on target demographics, including:</li>
+                <ul>
+                    <li>Floridians</li>
+                    <li>Hispanic communities</li>
+                    <li>Black communities</li>
+                    <li>Republican voters and conservatives</li>
+                    <li>Suburban mothers</li>
+                </ul>
+                <li>Compiled attention-grabbing news stories and statistics</li>
+                <li>Wrote copy for content marketing campaigns</li>
+                <li>Produced literature reviews detailing research findings</li>
+                <li>Wrote and presented recommendations for messaging strategy</li>
+            </ul>
+        </div>
+        <div class="job">
+            <p class="position">ELA Teacher</p>
+            <div class="comp-tisms">
+                <p class="company">Gary Comer College Prep</p>
+                <p class="location">(Chicago, IL)</p>
+            </div>
+            <div class="dates">
+                <p class="date-start">Aug 2019</p>
+                <p class="date-dash">&ndash;</p>
+                <p class="date-end">Oct 2019</p>
+            </div>
+            <ul class="deets">
+                <li>Taught communication skills to 154 students (5 sections daily)</li>
+                <li>Achieved largest growth of all 17 junior composition cohorts in Noble Network</li>
+                <li>Designed, printed, and disseminated 5- to 10-page handout for each day&rsquo;s instruction</li>
+                <li>Produced progress reports every 2 weeks; developed problem-solving strategies</li>
+            </ul>
+        </div>
+        <div class="job" id="uc">
+            <p class="position">Graduate Student Researcher</p>
+            <div class="comp-tisms">
+                <p class="company">University of Chicago</p>
+                <p class="location">(Chicago, IL)</p>
+            </div>
+            <div class="dates">
+                <p class="date-start">Sep 2018</p>
+                <p class="date-dash">&ndash;</p>
+                <p class="date-end">Jun 2019</p>
+            </div>
+            <ul class="deets">
+                <li>Conducted multi-disciplinary research; produced numerous research papers</li>
+                <li>Planned and executed 6-month thesis project</li>
+                <li>Prepared and delivered 10 presentations on research findings</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section_break"><hr></div>
     <!--Education FUSE DEGREE MAJOR GPA-->
     <style>
         /* Education Tisms */
@@ -307,165 +446,6 @@
                 <p class="date-dash">&ndash;</p>
                 <p class="date-end">Jun 2018</p>
             </div>
-        </div>
-    </div>
-    <div class="section_break"><hr></div>
-    <!--Work Experience-->
-    <style>
-        /* Work Experience */
-
-        .job {
-            display: flex;
-            max-width: 100%;
-            padding: 0 1.5rem;
-            flex-flow: row wrap;
-            justify-content: space-between;
-        }
-
-        .job p {
-            display: block;
-        }
-
-        .position {
-            min-width: 14rem;
-            font-weight: bold;
-        }
-
-        .comp-tisms {
-            flex: 1 1 20rem;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-        }
-
-        .company {
-            min-width: 12rem;
-            font-style: italic;
-        }
-
-        .location {
-            min-width: 8rem;
-        }
-
-        @media screen and (max-width: 480px) {
-            .comp-tisms {
-                flex-flow: row wrap;
-                justify-content: space-between;
-            }
-        }
-    </style>
-    <div class="main">
-        <h1 class="section_title">Work Experience<span class="footnote" id="work-experience"></span></h1>
-        <div class="job">
-            <p class="position">Research Assistant</p>
-            <div class="comp-tisms">
-                <p class="company">University of Louisville</p>
-                <p class="location">(Louisville, KY)</p>
-            </div>
-            <div class="dates">
-                <p class="date-start">Nov 2020</p>
-                <p class="date-dash">&ndash;</p>
-                <p class="date-end">Present</p>
-            </div>
-            <ul class="deets">
-                <li>Lead medical writing unit at Division of Infectious Diseases</li>
-                <ul>
-                    <li>Collaborate with researchers during writing process</li>
-                    <li>Pull sources, proofread, take minutes and dictation</li>
-                </ul>
-                <li>Proof and copyedit research papers for Journals published by Division of Infectious Diseases:</li>
-                <ul>
-                    <li>Journal of Respiratory Infections (<a href="https://ir.library.louisville.edu/jri/">view website</a>)</li>
-                    <li>Journal of Refugee and Global Health (<a href=https://ir.library.louisville.edu/rgh/">view website</a>)</li>
-                </ul>
-                <li>Manage social media and email accounts for Division of Infectious Diseases</li>
-                <ul>
-                    <li>Twitter, ResearchGate</li>
-                    <li>Email contact with potential and current research study participants</li>
-                </ul>
-            </ul>
-        </div>
-        <div class="job">
-            <p class="position">Researcher</p>
-            <div class="comp-tisms">
-                <p class="company">Potential Energy Coalition</p>
-                <p class="location">(New York, NY)</p>
-            </div>
-            <div class="dates">
-                <p class="date-start">Dec 2019</p>
-                <p class="date-dash">&ndash;</p>
-                <p class="date-end">Jun 2020</p>
-            </div>
-            <ul class="deets">
-                <li>Produced flood risk profiles on 5 Florida counties and 44 localities</li>
-                <ul>
-                    <li>Compiled statistics detailing at-risk populations, real estate value, and facilities</li>
-                    <li>Collected attention-grabbing local interest stories highlighting flood impacts</li>
-                </ul>
-                <li>Developed portfolio of 45 attention-grabbing local interest stories on flooding in Florida</li>
-                <ul>
-                    <li>Wrote 140-character copy promoting each article; identified 2-3 key pull-quotes from each</li>
-                </ul>
-                <li>Created internal guide to conservative-friendly message framing</li>
-                <ul>
-                    <li>Drew insights from conservative websites and publications</li>
-                    <li>Identified and categorized key terms and talking points; wrote summaries of each</li>
-                    <li>Produced 10-point summary of messaging recommendations</li>
-                </ul>
-                <li>Produced literature review on climate change issues concerning Hispanic demographic</li>
-                <ul>
-                    <li>Analyzed opinion polls from think-tanks and outdoor industry market research</li>
-                    <li>Wrote case studies on 7 Hispanic environmental organizations and activists</li>
-                </ul>
-                <li>Reported on Republican climate policies and conservative climate activism</li>
-                <ul>
-                    <li>Summarized proposals and articles; produced profiles on authors and proponents</li>
-                    <li>Summarized congressional and media reception to proposals on left and right</li>
-                </ul>
-            </ul>
-        </div>
-        <div class="job">
-            <p class="position">Composition Teacher</p>
-            <div class="comp-tisms">
-                <p class="company">Gary Comer College Prep</p>
-                <p class="location">(Chicago, IL)</p>
-            </div>
-            <div class="dates">
-                <p class="date-start">Aug 2019</p>
-                <p class="date-dash">&ndash;</p>
-                <p class="date-end">Oct 2019</p>
-            </div>
-            <ul class="deets">
-                <li>Taught communication skills to 154 students (5 sections daily)</li>
-                <li>Achieved largest growth of all 17 junior composition cohorts in Noble Network</li>
-                <li>Designed, printed, and disseminated 5- to 10-page handout for each day&rsquo;s instruction</li>
-                <li>Logged student progress in Excel and on intranet; analyzed assessment data on Tableau</li>
-                <li>Produced progress reports every 2 weeks; developed problem-solving strategies</li>
-                <li>Maintained inventory of supplies; managed tracking of teaching budget</li>
-                <li>Responded to all internal and external communications within 48 hours</li>
-            </ul>
-        </div>
-        <div class="job" id="uc">
-            <p class="position">Graduate Student Researcher</p>
-            <div class="comp-tisms">
-                <p class="company">University of Chicago</p>
-                <p class="location">(Chicago, IL)</p>
-            </div>
-            <div class="dates">
-                <p class="date-start">Sep 2018</p>
-                <p class="date-dash">&ndash;</p>
-                <p class="date-end">Jun 2019</p>
-            </div>
-            <ul class="deets">
-                <li>Conducted multidisciplinary research and presented findings</li>
-                <li>Planned, coordinated, and delivered pre-concert lecture to public audience</li>
-                <ul>
-                    <li>Interviewed ensemble about their program; researched relevant material</li>
-                    <li>Wrote and delivered lecture; answered audience questions</li>
-                </ul>
-                <li>Prepared and delivered 9 other presentations on research findings</li>
-                <li>Planned and executed 6-month thesis project; produced numerous research papers</li>
-            </ul>
         </div>
     </div>
     <div class="section_break"><hr></div>
@@ -639,7 +619,7 @@
         }
 
         #software {
-            padding-right: 2.5rem;
+            padding-right: 1.5rem;
         }
 
         .cat-title {
@@ -650,7 +630,7 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: flex-start;
-            padding-left: 2.5rem;
+            padding-left: 1.5rem;
         }
 
         .kind {
@@ -704,52 +684,27 @@
         }
     </style>
     <div class="main">
-        <h1 class="section_title">Skills<span class="footnote" id="skills"></span></h1>
+        <h1 class="section_title">IT Skills<span class="footnote" id="skills"></span></h1>
         <div class="skills">
             <div class="skill-cat" id="software">
-                <h2 class="cat-title">Code and Software:</h2>
                 <div class="sub-cat">
-                    <p class="kind">Programming Languages:</p>
-                    <p class="skill-list">Python (NumPy, Pandas, Matplotlib, Seaborn, SciPy), JavaScript</p>
+                    <p class="kind">Languages:</p>
+                    <p class="skill-list">R, Python, HTML, CSS, JavaScript, <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span></p>
                 </div>
                 <div class="sub-cat">
-                    <p class="kind">Markup Languages:</p>
-                    <p class="skill-list">HTML, CSS, <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span></p>
-                </div>
-                <div class="sub-cat">
-                    <p class="kind">Office 365:</p>
-                    <p class="skill-list">Word, Excel (including pivot tables), PowerPoint, Outlook</p>
+                    <p class="kind">Office Suites</p>
+                    <p class="skill-list">Office 365, G Suite, LibreOffice</p>
                 </div>
                 <div class="sub-cat">
                     <p class="kind">Adobe Creative Suite:</p>
-                    <p class="skill-list">Acrobat, Photoshop, Bridge</p>
-                </div>
-                <div class="sub-cat">
-                    <p class="kind">Google Suite:</p>
-                    <p class="skill-list">Docs, Slides, Sheets, Drive, Calendar, Mail</p>
-                </div>
-                <div class="sub-cat">
-                    <p class="kind">Other Software:</p>
-                    <p class="skill-list">Tableau, GIMP, G Suite</p>
+                    <p class="skill-list">Acrobat, Photoshop</p>
                 </div>
                 <div class="sub-cat">
                     <p class="kind">Operating Systems:</p>
                     <p class="skill-list">Windows, macOS</p>
                 </div>
             </div>
-            <div class="skill-cat">
-                <h2 class="cat-title">Other:</h2>
-                <div class="sub-cat">
-                    <p class="kind">Languages:</p>
-                    <p class="skill-list" id="languages">English (native), German, Latin</p>
-                </div>
-                <div class="sub-cat">
-                    <p class="kind">Administration:*</p>
-                    <p class="skill-list" id="admin">Event Logistics, Communications, Marketing, Databases</p>
-                </div>
-            </div>
         </div>
-        <p class="note">* For further details, see <a href=/performing-arts/performing-arts.html>performing arts<i class="fas fa-link"></i></a></p>
     </div>
     <div class="section_break" id="contact"></div>
     <div w3-include-html="/footer.html"></div>
