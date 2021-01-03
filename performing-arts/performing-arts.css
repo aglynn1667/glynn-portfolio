@@ -3,11 +3,11 @@ html {
     height: 100%;
     background: hsla(0, 25%, 25%, 1);
     color: white;
-    font-family: optima;
+    font-family: optima, sans-serif;
 }
 
 body {
-    font-family: optima;
+    font-family: optima, sans-serif;
     padding-top: 20px;
 }
 
