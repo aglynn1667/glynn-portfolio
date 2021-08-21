@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Diabetic Foot Osteomyelitis (DFO)</title>
+	<link href="/index.css" type="text/css" rel="stylesheet">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+		$(function () {
+			$("header").load("/header.html");
+			$("footer").load("/footer.html");
+		});
+	</script>
+	<script>
+		function navDrop() {
+			var x = document.getElementById('navlinks');
+			if (x.style.display === 'flex') {
+				x.style.display = 'none';
+			} else {
+				x.style.display = 'flex';
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<header></header>
+	<div class="spacer"></div>
+	<div class="main">
+		<h1>Diabetic Foot Infections</h1>
+		<h2 id="diabetic-foot-osteomyelitis-dfo">Diabetic Foot Osteomyelitis (DFO)</h2>
+		<p>Osteomyelitis in infected diabetic foot creates a high risk of below-the-knee amputation. It is a consequence
+			of
+			non-healing ulcer infection that spread to the bone.</p>
+		<p>It can affect any foot bone, but the forefoot is most involved (90% of cases), with midfoot in 5% and
+			hindfoot in 5%
+			of cases. (<a href="#bonham" data-reference-type="ref" data-reference="bonham">1</a>)</p>
+		<h3 id="common-pathogens-1">Common pathogens</h3>
+		<p>The infection is mostly polymicrobial.</p>
+		<ul>
+			<li>
+				<p><em>S. aureus</em> can be found in 50% of cases</p>
+			</li>
+			<li>
+				<p>Enterococci in 40%</p>
+			</li>
+			<li>
+				<p>Strep species in 30%</p>
+			</li>
+			<li>
+				<p>Staph epi in 25%</p>
+			</li>
+			<li>
+				<p>Among gram-negative organisms, most common (<a href="#lipsky" data-reference-type="ref"
+						data-reference="lipsky">2</a>) are:</p>
+			</li>
+			<ul>
+				<li>
+					<p><em>E. coli</em></p>
+				</li>
+				<li>
+					<p><em>K. pneumoniae</em></p>
+				</li>
+				<li>
+					<p>Proteus</p>
+				</li>
+				<li>
+					<p><em>P. aeruginosa</em></p>
+				</li>
+			</ul>
+		</ul>
+		<h3 id="diagnosis-10">Diagnosis</h3>
+		<h4 id="physical-exam-1">Physical exam</h4>
+		<p>The depth and width of an ulcer have a high clinical importance. (<a href="#lipsky2"
+				data-reference-type="ref" data-reference="lipsky2">3</a>)</p>
+		<ul>
+			<li>
+				<p>An ulcer larger than 2 cm<sup>2</sup> has a sensitivity of 56% and a specificity of 92%</p>
+			</li>
+			<li>
+				<p>An ulcer deeper than 3 mm is more associated with an underlying osteomyelitis than superficial ulcers
+					(82% vs. 33%)</p>
+			</li>
+		</ul>
+		<h4 id="prob-to-bone-test">Prob-to-bone test</h4>
+		<p>If a sterile probe can reach the bone, it strongly suggests that the bone is already infected with a
+			sensitivity of
+			66% and a specificity of 85%. (<a href="#Grayson" data-reference-type="ref" data-reference="Grayson">4</a>)
+		</p>
+		<h4 id="imaging-3">Imaging</h4>
+		<p>Imaging suggesting osteomyelitis.</p>
+		<h4 id="labs-3">Labs</h4>
+		<p>CBC, ESR, CRP, and bone biopsy.</p>
+		<p>Avoid wound swab.</p>
+		<h3 id="treatment-4">Treatment</h3>
+		<p>Conservative surgery along with Abx.</p>
+		<ul>
+			<li>
+				<p>Conservative surgery denotes a procedure in which only dead tissue is removed without performing
+					total amputation.</p>
+			</li>
+		</ul>
+		<p>Duration of Abx:</p>
+		<ul>
+			<li>
+				<p>4–6 weeks if the infected bone was not fully removed</p>
+			</li>
+			<li>
+				<p>3 months when Abx used only</p>
+			</li>
+		</ul>
+		<h3 class="unnumbered" id="references-5">References</h3>
+		<ol>
+			<li>
+				<p id="bonham">Bonham P. A critical review of the
+					literature: part 1:
+					diagnosing osteomyelitis in patients with diabetes and foot ulcers. J Wound Ostomy Continence Nurs.
+					2001;28:73–88.</p>
+			</li>
+			<li>
+				<p id="lipsky">Lipsky BA, Aragón-Sánchez J, Diggle M,
+					Embil J, Kono S,
+					Lavery L, Senneville É, Urbančič-Rovan V, Van Asten S, International Working Group on the Diabetic
+					Foot.,
+					Peters EJ. Diabetes Metab Res Rev. 2016 Jan; 32 Suppl 1():45–74.</p>
+			</li>
+			<li>
+				<p id="lipsky2">Lipsky BA. Osteomyelitis of the foot
+					in diabetic
+					patients. Clin Infect Dis. 1997 Dec; 25(6):1318–26.</p>
+			</li>
+			<li>
+				<p id="Grayson">Grayson ML, Gibbons GW, Balogh K,
+					Levin E, Karchmer AW.
+					Probing to bone in infected pedal ulcers. A clinical sign of underlying osteomyelitis in diabetic
+					patients.
+					JAMA. 1995 Mar 1; 273(9):721-3.</p>
+			</li>
+			<li>
+				<p id="Noonburg">Noonburg, Greer E. MD Management
+					of Extremity Trauma
+					and Related Infections Occurring in the Aquatic Environment, Journal of the American Academy of
+					Orthopaedic
+					Surgeons: July 2005 - Volume 13 - Issue 4 - p 243-253.</p>
+			</li>
+		</ol>
+	</div>
+	<footer></footer>
+</body>
+
+</html>

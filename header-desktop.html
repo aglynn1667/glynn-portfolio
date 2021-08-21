@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Advanced Practice Manual for Bone & Joint Infections&mdash;Home</title>
+		<link href="/index.css" type="text/css" rel="stylesheet">
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+			$(window).ready(function() {
+				var w = $(window).width();
+				if (w < 768) {
+				$(function(){
+					$("header").load("/header.html");
+					$("footer").load("/footer.html");
+				});};
+
+				$(window).resize(function() {
+					var w = $(window).width();
+					if (w < 768) {
+					$(function(){
+						$("header").load("/header.html");
+						$("footer").load("/footer.html");
+					});};
+				});
+			});
+
+			
+		</script>
+		<script>
+			function navDrop() {
+				var x = document.getElementById('navlinks');
+				if (x.style.display === 'flex') {
+					x.style.display = 'none';
+				} else {
+					x.style.display = 'flex';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header></header>
+		<div class="spacer"></div>
+		<div class="main">
+			<h1>Advanced Practice Manual for Bone & Joint Infections</h1>
+			<p class="address">Division of Infectious Diseases<br />University of Louisville<br />Louisville, KY</p>
+			<p>This manual was created by the Division of Infectious Diseases at the University of Louisville to establish the standard of practice for the care of patients with bone and joint infections, skin and soft tissue infections, and bacteremia.</p>
+			<p id="cell-only">Tap the bars icon (&Congruent;) in the top-right corner of the page to navigate.</p>
+			<h2>List of Contributors</h2>
+			<div class="author">
+				<p class="name">Darmaan Aden, MD</p>
+				<p class="credentials">Chief Fellow (2021)</p>
+			</div>
+			<div class="author">
+				<p class="name">Forest W. Arnold, DO MSc</p>
+				<p class="credentials">Associate Professor; Hospital Epidemiologist</p>
+			</div>
+			<div class="author">
+				<p class="name">Mark V. Burns, MD</p><p class="credentials">Assistant Professor of Medicine</p>
+			</div>
+			<div class="author">
+				<p class="name">Angeline Prabhu, MD</p>
+				<p class="credentials">Chief Fellow (2022)</p>
+			</div>
+			<div class="author">
+				<p class="name">Kenneth Schot Hannan, MD</p>
+				<p class="credentials">Fellow</p>
+			</div>
+			<div class="author">
+				<p class="name">Mohamad Belal Aldaas, MD</p>
+				<p class="credentials">Fellow</p>
+			</div>
+			<div class="author">
+				<p class="name">Gretchen Miller Carolan, APRN</p>
+				<p class="credentials">Nurse Practitioner</p>
+			</div>
+			<div class="author">
+				<p class="name">Jennifer Parry, APRN</p>
+				<p class="credentials">Nurse Practitioner</p>
+			</div>
+			<div class="author">
+				<p class="name">Raghava S. Ambadapoodi, MBBS</p>
+				<p class="credentials">Clinical Research Coordinator</p>
+			</div>
+			<div class="author">
+				<p class="name">Alex Glynn, MA</p>
+				<p class="credentials">Medical Writer</p>
+			</div>
+			<div class="author">
+				<p class="name">Julio A. Ramirez</p>
+				<p class="credentials">Division Chief; Professor of Medicine</p>
+			</div>
+		</div>
+		<footer></footer>
+	</body>
+</html>

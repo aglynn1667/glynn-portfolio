@@ -1,545 +1,391 @@
-/* General Tisms */
 html {
-    height: 100%;
-    background: hsla(210, 25%, 25%, 1);
-    color: white;
-    font-family: optima, sans-serif;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+	background-color: white;
+	scroll-behavior: smooth;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
 }
 
 body {
-    font-family: optima, sans-serif;
-    padding-top: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
-a {
-    color: hsla(217, 52%, 80%, 1);
-    text-decoration: none;
-    font-size: 20px;
-}
-
-h1 {
-    font-size: 32px;
-}
-
-h2 {
-    padding-left: 20px;
-    font-size: 24px;
-}
-
-p {
-    font-size: 20px;
-}
-
-table {
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 920px;
-    font-size: 20px;
-}
-
-hr {
-    width: 400px;
-}
-
-span {
-    padding-left: 20px;
-}
-
-span.tism {
-    margin-top: -170px;
-    padding-bottom: 130px;
-    display: block;
-}
-
-span.footnote {
-    margin-top: -230px;
-    padding-bottom: 210px;
-    display: inline-block;
-}
-
-/* Header Tisms */
-
-.invisible-header {
-    visibility: hidden;
-    height: 130px;
+*::-webkit-scrollbar {
+	display: none;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 130px;
-    background-color: hsla(210, 15%, 15%, 0.9);
-    z-index: 5;
+	width: 100%;
+	background-color: black;
+	/* background-image: linear-gradient(to bottom right, #000000, #111111); */
+	color: white;
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	z-index: 5;
+	margin: 0;
+	padding: 0;
 }
 
-.banner {
-    width: 960px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-areas: "name nav";
+@media screen and (min-width: 768px) {
+	header {
+		position: fixed;
+		z-index: 8;
+	}
+	div.main h1:first-child {
+		margin-top: 7rem;
+	}
+	a.icon {
+		visibility: hidden;
+	}
 }
 
-#name {
-    display: inline-block;
-    width: 180px;
-    grid-area: name;
+img {
+	max-width: 100%;
+}
+
+footer {
+	width: 100%;
+	bottom: 0;
+	left: 0;
 }
 
 nav {
-    margin: auto;
-    width: 960px;
-    display: grid;
-    grid-template-columns: repeat(5, 192px);
-    grid-template-rows: 40px;
-    grid-template-areas: "a b c d e"
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.b {
-    grid-area: b;
+nav img {
+	height: 2.5rem;
+	margin: 1rem;
+	flex-shrink: 0;
+	box-sizing: border-box;
+	/* border: 1px solid green; */
 }
 
-.c {
-    grid-area: c;
+div.logo {
+	width: 8rem;
+	margin: 0;
+	font-size: 1.15rem;
+	font-weight: bold;
+	color: white;
+	box-sizing: border-box;
 }
 
-.d {
-    grid-area: d;
+@media screen and (min-width: 375px) {
+	div.logo {
+		/* height: 2.5rem; */
+		/* padding: 1rem 0; */
+		font-size: 1.15rem;
+		font-weight: bold;
+		color: white;
+		box-sizing: border-box;
+		width: initial;
+		margin: auto;
+	}
 }
 
-.e {
-    grid-area: e;
+#bandj {
+	display: flex;
 }
 
-.dropdown {
-    text-align: center;
-    position: relative;
-    grid-area: a;
-    font-size: 20px;
-    padding-top: 10px;
-    color: hsla(217, 52%, 80%, 1);
+#advanced {
+	display: none;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 40px;
-    background-color: hsla(210, 15%, 15%, 0.9);
-    z-index: 6;
-    width: 280px;
+@media screen and (min-width: 768px) {
+	#bandj {
+		display: none;
+	}
+	#advanced {
+		display: flex;
+	}
 }
 
-.dropdown:hover {
-    background-color: hsla(210, 25%, 25%, 0.9)
+p {
+	max-width: 66ch;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+a {
+	text-decoration: none;
+	color: #ad0000;
 }
 
-.contents-table {
-    display: grid;
-    padding-bottom: 30px;
-    width: 240px;
-    grid-template-columns: 240px;
-    grid-template-rows: repeat(5, 40px);
-    grid-template-areas: "item1" "item2" "item3" "item4" "item5";
+figure {
+	margin: 1em 0;
 }
 
-.content {
-    position: relative;
-    top: 10px;
+#navlinks a {
+	color: white;
 }
 
-.item {
-    text-align: left;
-    width: 240px;
-    height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+#navlinks {
+	display: none;
+	flex-direction: column;
+	/* padding: 1rem; */
+	z-index: 1;
 }
 
-.item:hover {
-    background-color: hsla(210, 25%, 25%, 0.9);
+#navlinks div:first-child {
+	margin-top: 4rem;
 }
 
-.box {
-    text-align: center;
-    padding-top: 10px;
+#ul-side {
+	display: none;
 }
 
-.box:hover {
-    background-color: hsla(210, 25%, 25%, 0.9);
-    text-align: center;
+@media screen and (min-width: 768px) {
+	#navlinks {
+		display: flex;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		width: 20%;
+		overflow: scroll;
+		z-index: 7;
+		background-color: black;
+		padding-bottom: 115px;
+	}
+	#ul-side {
+		display: inline-block;
+		height: 2.5rem;
+		margin: 1.1em;
+		align-self: flex-start;
+		box-sizing: border-box;
+		top: 0;
+		left: 0;
+	}
 }
 
-/* Contact Dropdown Tisms*/
-
-.dummy {
-    color: white;
-}
-
-.dropcontact {
-    text-align: center;
-    position: relative;
-    grid-area: d;
-    font-size: 20px;
-    padding-top: 10px;
-    color: hsla(217, 52%, 80%, 1);
-}
-
-.dropcontact-content {
-    display: none;
-    position: absolute;
-    top: 40px;
-    background-color: hsla(210, 15%, 15%, 0.9);
-    z-index: 6;
-    width: 360px;
-}
-
-.dropcontact:hover {
-    background-color: hsla(210, 25%, 25%, 0.9)
-}
-
-.dropcontact:hover .dropcontact-content {
-    display: block;
-}
-
-.dropcontact-table {
-    display: grid;
-    width: 360px;
-    padding-bottom: 30px;
-    grid-template-columns: 360px;
-    grid-template-rows: repeat(3, 40px);
-    grid-template-areas: "e-mail" "cell-no" "linked-in";
-}
-
-.contact-content {
-    position: relative;
-    top: 10px;
-}
-
-.contact-item {
-    text-align: left;
-    width: 320px;
-    height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.contact-item:hover {
-    background-color: hsla(210, 25%, 25%, 0.9);
-}
-
-.email-address {
-    grid-area: e-mail;
-}
-
-.cell-no {
-    grid-area: cell-no;
-}
-
-.linked-in {
-    grid-area: linked-in;
-}
-
-/* Body Tisms */
-
-.main {
-    width: 920px;
-    margin: auto;
-    grid-template-columns: 960px;
-    grid-template-rows: auto;
-    background-color: hsla(210, 22%, 22%, 1);
-    padding-top: 20px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.section_title {
-    width: 900px;
-    padding: 10px;
-    margin: auto;
-}
-
-.section_break {
-    padding: 20px;
-}
-
-.company {
-    font-style: italic;
-}
-
-.start {
-    text-align: left;
-}
-
-.dash {
-    text-align: center;
-}
-
-.end {
-    text-align: right;
-}
-
-.institution, .date, .position, .category, .contact_type {
-    font-weight: bold;
-}
-
-/* Introduction Tisms*/
-
-.top {
-    width: 900px;
-    display: grid;
-    margin: auto;
-    padding-top: 20px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 80px 1fr;
-    grid-template-areas: "greeting image" "introduction image";
-}
-
-.greeting {
-    grid-area: greeting;
-    padding-left: 30px;
-}
-
-.introduction {
-    grid-area: introduction;
-    padding-left: 30px;
-    padding-right: 40px;
-}
-
-.image {
-    grid-area: image;
-}
-
-/* Education Tisms */
-
-.education {
-    width: 880px;
-    font-size: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: grid;
-    grid-template-columns: 30% 10% 15% 20% 10% 5% 10%;
-    grid-template-rows: 40px;
-    grid-template-areas: "institution degree major gpa date-start date-dash date-end"
-}
-
-.institution {
-    grid-area: institution;
+#navlinks ul {
+	list-style-type: none;
 }
 
-.degree {
-    grid-area: degree;
+#navlinks div a {
+	/* border: 1px dotted blue; */
+	margin: 0;
+	padding: 0.5em 1em;
+	/* box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2), 0 6px 20px 0 rgba(100, 100, 100, 0.19); */
+	background-image: linear-gradient(to bottom right, #000000, #111111);
 }
 
-.major {
-    grid-area: major;
+ul.l1 {
+	padding-left: 0;
 }
 
-gpa {
-    grid-area: gpa;
-}
-
-/* Work Experience Tisms */
-
-.job {
-    width: 880px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-    display: grid;
-    grid-template-columns: 30% 27% 20% 10% 3% 10%;
-    grid-template-rows: 40px auto;
-    grid-template-areas: "position company location date-start date-dash date-end" "deets deets deets deets deets deets";
-}
+/* ul.l2, ul.l3, ul.l4, ul.l5 {
+	padding-left: 1em;
+} */
 
-.position {grid-area: position;}
+/* #navlinks li {
+	padding-left: 2em;
+	text-indent: -2em;
+} */
 
-.company {
-    grid-area: company;
-    text-align: center;
-}
+/* a { border: 1px dotted green; } */
 
-.location {
-    grid-area: location;
-    text-align: center;
+#navlinks a {
+	display: block;
 }
 
-.date-start {
-    grid-area: date-start;
-    font-weight: bold;
-    text-align: left;
+#navlinks a p {
+	margin: 0;
+	text-indent: -1em;
 }
 
-.date-dash {
-    grid-area: date-dash;
-    font-weight: bold;
-    text-align: center;
+@media screen and (min-width: 768px) {
+	#navlinks a p {
+		font-size: 1rem;
+		text-indent: -1em;
+	}
 }
 
-.date-end {
-    grid-area: date-end;
-    font-weight: bold;
-    text-align: right;
+a.l1 p {
+	font-size: x-large;
+	padding-left: 1em;
 }
 
-.deets {
-    grid-area: deets;
+a.l2 p {
+	font-size: larger;
+	padding-left: 2em;
 }
-
-/* Presentation Tisms*/
 
-.presentations {
-    width: 880px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size 20px;
-    display: grid;
-    grid-template-columns: 70% 25% 5%;
-    grid-template-rows: 40px 40px;
-    grid-template-areas: "title venue date-end";
+a.l3 p {
+	font-size: large;
+	padding-left: 3em;
 }
 
-.title {
-    grid-area: title;
-    font-weight: bold;
+a.l4 p {
+	font-size: medium;
+	padding-left: 4em;
 }
 
-.venue {
-    grid-area: venue;
-    font-style: italic;
+a.l5 p {
+	font-size: small;
+	padding-left: 5em;
 }
 
-/* Skill Tisms */
-
-.skills {
-    display: grid;
-    margin: auto;
-    width: 880px;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(5, 20px);
-    grid-template-areas: "general generals" "office offices" "adobe adobes" "other others" "prog_lang prog_langs";
-    grid-row-gap: 3px;
-    padding-bottom: 20px;
+a.l6 p {
+	font-size: smaller;
+	padding-left: 6em;
 }
 
-.general {
-    grid-area: general;
-    font-weight: bold;
+a.l7 p {
+	font-size: x-small;
+	padding-left: 7em;
 }
 
-.generals {
-    grid-area: generals;
+div.spacer {
+	display: none;
+	height: 5rem;
+	margin: 0;
+	padding: 0;
 }
 
-.office {
-    grid-area: office;
-    font-weight: bold;
+div.main {
+	max-width: 66ch;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.5rem;
+	flex: 1;
 }
 
-.offices {
-    grid-area: offices;
+@media screen and (min-width: 768px) {
+	div.main {
+		margin-left: 25%;
+	}
 }
 
-.adobe {
-    grid-area: adobe;
-    font-weight: bold;
+p.address {
+	font-size: 1.3rem;
 }
 
-.adobes {
-    grid-area: adobes;
+div.author {
+	padding: 0.5em 0;
 }
 
-.other {
-    grid-area: other;
-    font-weight: bold;
+p.name {
+	margin: 0;
 }
 
-.others {
-    grid-area: others;
+p.credentials {
+	font-style: italic;
+	margin: 0;
+	padding-left: 1em;
 }
 
-.prog_lang {
-    grid-area: prog_lang;
-    font-weight: bold;
+p.placeholder {
+	color: red;
 }
 
-.prog_langs {
-    grid-area: prog_langs;
+div.page-placeholder {
+	height: 75vh;
 }
-
-/* Footer Tisms */
 
 footer {
-    height: 200px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    background-image: linear-gradient(to bottom, hsla(210, 15%, 15%, 1), hsla(210, 20%, 20%, 1));
-    padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	z-index: 8;
 }
 
-#contact_header {
-    width: 930px;
-    margin: auto;
-    padding-top: 20px;
+footer img {
+	max-width: 700px;
+	flex-shrink: 1;
 }
 
-.contact {
-    display: grid;
-    margin: auto;
-    width: 920px;
-    grid-template-columns: 1fr 2fr 8fr;
-    grid-column-gap: 100px;
-    grid-template-rows: 25px 25px 25px;
-    grid-template-areas: "email emails emails" "cellno cellnos cellnos" "online onlines copyright";
-    grid-row-gap: 3px;
-    padding-bottom: 20px;
+h5 {
+	font-size: 1em;
+	font-weight: normal;
+	font-style: italic;
 }
 
-.email {
-    grid-area: email;
-    font-weight: bold;
+span.h6 {
+	font-size: 1em;
+	color: #ad0000;
 }
 
-.emails {
-    grid-area: emails;
+div.table {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow-x: scroll;
 }
 
-.cellno {
-    grid-area: cellno;
-    font-weight: bold;
+table {
+	border-collapse: collapse;
+	font-size: small;
 }
 
-.cellnos {
-    grid-area: cellnos;
+th {
+	text-align: left;
+	border-bottom: 2px solid #ad0000;
 }
 
-.online {
-    grid-area: online;
-    font-weight: bold;
+td {
+	border-bottom: 1px solid gray;
+	vertical-align: top;
 }
 
-.onlines {
-    grid-area: onlines;
+td:first-child, th:first-child {
+	position: -webkit-sticky;
+	position: sticky;
+	left: 0;
+	background-color: white;
 }
 
-.copyright {
-    grid-area: copyright;
-    text-align: right;
+th, td {
+	padding: 1em 1em 1em 0;
 }
 
-/* Hyper-Specific Tisms */
-
-#home {
-    color: white;
+tr.midrow td {
+	color: #ad0000;
+	font-weight: bold;
+	border-bottom: 1px solid #ad0000;
 }
 
-#present {
-    text-align: left;
+caption {
+	text-align: left;
 }
+
+figcaption {
+	font-size: small;
+}
+
+div.lightbox {
+	background-color: black;
+}
+
+.block {
+	display: block;
+}
+
+.center {
+	margin: auto;
+}
+
+/* wider than cell phone */
+
+@media only screen and (min-width: 768px) {
+	#cell-only {
+		display: none;
+	}
+}
+
+/* * { border: 1px dotted blue; } */

@@ -1,0 +1,27 @@
+\jtable[caption=Microbiology of 505 cases of septic arthritis in large series reporting data from 1999--2013., label=microbiology, maxwidth=\textwidth]{XX}{}{
+\toprule
+Bacteria & Number (%)\\
+\midrule
+Staphylococci & 282 (56)\\
+\tabindent Methicillin-sensitive \emph{Staphylococcus aureus} (MSSA) & 214 (42)\\
+\tabindent Methicillin-resistant S.\ aureus (MRSA) & 51 (10)\\
+\tabindent Coagulase-negative staphylococci & 17 (3)\\
+Streptococci & 83 (16)\\
+\tabindent Unspecified streptococcal species & 56 (11)\\
+\tabindent Viridans streptococci & 7 (1)\\
+\tabindent \emph{Streptococcus pneumoniae} & 5(1)\\
+\tabindent Other streptococcal species & 15 (3)\\
+Gram-negative rods & 78 (15)\\
+\tabindent \emph{Pseudomonas aeruginosa} & 30 (6)\\
+\tabindent \emph{Escherichia coli} & 14 (3)\\
+\tabindent \emph{Proteus} species & 5 (1)\\
+\tabindent \emph{Klebsiella} species & 5 (1)\\
+\tabindent Others & 21 (4)\\
+Others & 62 (12)\\
+\tabindent Polymicrobial & 25 (5)\\
+\tabindent Anaerobes & 3 (0.6)\\
+\tabindent Mycobacterium tuberculosis & 9 (1.8)\\
+\tabindent \emph{Neisseria gonorrhoeae} (gonococcus) & 6 (1.2)\\ 
+\tabindent Miscellaneous & 19 (4)\\
+\bottomrule
+}
