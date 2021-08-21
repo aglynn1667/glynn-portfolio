@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--Make page same width as device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requiem: </title>
+    <!--Style Sheet-->
+    <link href="/performing-arts/performing-arts-master.css" type="text/css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/performing-arts/favicon-pa/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/performing-arts/favicon-pa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/performing-arts/favicon-pa/favicon-16x16.png">
+    <link rel="manifest" href="/performing-arts/favicon-pa/site.webmanifest">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+    <!--Enable Inclusions-->
+    <script src="/include.js"></script>
+    <!--JS for main nav-->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function navDrop() {
+            var x = document.getElementById("navLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</head>
+<!--Body begins here-->
+<body>
+    <div w3-include-html="/performing-arts/universals-pa.html"></div>
+    <!--Context Nav-->
+    <div class="context-nav">
+        <a class="category">Requiem</a>
+        <a href="/performing-arts/i-introit/i-introit.html">I. Introit</i></a>
+        <a href="/performing-arts/ii-kyrie/ii-kyrie.html">II. Kyrie<i class="fas fa-glasses" style="float: right;"></i></a>
+        <a href="#start" style="padding-left: 3rem;">i. The Score</a>
+        <a href="#text" style="padding-left: 3rem;">ii. The Text</a>
+        <a href="/performing-arts/iii-dies-irae/iii-dies-irae.html">III. Dies Irae</a>
+        <a href="/performing-arts/iv-tuba-mirum/iv-tuba-mirum.html">IV. Tuba Mirum</a>
+        <a href="/performing-arts/v-rex-tremendae/v-rex-tremendae.html">V. Rex Tremendae</a>
+        <a href="/performing-arts/vi-ingemisco/vi-ingemisco.html">VI. Ingemisco</a>
+        <a href="/performing-arts/vii-confutatis/vii-confutatis.html">VII. Confutatis</a>
+        <a href="/performing-arts/viii-lacrimosa/viii-lacrimosa.html">VIII. Lacrimosa</a>
+        <a href="/performing-arts/ix-interlude/ix-interlude.html">IX. Interlude</a>
+        <a href="/performing-arts/x-domine-iesu-christe/x-domine-iesu-christe.html">X. Domine Iesu Christe</a>
+        <a href="/performing-arts/xi-hostias/xi-hostias.html">XI. Hostias</a>
+        <a href="/performing-arts/xii-sanctus/xii-sanctus.html">XII. Sanctus</a>
+        <a href="/performing-arts/xiii-benedictus/xiii-benedictus.html">XIII. Benedictus</a>
+        <a href="/performing-arts/xiv-agnus-dei/xiv-agnus-dei.html">XIV. Agnus Dei</a>
+        <a href="/performing-arts/xv-lux-aeterna/xv-lux-aeterna.html">XV. Lux Aeterna</a>
+        <a href="/performing-arts/xvi-libera-me/xvi-libera-me.html">XVI. Libera Me</a>
+        <a href="/performing-arts/xvii-in-paradisum/xvii-in-paradisum.html">XVII. In Paradisum</a>
+    </div>
+    <!--Page Content-->
+    <style>        
+        .title, .subtitle {
+            text-align: center;
+            display: block;
+        }
+
+        .title {
+            padding: 1rem 0 2rem 0;
+            height: 2rem;
+        }
+
+        .subtitle {
+            height: 2rem;
+            padding: 0 0 2rem 0;
+        }
+
+        .score {
+            display: grid;
+            background-color: white;
+            grid-row-gap: 0;
+            grid-template-rows: repeat(37, auto);
+            grid-template-areas: "p1" "hr" "p2" "hr" "p3" "hr" "p4" "hr" "p5" "hr" "p6" "hr" "p7" "hr" "p8" "hr" "p9" "hr" "p10" "hr" "p11" "hr" "p12" "hr" "p13" "hr" "p14" "hr" "p15" "hr" "p16" "hr" "p17" "hr" "p18" "hr" "p19";
+        }
+
+        @media screen and (min-width: 1024px) {
+            .score {
+                grid-row-gap: 2rem
+            }
+        }
+
+        .main img {
+            max-width: 100%;
+            border: 1rem solid white;
+            box-sizing: border-box;
+        }
+
+        .text {
+            padding: 2rem 0;
+        }
+
+        .text p {
+            padding: 0 1rem;
+        }
+
+        .mov-text {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .latin {
+            display: inline-block;
+            max-width: 20rem;
+        }
+        .english {
+            display: inline-block;
+            max-width: 20rem;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .next {
+            display: block;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .previous {
+            display: block;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .next:hover, .previous:hover {
+            background-color: hsla(0, 28%, 28%, 1);
+        }
+    </style>
+    <div class="main" id="first">
+        <div class="top">
+            <span class="footnote" id="start"></span>
+            <h1 class="title">Requiem</h1>
+            <h2 class="subtitle"></h2>
+        </div>
+        <div class="score">
+            
+        </div>
+        <div class="text">
+            <div class="mov-text">
+                <div class="latin">
+                    <h2><span class="footnote" id="text"></span></h2>
+                    
+                </div>
+                <div class="english">
+                    <h2>&nbsp;</h2>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <a class="previous" href="">&#8810; Previous</a>
+            <a class="next" href="">Next &#8811;</a>
+        </div>
+    </div>
+    <!--Footer Tisms-->
+    <div class="section_break" id="contact"></div>
+    <div w3-include-html="/performing-arts/footer-pa.html"></div>
+</body>
+<script>includeHTML();</script>
+</html>

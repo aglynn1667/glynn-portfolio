@@ -1,75 +1,688 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Advanced Practice Manual for Bone & Joint Infections&mdash;Home</title>
-	<link href="/index.css" type="text/css" rel="stylesheet">
-	<link rel="manifest" href="/manifest.json" />
-	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="/navigation.js"></script>
-	<script src="/bars.js"></script>
+    <meta charset="UTF-8">
+    <!--Make page same width as device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Glynn: CV</title>
+    <!--Style Sheet-->
+    <link href="master.css" type="text/css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-main/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-main/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-main/favicon-16x16.png">
+    <link rel="manifest" href="/favicon-main/site.webmanifest">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+    <!--Enable Inclusions-->
+    <script src="/include.js"></script>
+    <!--JS for main nav-->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function navDrop() {
+            var x = document.getElementById("navLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
 </head>
-
+<!--Body begins here-->
 <body>
-	<header></header>
-	<!-- <div class="spacer"></div> -->
-	<div id="sidebar"></div>
-	<div class="main">
-		<h1>Advanced Practice Manual for Bone & Joint Infections</h1>
-		<p class="address">Division of Infectious Diseases<br />University of Louisville<br />Louisville, KY</p>
-		<p>This manual was created by the Division of Infectious Diseases at the University of Louisville to establish
-			the standard of practice for the care of patients with bone and joint infections, skin and soft tissue
-			infections, and bacteremia.</p>
-		<p id="cell-only">Tap the bars icon (&Congruent;) in the top-right corner of the page to navigate.</p>
-		<h2>List of Contributors</h2>
-		<div class="author">
-			<p class="name">Darmaan Aden, MD</p>
-			<p class="credentials">Chief Fellow (2021)</p>
-		</div>
-		<div class="author">
-			<p class="name">Forest W. Arnold, DO MSc</p>
-			<p class="credentials">Associate Professor; Hospital Epidemiologist</p>
-		</div>
-		<div class="author">
-			<p class="name">Mark V. Burns, MD</p>
-			<p class="credentials">Assistant Professor of Medicine</p>
-		</div>
-		<div class="author">
-			<p class="name">Angeline Prabhu, MD</p>
-			<p class="credentials">Chief Fellow (2022)</p>
-		</div>
-		<div class="author">
-			<p class="name">Kenneth Schot Hannan, MD</p>
-			<p class="credentials">Fellow</p>
-		</div>
-		<div class="author">
-			<p class="name">Mohamad Belal Aldaas, MD</p>
-			<p class="credentials">Fellow</p>
-		</div>
-		<div class="author">
-			<p class="name">Gretchen Miller Carolan, APRN</p>
-			<p class="credentials">Nurse Practitioner</p>
-		</div>
-		<div class="author">
-			<p class="name">Jennifer Parry, APRN</p>
-			<p class="credentials">Nurse Practitioner</p>
-		</div>
-		<div class="author">
-			<p class="name">Raghava S. Ambadapoodi, MBBS</p>
-			<p class="credentials">Clinical Research Coordinator</p>
-		</div>
-		<div class="author">
-			<p class="name">Alex Glynn, MA</p>
-			<p class="credentials">Medical Writer</p>
-		</div>
-		<div class="author">
-			<p class="name">Julio A. Ramirez</p>
-			<p class="credentials">Division Chief; Professor of Medicine</p>
-		</div>
-	</div>
-	<footer></footer>
-</body>
+    <div w3-include-html="/universals.html"></div>
+    <!--Context Nav-->
+    <div class="context-nav">
+        <a class="category">Curriculum Vitae</a>
+        <a href="#start">Introduction</a>
+        <a href="#work-experience">Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#endorsement">Endorsement</a>
+        <a href="#presentations">Presentations</a>
+        <a href="#skills">IT Skills</a>
+        <a href="#contact">Contact Info</a>
+    </div>
+    <!--Page Content-->
+    <style>
+        /* Introduction Tisms*/
 
+        .top {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+        }
+
+        @media screen and (min-width: 480px) {
+            .top {
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+        }
+
+        .top-tism {
+            flex: initial;
+        }
+
+        @media screen and (min-width: 480px) {
+            .top-tism {
+                flex: 1 1 200px;
+            }
+        }
+
+        .greeting {
+            padding-left: 1rem;
+            flex: 0;
+        }
+
+        .top-text {
+            display: flex;
+            width: auto;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #me {
+            width: 100%;
+            padding: 1rem 0 0 0;
+            flex: initial;
+        }
+        
+
+        @media screen and (min-width: 480px) {
+            #me {
+                width: 480px;
+                max-width: 100%;
+                max-height: 380px;
+                padding: 1rem;
+                flex: 1 1 480px;
+                object-fit: contain;
+            }
+        }
+
+        .introduction {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        #first {
+            padding-top: 0;
+        }
+    </style>
+    <div class="main" id="first">
+        <span class="footnote" id="start"></span>
+        <div class="top">
+            <div class="top-tism">
+                <h1 class="greeting">Hello there.</h1>
+                <div class="top-text">
+                    <p class="introduction">I'm Alex (a.k.a. Aaron), an experienced writer/researcher currently based in Louisville, KY, and working for the University of Louisville.</p>
+                    <p class="introduction">Take a look at my CV and writing portfolio, and please get in touch; communication is what I do.</p>
+                    <img src="signature.png" width="180px" style="margin: auto">
+                </div>
+            </div>
+            <img src="me.jpeg" class="image" id="me">
+        </div>
+    </div>
+    <div class="section_break"><hr></div>
+    <!--Work Experience-->
+    <style>
+        /* Work Experience */
+
+        .job {
+            display: flex;
+            max-width: 100%;
+            padding: 0 1.5rem;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .job p {
+            display: block;
+        }
+
+        .position {
+            min-width: 14rem;
+            font-weight: bold;
+        }
+
+        .comp-tisms {
+            flex: 1 1 20rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+
+        .company {
+            min-width: 12rem;
+            font-style: italic;
+        }
+
+        .location {
+            min-width: 8rem;
+        }
+
+        @media screen and (max-width: 480px) {
+            .comp-tisms {
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <div class="main">
+        <h1 class="section_title">Work Experience<span class="footnote" id="work-experience"></span></h1>
+        <div class="job">
+            <p class="position">Research Assistant</p>
+            <div class="comp-tisms">
+                <p class="company">University of Louisville</p>
+                <p class="location">(Louisville, KY)</p>
+            </div>
+            <div class="dates">
+                <p class="date-start">Nov 2020</p>
+                <p class="date-dash">&ndash;</p>
+                <p class="date-end">Present</p>
+            </div>
+            <ul class="deets">
+                <li>Lead medical writing unit at Division of Infectious Diseases</li>
+                <li>Co-manage <a href=https://ir.library.louisville.edu/jri/">Journal of Respiratory Infections</a> and <a href="https://ir.library.louisville.edu/rgh/">Journal of Refugee and Global Health</a></li>
+                <li>Manage social media and email accounts for Division of Infectious Diseases</li>
+            </ul>
+        </div>
+        <div class="job">
+            <p class="position">Researcher</p>
+            <div class="comp-tisms">
+                <p class="company">Potential Energy Coalition</p>
+                <p class="location">(New York, NY)</p>
+            </div>
+            <div class="dates">
+                <p class="date-start">Dec 2019</p>
+                <p class="date-dash">&ndash;</p>
+                <p class="date-end">Jun 2020</p>
+            </div>
+            <ul class="deets">
+                <li>Conducted research to facilitate improved communications on climate change</li>
+                <li>Wrote copy for content marketing campaigns</li>
+            </ul>
+        </div>
+        <div class="job">
+            <p class="position">ELA Teacher</p>
+            <div class="comp-tisms">
+                <p class="company">Gary Comer College Prep</p>
+                <p class="location">(Chicago, IL)</p>
+            </div>
+            <div class="dates">
+                <p class="date-start">Aug 2019</p>
+                <p class="date-dash">&ndash;</p>
+                <p class="date-end">Oct 2019</p>
+            </div>
+            <ul class="deets">
+                <li>Taught communication skills to 154 students (5 sections daily)</li>
+                <li>Achieved largest growth of all 17 junior composition cohorts in Noble Network</li>
+            </ul>
+        </div>
+        <div class="job" id="uc">
+            <p class="position">Graduate Student Researcher</p>
+            <div class="comp-tisms">
+                <p class="company">University of Chicago</p>
+                <p class="location">(Chicago, IL)</p>
+            </div>
+            <div class="dates">
+                <p class="date-start">Sep 2018</p>
+                <p class="date-dash">&ndash;</p>
+                <p class="date-end">Jun 2019</p>
+            </div>
+            <ul class="deets">
+                <li>Conducted multi-disciplinary research; produced numerous research papers</li>
+                <li>Planned and executed 6-month thesis project</li>
+                <li>Prepared and delivered 10 presentations on research findings</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section_break"><hr></div>
+    <!--Education FUSE DEGREE MAJOR GPA-->
+    <style>
+        /* Education Tisms */
+
+        .education {
+            max-width: 100%;
+            font-size: 1rem;
+            padding: 0 1.5rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .education p {
+            display: block;
+        }
+
+        .institution {
+            min-width: 13rem;
+            font-weight: bold;
+        }
+
+        .edu-tisms {
+            flex: 1 1 14rem;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+        }
+
+        .degree {
+            min-width: 3rem;
+        }
+
+        .major {
+            min-width: 6rem;
+        }
+
+        .gpa {
+            min-width: 5rem;
+        }
+
+        .dates {
+            min-width: 11rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .date-start {
+            min-width: 5rem;
+            font-weight: bold;
+        }
+
+        .date-dash {
+            min-width: 1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .date-end {
+            min-width: 5rem;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        #present {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 480px) {
+            #UofC {
+                padding-bottom: 3rem;
+            }
+        }
+    </style>
+    <div class="main">
+        <h1 class="section_title">Education<span class="footnote" id="education"></span></h1>
+        <div class="education" id="UofC">
+            <p class="institution">University of Chicago</p>
+            <div class="edu-tisms">
+                <p class="degree">MA</p>
+                <p class="major">Humanities</p>
+                <p class="gpa">GPA 4.0</p>
+            </div>
+            <div class="dates">
+                <p class="date-start">Sep 2018</p>
+                <p class="date-dash">&ndash;</p>
+                <p class="date-end">Jun 2019</p>
+            </div>
+        </div>
+        <div class="education">
+            <p class="institution">University of Cambridge</p>
+            <div class="edu-tisms">
+                <p class="degree">BA</p>
+                <p class="major">English</p>
+                <p class="gpa">II. i</p>
+            </div>
+            <div class="dates">
+                <p class="date-start">Oct 2014</p>
+                <p class="date-dash">&ndash;</p>
+                <p class="date-end">Jun 2018</p>
+            </div>
+        </div>
+    </div>
+    <div class="section_break"><hr></div>
+    <!--Endorsement-->
+    <style>
+        /* Endorsement Tisms */
+
+        blockquote {
+            quotes: "“" "”";
+            margin: 0;
+            max-width: 100%;
+            padding: 1.5em;
+        }
+
+        blockquote:before {
+            color: white;
+            font-family: georgia;
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 0.1em;
+            vertical-align: -0.4em;
+        }
+
+        blockquote:after {
+            color: white;
+            font-family: georgia;
+            content: close-quote;
+            font-size: 4em;
+            line-height: 1em;
+            float: right;
+        }
+
+        blockquote p {
+            display: inline;
+        }
+
+        .rec {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin: 0 3rem;
+            width: 100%;
+        }
+
+        .rec h3 {
+            display: block;
+            margin: 0;
+        }
+
+        .rec-name {
+            padding-left: 1.5rem;
+            margin: 0;
+        }
+
+        .rec-title, .rec-company {
+            font-style: italic;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .rec-link {
+            text-align: right;
+            float: right;
+            padding: 1rem;
+        }
+    </style>
+    <div class="main">
+        <h1 class="section_title">Endorsement<span class="footnote" id="endorsement"></span></h1>
+        <blockquote>
+            <p>Aaron has been a valuable member of the research team at Potential Energy Coalition. He has been a fast learner on tight deadlines, preparing comprehensive reports with both speed and rigor. Aaron quickly immerses himself in the subject matter and brings a critical mind to a dizzying array of subjects. He's our secret weapon for fast turn, critical research missions. I highly recommend him to anyone looking to bring true intellect onto their team.</p>
+        </blockquote>
+        <h3 class="rec-name">Danielle Travers</h3>
+        <div class="rec">
+            <h3 class="rec-title">Head of Insights,&ensp;</h3>
+            <h3 class="rec-company">Potential Energy Coalition</h3>
+        </div>
+        <a class="rec-link" href="https://www.linkedin.com/in/aaron-glynn">View on my LinkedIn<sup class="reg">&reg;</sup> Profile <i class="fas fa-link"></i></a>
+    </div>
+    <div class="section_break"><hr></div>
+    <!--Presentations FUSE DETAILS-->
+    <style>
+        /* Presentation Tisms*/
+
+        #pres-head {
+            padding-bottom: 2rem;
+        }
+
+        .presentations {
+            max-width: 100%;
+            padding: 0 1.5rem 1rem 1.5rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .presentations p {
+            display: block;
+        }
+
+        .title-tisms {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            flex: 1 1 70%;
+            margin: 0;
+        }
+
+        .title {
+            margin: 0;
+        }
+
+        .subtitle {
+            padding-left: 1rem;
+            padding-right: 2rem;
+            margin: 0;
+        }
+
+        .details {
+            display: flex;
+            min-width: 25%;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin: 0;
+        }
+
+        .venue {
+            text-align: left;
+            font-style: italic;
+            min-width: 10rem;
+            margin: 0;
+        }
+
+        .date-tism {
+            font-weight: bold;
+            text-align: right;
+            min-width: 3rem;
+            margin: 0;
+        }
+    </style>
+    <div>
+        <div class="main">
+            <h1 class="section_title" id="pres-head">Presentations (UChicago)<span class="footnote" id="presentations"></span></h1>
+            <div class="presentations">
+                <div class="title-tisms">
+                    <p class="title">In Despite of Heav&rsquo;n:</p>
+                    <p class="subtitle">Theomachy in Milton&rsquo;s <em>Paradise Lost</em></p>
+                </div>
+                <div class="details">
+                    <p class="venue">Smart Museum</p>
+                    <p class="date-tism">2019</p>
+                </div>
+            </div>
+            <div class="presentations">
+                <div class="title-tisms">
+                    <p class="title">In Despite of Heav&rsquo;n:</p>
+                    <p class="subtitle">Theomachy in Milton&rsquo;s <em>Paradise Lost</em></p>
+                </div>
+                <div class="details">
+                    <p class="venue">UChicago Bookstore</p>
+                    <p class="date-tism">2019</p>
+                </div>
+            </div>
+            <div class="presentations">
+                <p class="title-tisms">Milton&rsquo;s Encounter with Italian Music</p>
+                <div class="details">
+                    <p class="venue">Logan Center</p>
+                    <p class="date-tism">2019</p>
+                </div>
+            </div>
+            <div class="presentations">
+                <p class="title-tisms">Hamlet&rsquo;s Circuitous Action</p>
+                <div class="details">
+                    <p class="venue">Logan Center</p>
+                    <p class="date-tism">2019</p>
+                </div>
+            </div>
+            <div class="presentations">
+                <p class="title-tisms">David Quint on <em>Paradise Lost</em></p>
+                <div class="details">
+                    <p class="venue">Goodspeed Hall</p>
+                    <p class="date-tism">2019</p>
+                </div>
+            </div>
+            <div class="presentations">
+                <div class="title-tisms">
+                    <p class="title">Whose is this Fugue?</p>
+                    <p class="subtitle">Reinterpreting the &Uuml;sk&uuml;dar Theme</span></p>
+                </div>
+                <div class="details">
+                    <p class="venue">Cobb Lecture Hall</p>
+                    <p class="date-tism">2019</p>
+                </div>
+            </div>
+            <div class="presentations">
+                <p class="title-tisms">Milton&rsquo;s Musical Moments</p>
+                <div class="details">
+                    <p class="venue">Regenstein Library</p>
+                    <p class="date-tism">2019</p>
+                </div>
+            </div>
+            <div class="presentations">
+                <div class="title-tisms">
+                    <p class="title">Non Novum Quicquam:</p>
+                    <p class="subtitle">The Exegetical Paradox of Milton&rsquo;s <em>De Doctrina Christiana</em></p>
+                </div>
+                <div class="details">
+                    <p class="venue">Swift Hall</p>
+                    <p class="date-tism">2019</p>
+                </div>
+            </div>
+            <div class="presentations">
+                <div class="title-tisms">
+                    <p class="title">Staging &lsquo;Muth&rsquo;:</p>
+                    <p class="subtitle">Independence of Mind in Wagner&rsquo;s <em>Der Ring des Nibelungen</em></p>
+                </div>
+                <div class="details">
+                    <p class="venue">Regenstein Library</p>
+                    <p class="date-tism">2018</p>
+                </div>
+            </div>
+            <div class="presentations">
+                <p class="title-tisms">Foucault&rsquo;s <em>A History of Sexuality</em> Vol. I</p>
+                <div class="details">
+                    <p class="venue">Swift Hall</p>
+                    <p class="date-tism">2018</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section_break"><hr></div>
+    <!--Skills-->
+    <style>
+        /* Skill Tisms */
+
+        .skills {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .skills p {
+            display: block;
+        }
+
+        .skill-cat {
+            display: block;
+            flex: 1 1 32rem;
+        }
+
+        #software {
+            padding-right: 1.5rem;
+        }
+
+        .cat-title {
+            padding-left: 1.5rem;
+        }
+
+        .sub-cat {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            padding-left: 1.5rem;
+        }
+
+        .kind {
+            font-weight: bold;
+            min-width: 13rem;
+            padding: 0;
+            margin: 0.5rem 0;
+        }
+
+        .skill-list {
+            flex: 1 1 65%;
+            padding-left: 0.5rem;
+            padding-right: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin: 0.5rem 0;
+        }
+
+        #languages {
+            padding-right: 0.875rem;
+        }
+
+        #admin {
+            padding-right: 0.875rem;
+        }
+
+        .note {
+            text-align: right;
+            padding-right: 0.5rem;
+        }
+
+        .tex sub, .latex sub, .latex sup {
+            text-transform: uppercase;
+        }
+
+        .latex sub {
+            vertical-align: -0.5ex;
+            margin-left: -0.1667em;
+            margin-right: -0.125em;
+        }
+
+        .latex, .latex sub {
+            font-size: 1em;
+        }
+
+        .latex sup {
+            font-size: 0.85em;
+            vertical-align: 0.15em;
+            margin-left: -0.36em;
+            margin-right: -0.15em;
+        }
+    </style>
+    <div class="main">
+        <h1 class="section_title">IT Skills<span class="footnote" id="skills"></span></h1>
+        <div class="skills">
+            <div class="skill-cat" id="software">
+                <div class="sub-cat">
+                    <p class="kind">Languages:</p>
+                    <p class="skill-list">R, Python, HTML, CSS, JavaScript, <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span></p>
+                </div>
+                <div class="sub-cat">
+                    <p class="kind">Office Suites:</p>
+                    <p class="skill-list">Office 365, G Suite, LibreOffice</p>
+                </div>
+                <div class="sub-cat">
+                    <p class="kind">Adobe Creative Suite:</p>
+                    <p class="skill-list">Photoshop, InDesign, Acrobat</p>
+                </div>
+                <div class="sub-cat">
+                    <p class="kind">Operating Systems:</p>
+                    <p class="skill-list">Windows, macOS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section_break" id="contact"></div>
+    <div w3-include-html="/footer.html"></div>
+</body>
+<script>includeHTML();</script>
 </html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--Make page same width as device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratias Collegio Binsonio</title>
+    <!--Style Sheet-->
+    <link href="/performing-arts/performing-arts-master.css" type="text/css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/performing-arts/favicon-pa/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/performing-arts/favicon-pa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/performing-arts/favicon-pa/favicon-16x16.png">
+    <link rel="manifest" href="/performing-arts/favicon-pa/site.webmanifest">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+    <!--Enable Inclusions-->
+    <script src="/include.js"></script>
+    <!--JS for main nav-->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function navDrop() {
+            var x = document.getElementById("navLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+</head>
+<!--Body begins here-->
+<body>
+    <div w3-include-html="/performing-arts/universals-pa.html"></div>
+    <!--Context Nav-->
+    <div class="context-nav">
+        <a class="category">Gratias Collegio Binsonio</a>
+        <a href="#start">The Score</a>
+        <a href="#text">The Text</a>
+    </div>
+    <!--Page Content-->
+    <style>        
+        .title, .subtitle {
+            text-align: center;
+            display: block;
+        }
+
+        .title {
+            padding: 1rem 0 2rem 0;
+            height: 2rem;
+        }
+
+        .subtitle {
+            height: 2rem;
+            padding: 0 0 2rem 0;
+        }
+
+        .score {
+            display: grid;
+            background-color: white;
+            grid-row-gap: 0;
+            grid-template-rows: repeat(11, auto);
+            grid-template-areas: "p1" "hr" "p2" "hr" "p3" "hr" "p4" "hr" "p5" "hr" "p6";
+        }
+
+        @media screen and (min-width: 1024px) {
+            .score {
+                grid-row-gap: 2rem
+            }
+        }
+
+        .main img {
+            max-width: 100%;
+            border: 1rem solid white;
+            box-sizing: border-box;
+        }
+
+        .text {
+            padding: 2rem 0;
+        }
+
+        .text p {
+            padding: 0 1rem;
+        }
+    </style>
+    <div class="main" id="first">
+        <div class="top">
+            <span class="footnote" id="start"></span>
+            <h1 class="title">Gratias Collegio Binsonio</h1>
+            <h2 class="subtitle">for SATB Quartet</h2>
+        </div>
+        <div class="score">
+            <img src="gratias1.png" class="p1">
+            <hr class="hr">
+            <img src="gratias2.png" class="p2">
+            <hr class="hr">
+            <img src="gratias3.png" class="p3">
+            <hr class="hr">
+            <img src="gratias4.png" class="p4">
+            <hr class="hr">
+            <img src="gratias5.png" class="p5">
+            <hr class="hr">
+            <img src="gratias6.png" class="p6">
+        </div>
+        <div class="text">
+            <h2 id="grace_title">The Grace for Robinson College, Cambridge:<span class="footnote" id="text"></span></h2>
+            <p id="grace_latin"><em>Benedic, domine, nobis et donis tuis, per Iesum Christum dominum nostrum, Amen.</em></p>
+            <p id="grace_english">Bless us, Lord, and your gifts, through Jesus Christ our lord, Amen.</p>
+        </div>
+    </div>
+    <!--Footer Tisms-->
+    <div class="section_break" id="contact"></div>
+    <div w3-include-html="/performing-arts/footer-pa.html"></div>
+</body>
+<script>includeHTML();</script>
+</html>

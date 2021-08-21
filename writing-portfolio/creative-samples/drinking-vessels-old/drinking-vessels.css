@@ -1,0 +1,507 @@
+/* General Tisms */
+html {
+    height: 100%;
+    background: hsla(210, 25%, 25%, 1);
+    color: white;
+    font-family: optima, sans-serif;
+}
+
+body {
+    font-family: optima, sans-serif;
+    padding-top: 20px;
+}
+
+a {
+    color: hsla(217, 52%, 80%, 1);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.dummy {
+    color: white;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+
+table {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 920px;
+    font-size: 20px;
+}
+
+hr {
+    width: 400px;
+}
+
+span.tism {
+    margin-top: -170px;
+    padding-bottom: 130px;
+    display: block;
+}
+
+span.footnote {
+    margin-top: -240px;
+    padding-bottom: 220px;
+    display: inline-block;
+}
+
+.reg {
+    font-size: 10px;
+}
+
+.far {
+    float: left;
+    width: 30px;
+    padding-right: 20px;
+    text-align: center;
+}  
+
+/* Header Tisms */
+
+.invisible-header {
+    visibility: hidden;
+    height: 130px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 130px;
+    background-color: hsla(210, 15%, 15%, 0.9);
+    z-index: 5;
+}
+
+.banner {
+    width: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "name nav";
+}
+
+#name {
+    display: inline-block;
+    width: 180px;
+    grid-area: name;
+}
+
+nav {
+    margin: auto;
+    width: 960px;
+    display: grid;
+    grid-template-columns: repeat(5, 192px);
+    grid-template-rows: 40px;
+    grid-template-areas: "a b c d e"
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.dropdown {
+    text-align: center;
+    position: relative;
+    grid-area: a;
+    font-size: 20px;
+    padding-top: 10px;
+    color: hsla(217, 52%, 80%, 1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: hsla(210, 15%, 15%, 0.9);
+    z-index: 6;
+    width: 384px;
+}
+
+.dropdown:hover {
+    background-color: hsla(210, 25%, 25%, 0.9)
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contents-table {
+    display: grid;
+    padding-bottom: 30px;
+    width: 384px;
+    grid-template-columns: 384px;
+    grid-template-rows: repeat(10, 40px);
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5" "item6" "item7" "item8" "item9" "item10";
+}
+
+.content {
+    position: relative;
+    top: 10px;
+}
+
+.item {
+    text-align: left;
+    width: 344px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.item:hover {
+    background-color: hsla(210, 25%, 25%, 0.9);
+}
+
+.i {
+    grid-area: item1;
+}
+
+.ii {
+    grid-area: item2;
+}
+
+.iii {
+    grid-area: item3;
+}
+
+.iv {
+    grid-area: item4;
+}
+
+.v {
+    grid-area: item5;
+}
+
+.vi {
+    grid-area: item6;
+}
+
+.vii {
+    grid-area: item7;
+}
+
+.viii {
+    grid-area: item8;
+}
+
+.ix {
+    grid-area: item9;
+}
+
+.x {
+    grid-area: item10;
+}
+
+.box {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.box:hover {
+    background-color: hsla(210, 25%, 25%, 0.9);
+    text-align: center;
+}
+
+/* Contact Dropdown Tisms*/
+
+.current {
+    padding-left: 50px;
+}
+
+#current_chapter {
+    float: right;
+}
+
+.dropcontact {
+    text-align: center;
+    position: relative;
+    grid-area: d;
+    font-size: 20px;
+    padding-top: 10px;
+    color: hsla(217, 52%, 80%, 1);
+}
+
+.dropcontact-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: hsla(210, 15%, 15%, 0.9);
+    z-index: 6;
+    width: 384px;
+}
+
+.dropcontact:hover {
+    background-color: hsla(210, 25%, 25%, 0.9)
+}
+
+.dropcontact:hover .dropcontact-content {
+    display: block;
+}
+
+.dropcontact-table {
+    display: grid;
+    width: 384px;
+    padding-bottom: 30px;
+    grid-template-columns: 384px;
+    grid-template-rows: repeat(3, 40px);
+    grid-template-areas: "e-mail" "cell-no" "linked-in";
+}
+
+.contact-content {
+    position: relative;
+    top: 10px;
+}
+
+.contact-item {
+    text-align: left;
+    width: 344px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-item:hover {
+    background-color: hsla(210, 25%, 25%, 0.9);
+}
+
+.email-address {
+    grid-area: e-mail;
+}
+
+.cell-no {
+    grid-area: cell-no;
+}
+
+.linked-in {
+    grid-area: linked-in;
+}
+
+/* Body Tisms */
+
+.main {
+    width: 920px;
+    margin: auto;
+    grid-template-columns: 960px;
+    grid-template-rows: auto;
+    background-color: hsla(210, 22%, 22%, 1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.main p {
+    font-size: 20px;
+}
+
+.section_title {
+    width: 900px;
+    padding: 10px;
+    margin: auto;
+}
+
+.section_break {
+    padding: 20px;
+}
+
+.indent {
+    text-indent: 2em;
+    margin-top: -20px;
+}
+
+q {
+    quotes: "‘" "’" "“" "”";
+}
+
+q: :before {
+    content: open-quote;
+}
+
+q: :after {
+    content: close-quote;
+}
+
+
+sup {
+    font-size: 10px;
+}
+
+.textbox {
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote {
+    width: 800px;
+}
+
+.attribution {
+    padding-left: 100px;
+}
+
+.endnote {
+    padding-left: 20px;
+    text-indent: -20px;
+    width: 860px;
+}
+
+.bibliography {
+    padding-left: 34px;
+    text-indent: -34px;
+    width: 840px;
+}
+
+.center {
+    text-align: center;
+}
+
+.right_align {
+    text-align: right;
+}
+
+/* Footer Tisms */
+
+footer {
+    height: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, hsla(210, 15%, 15%, 1), hsla(210, 20%, 20%, 1));
+    padding-bottom: 20px;
+}
+
+#contact_header {
+    width: 930px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.contact {
+    display: grid;
+    margin: auto;
+    width: 920px;
+    grid-template-columns: 192px 1fr 1fr;
+    grid-template-rows: 25px 25px 25px;
+    grid-template-areas: "email emails emails" "cellno cellnos cellnos" "online onlines copyright";
+    grid-row-gap: 3px;
+    padding-bottom: 20px;
+}
+
+.email {
+    grid-area: email;
+    font-weight: bold;
+}
+
+.emails {
+    grid-area: emails;
+}
+
+.cellno {
+    grid-area: cellno;
+    font-weight: bold;
+}
+
+.cellnos {
+    grid-area: cellnos;
+}
+
+.online {
+    grid-area: online;
+    font-weight: bold;
+}
+
+.onlines {
+    grid-area: onlines;
+}
+
+.copyright {
+    grid-area: copyright;
+    text-align: right;
+}
+
+/* Hyper-Specific Tisms */
+
+.buttons_next_only {
+    display: grid;
+    padding-top: 40px;
+    width: 880px;
+    margin: auto;
+    grid-template-columns: 798px 82px;
+    grid-template-areas: "maxspace next";
+}
+
+.buttons_previous_only {
+    display: grid;
+    padding-top: 40px;
+    width: 880px;
+    margin: auto;
+    grid-template-columns: 115px 765px;
+    grid-template-areas: "previous maxspace";
+}
+
+.buttons {
+    display: grid;
+    padding-top: 40px;
+    width: 880px;
+    margin: auto;
+    grid-template-columns: 115px 683px 82px;
+    grid-template-areas: "previous midspace next";
+}
+
+.button {
+    text-align: right;
+    padding: 10px;
+}
+
+.button:hover {
+    background-color: hsla(210, 25%, 25%, 0.9);
+    text-align: right;
+}
+
+.previous {
+    grid-area: previous;
+    font-weight: bold;
+}
+
+.midspace {
+    grid-area: midspace;
+}
+
+.maxspace {
+    grid-area: maxspace;
+}
+
+.next {
+    grid-area: next;
+    font-weight: bold;
+    text-align: right;
+}
+
+#home {
+    color: white;
+}

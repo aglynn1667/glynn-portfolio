@@ -1,0 +1,444 @@
+/* General Tisms */
+html {
+    height: 100%;
+    background: DarkSlateGray;
+    color: white;
+    font-family: optima, sans-serif;
+}
+
+body {
+    font-family: optima, sans-serif;
+    padding-top: 20px;
+}
+
+a {
+    color: PowderBlue;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+
+table {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 920px;
+    font-size: 20px;
+}
+
+hr {
+    width: 400px;
+}
+
+span {
+    padding-left: 20px;
+}
+
+span.tism {
+    margin-top: -170px;
+    padding-bottom: 130px;
+    display: block;
+}
+
+span.footnote {
+    margin-top: -230px;
+    padding-bottom: 210px;
+    display: inline-block;
+}
+
+/* Header Tisms */
+
+.invisible-header {
+    visibility: hidden;
+    height: 130px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 130px;
+    background-color: hsla(180, 15%, 15%, 0.9);
+    z-index: 5;
+}
+
+.banner {
+    width: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: "name nav";
+}
+
+#name {
+    display: inline-block;
+    width: 180px;
+    grid-area: name;
+}
+
+nav {
+    margin: auto;
+    width: 960px;
+    display: grid;
+    grid-template-columns: repeat(5, 192px);
+    grid-template-rows: 40px;
+    grid-template-areas: "a b c d e"
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.dropdown {
+    text-align: center;
+    position: relative;
+    grid-area: a;
+    font-size: 20px;
+    padding-top: 10px;
+    color: powderblue;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: hsla(180, 15%, 15%, 0.9);
+    z-index: 6;
+    width: 280px;
+}
+
+.dropdown:hover {
+    background-color: hsla(180, 25%, 25%, 0.9)
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contents-table {
+    display: grid;
+    padding-bottom: 30px;
+    width: 240px;
+    grid-template-columns: 240px;
+    grid-template-rows: repeat(3, 40px);
+    grid-template-areas: "item1" "item2" "item3";
+}
+
+.content {
+    position: relative;
+    top: 10px;
+}
+
+.item {
+    text-align: left;
+    width: 240px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.item:hover {
+    background-color: hsla(180, 25%, 25%, 0.9);
+}
+
+.i {
+    grid-area: item1;
+}
+
+.ii {
+    grid-area: item2;
+}
+
+.iii {
+    grid-area: item3;
+}
+
+.dropcontact {
+    text-align: center;
+    position: relative;
+    grid-area: d;
+    font-size: 20px;
+    padding-top: 10px;
+    color: powderblue;
+}
+
+.dropcontact-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background-color: hsla(180, 15%, 15%, 0.9);
+    z-index: 6;
+    width: 360px;
+}
+
+.dropcontact:hover {
+    background-color: hsla(180, 25%, 25%, 0.9)
+}
+
+.dropcontact:hover .dropcontact-content {
+    display: block;
+}
+
+.dropcontact-table {
+    display: grid;
+    width: 360px;
+    padding-bottom: 30px;
+    grid-template-columns: 360px;
+    grid-template-rows: repeat(3, 40px);
+    grid-template-areas: "e-mail" "cell-no" "linked-in";
+}
+
+.contact-content {
+    position: relative;
+    top: 10px;
+}
+
+.contact-item {
+    text-align: left;
+    width: 320px;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-item:hover {
+    background-color: hsla(180, 25%, 25%, 0.9);
+}
+
+.email-address {
+    grid-area: e-mail;
+}
+
+.cell-no {
+    grid-area: cell-no;
+}
+
+.linked-in {
+    grid-area: linked-in;
+}
+
+.box {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.box:hover {
+    background-color: hsla(180, 25%, 25%, 0.9);
+    text-align: center;
+}
+
+/* Body Tisms */
+
+.main {
+    width: 920px;
+    margin: auto;
+    grid-template-columns: 960px;
+    grid-template-rows: auto;
+    background-color: hsla(180, 22%, 22%, 1);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section_title {
+    width: 900px;
+    padding: 10px;
+    margin: auto;
+}
+
+.section_break {
+    padding: 20px;
+}
+
+.company {
+    font-style: italic;
+}
+
+.start {
+    text-align: left;
+}
+
+.dash {
+    text-align: center;
+}
+
+.end {
+    text-align: right;
+}
+
+.institution, .date, .position, .category, .contact_type {
+    font-weight: bold;
+}
+
+/* Introduction Tisms*/
+.top {
+    width: 900px;
+    display: grid;
+    margin: auto;
+    padding-top: 20px;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas: "greeting" "introduction";
+}
+
+.greeting {
+    grid-area: greeting;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.introduction {
+    grid-area: introduction;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Category Tisms */
+
+.analytical {
+    width: 800px;
+    display: grid;
+    margin: auto;
+    font-weight: normal;
+    grid-template-columns: 800px;
+    grid-template-rows: auto;
+    grid-template-areas: "milton" "renaissance" "misc";
+}
+
+.milton {
+    grid-area: milton;
+}
+
+.renaissance {
+    grid-area: renaissance;
+}
+
+.misc {
+    grid-area: misc;
+}
+
+.creative {
+    width: 800px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 70px;
+    grid-template-rows: 120px 1fr;
+    grid-template-areas: "drinking short" "drinking verse";
+}
+
+.drinking {
+    grid-area: drinking;
+}
+
+.drinkings {
+    grid-area: drinkings;
+}
+
+.short {
+    grid-area: short;
+}
+
+.shorts {
+    grid-area: shorts;
+}
+
+verse {
+    grid-area: verse;
+}
+
+verses {
+    grid-area: verses;
+}
+
+/* Footer Tisms */
+
+footer {
+    height: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, hsla(180, 15%, 15%, 1), hsla(180, 20%, 20%, 1));
+    padding-bottom: 20px;
+}
+
+#contact_header {
+    width: 930px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.contact {
+    display: grid;
+    margin: auto;
+    width: 920px;
+    grid-template-columns: 1fr 2fr 8fr;
+    grid-column-gap: 100px;
+    grid-template-rows: 25px 25px 25px;
+    grid-template-areas: "email emails emails" "cellno cellnos cellnos" "online onlines copyright";
+    grid-row-gap: 3px;
+    padding-bottom: 20px;
+}
+
+.email {
+    grid-area: email;
+    font-weight: bold;
+}
+
+.emails {
+    grid-area: emails;
+}
+
+.cellno {
+    grid-area: cellno;
+    font-weight: bold;
+}
+
+.cellnos {
+    grid-area: cellnos;
+}
+
+.online {
+    grid-area: online;
+    font-weight: bold;
+}
+
+.onlines {
+    grid-area: onlines;
+}
+
+.copyright {
+    grid-area: copyright;
+    text-align: right;
+}
+
+#home {
+    color: white;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--Make page same width as device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requiem: XVI. In Paradisum</title>
+    <!--Style Sheet-->
+    <link href="/performing-arts/performing-arts-master.css" type="text/css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/performing-arts/favicon-pa/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/performing-arts/favicon-pa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/performing-arts/favicon-pa/favicon-16x16.png">
+    <link rel="manifest" href="/performing-arts/favicon-pa/site.webmanifest">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/fc24ff61b3.js" crossorigin="anonymous"></script>
+    <!--Enable Inclusions-->
+    <script src="/include.js"></script>
+    <!--JS for main nav-->
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function navDrop() {
+            var x = document.getElementById("navLinks");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }
+    </script>
+    <!--Contextual CSS-->
+    <style>        
+        .roman {
+            display: inline-block;
+            width: 2.4rem;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        .roman-lower {
+            display: inline-block;
+            width: 1rem;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        #offertory, #in-par {
+            flex: none;
+            overflow-x: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        #in-par-tism {
+            display: none;
+        }
+
+        @media screen and (min-width: 1200px) {
+            #in-par-tism {
+                display: initial;
+                min-width: 1rem;
+                padding-right: 0;
+            }
+        }
+        
+        .title, .subtitle {
+            text-align: center;
+            display: block;
+        }
+
+        .title {
+            padding: 1rem 0 2rem 0;
+            height: 2rem;
+        }
+
+        .subtitle {
+            height: 2rem;
+            padding: 0 0 2rem 0;
+        }
+
+        .score {
+            display: grid;
+            background-color: #ebd6bb;
+            grid-row-gap: 0;
+            grid-template-rows: repeat(21, auto);
+            grid-template-areas: "p1" "hr" "p2" "hr" "p3" "hr" "p4" "hr" "p5" "hr" "p6" "hr" "p7" "hr" "p8" "hr" "p9" "hr" "p10" "hr" "p11" "hr" "p12" "hr" "p13";
+        }
+
+        .viewer iframe {
+            min-height: 80vh;
+            width: 100%;
+            border: none;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .score {
+                grid-row-gap: 1rem;
+            }
+        }
+
+        .score img {
+            max-width: 100%;
+            border-top: 2rem solid #ebd6bb;
+            border-bottom: 2rem solid #ebd6bb;
+            border-left: 1rem solid #ebd6bb;
+            border-right: 1rem solid #ebd6bb;
+            box-sizing: border-box;
+        }
+
+        .score hr {
+            border: 1px solid #0d0000;
+        }
+
+        .text {
+            padding: 2rem 0;
+        }
+
+        .text p {
+            padding: 0 1rem;
+        }
+
+        .mov-text {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+
+        .latin {
+            display: inline-block;
+            max-width: 23rem;
+        }
+        .english {
+            display: inline-block;
+            max-width: 23rem;
+        }
+
+        .previous {
+            display: block;
+            font-size: 1.5rem;
+            float: left;
+            text-align: center;
+            margin: 2rem 0 1rem 1rem;
+            padding: 1rem;
+            width: 7.5rem;
+        }
+
+        .previous:hover {
+            background-color: hsla(0, 28%, 28%, 1);
+        }
+    </style>
+</head>
+<!--Body begins here-->
+<body>
+    <div w3-include-html="/performing-arts/universals-pa.html"></div>
+    <!--Context Nav-->
+    <div class="context-nav">
+        <a href="/performing-arts/requiem.html" class="category">Requiem</a>
+        <a href="/performing-arts/i-introit/i-introit.html"><span class="roman">I.</span>Introit</a>
+        <a href="/performing-arts/ii-kyrie/ii-kyrie.html"><span class="roman">II.</span>Kyrie</a>
+        <a href="/performing-arts/iii-dies-irae/iii-dies-irae.html"><span class="roman">III.</span>Dies Irae</a>
+        <a href="/performing-arts/iv-tuba-mirum/iv-tuba-mirum.html"><span class="roman">IV.</span>Tuba Mirum</a>
+        <a href="/performing-arts/v-rex-tremendae/v-rex-tremendae.html"><span class="roman">V.</span>Rex Tremendae</a>
+        <a href="/performing-arts/vi-ingemisco/vi-ingemisco.html"><span class="roman">VI.</span>Ingemisco</a>
+        <a href="/performing-arts/vii-confutatis/vii-confutatis.html"><span class="roman">VII.</span>Confutatis</a>
+        <a href="/performing-arts/viii-lacrimosa/viii-lacrimosa.html"><span class="roman">VIII.</span>Lacrimosa</a>
+        <a href="/performing-arts/ix-interlude/ix-interlude.html"><span class="roman">IX.</span>Interlude</a>
+        <a href="/performing-arts/x-domine-iesu-christe/x-domine-iesu-christe.html" id="offertory"><span class="roman">X.</span>Domine Iesu Christe</a>
+        <a href="/performing-arts/xi-hostias/xi-hostias.html"><span class="roman">XI.</span>Hostias</a>
+        <a href="/performing-arts/xii-sanctus/xii-sanctus.html"><span class="roman">XII.</span>Sanctus</a>
+        <a href="/performing-arts/xiii-agnus-dei/xiii-agnus-dei.html"><span class="roman">XIII.</span>Agnus Dei</a>
+        <a href="/performing-arts/xiv-lux-aeterna/xiv-lux-aeterna.html"><span class="roman">XIV.</span>Lux Aeterna</a>
+        <a href="/performing-arts/xv-libera-me/xv-libera-me.html"><span class="roman">XV.</span>Libera Me</a>
+        <a id="in-par"><span class="roman">XVI.</span>In Paradisum<i class="fas fa-glasses" style="float: right;" id="in-par-tism"></i></a>
+    </div>
+    <!--Page Content-->
+    <div class="main" id="first">
+        <div class="viewer">
+            <iframe src="xvi-in-paradisum.pdf#toolbar=0" title="In Paradisum Score"></iframe>
+        </div>
+        <div class="text">
+            <div class="mov-text">
+                <div class="latin">
+                    <h2>XVI. In Paradisum<span class="footnote" id="text"></span></h2>
+                    <p>In paradisum deducant angeli.
+                    <br>In tuo adventu suscipiant te martyres,
+                    <br>Et perducant te in civitatem sanctam Ierusalem,
+                    <br>Chorus angelorum te suscipiat,
+                    <br>Et cum Lazaro quondam paupere
+                    <br>Aeternam habeas requiem.</p>
+                </div>
+                <div class="english">
+                    <h2>&nbsp;</h2>
+                    <p>Let the angels lead you into paradise. Let the martyrs receive you at your coming and lead you into the holy city of Jerusalem. Let the choir of angels receive you, and with the once poor Lazarus, may you have eternal rest.</p>
+                </div>
+            </div>
+            <a class="previous" href="/performing-arts/xvi-libera-me/xvi-libera-me.html">&#8810; Previous</a>
+        </div>
+    </div>
+    <!--Footer Tisms-->
+    <div class="section_break" id="contact"></div>
+    <div w3-include-html="/performing-arts/footer-pa.html"></div>
+</body>
+<script>includeHTML();</script>
+</html>

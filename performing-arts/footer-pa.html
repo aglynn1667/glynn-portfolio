@@ -1,0 +1,366 @@
+<style>
+    .small-tablet {
+        height: 23rem;
+        display: flex;
+        width: 100%;
+        flex-shrink: 0;
+        z-index: 1;
+        background-image: linear-gradient(to bottom, hsla(0, 15%, 15%, 1), hsla(0, 20%, 20%, 1));
+        box-shadow: 0 -0.1rem 0.4rem hsla(0, 15%, 15%, 0.5);
+    }
+
+    .small-tablet .footer-elements {
+        padding: 0 0 0.5rem 0.5rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+    }
+
+    .small-tablet a, .small-tablet p {
+        display: block;
+        font-size: 1.4rem;
+        padding: 1rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    .small-tablet a:hover{
+        background-color: hsla(0, 25%, 25%, 0.9)
+    }
+
+    .small-tablet #back-to-top, .small-tablet .copy {
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    .small-tablet .fa-arrow-alt-circle-up {
+        float: left;
+        padding-left: 0;
+        padding-right: 0.5rem;
+    }
+
+    .small-tablet .spacer:hover, .small-tablet .copy:hover{
+        background-color: initial;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .iPad {
+        display: none;
+    }
+
+    .d {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        .tablet {
+        height: 9rem;
+        display: flex;
+        width: 100%;
+        flex-shrink: 0;
+        z-index: 1;
+        background-image: linear-gradient(to bottom, hsla(0, 15%, 15%, 1), hsla(0, 20%, 20%, 1));
+        box-shadow: 0 -0.1rem 0.4rem hsla(0, 15%, 15%, 0.5);
+        }
+
+        .tablet .footer-elements {
+            max-height: 9rem;
+            width: 80%;
+            margin-left: 20%;
+            margin-right: 0;
+            padding-top: 1rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .tablet img {
+            max-height: 5rem;
+            padding: 1rem;
+            width: auto;
+        }
+
+        .tablet a {
+            display: block;
+            font-size: 1.2rem;
+            padding: 0.6rem 2rem;
+        }
+
+        .tablet p {
+            display: block;
+            font-size: 1.2rem;
+            padding: 0.6rem 2rem;
+            text-align: right;
+        }
+
+        .tablet a:hover{
+            background-color: hsla(0, 25%, 25%, 0.9)
+        }
+
+        .tablet .contact-tisms {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .tablet .copy-tisms {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .tablet #back-to-top {
+            text-align: right;
+        }
+
+        .tablet .fa-arrow-alt-circle-up {
+            float: right;
+            padding-left: 0.5rem;
+            padding-right: 0;
+        }
+
+        .tablet .spacer:hover, .tablet .copy:hover{
+            background-color: initial;
+        }
+        
+        .small-tablet {
+            display: none;
+        }
+
+        .iPad {
+            display: none;
+        }
+
+        .d {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .iPad {
+        height: 9rem;
+        width: 100%;
+        display: flex;
+        flex-shrink: 0;
+        z-index: 1;
+        background-image: linear-gradient(to bottom, hsla(0, 15%, 15%, 1), hsla(0, 20%, 20%, 1));
+        box-shadow: 0 -0.1rem 0.4rem hsla(0, 15%, 15%, 0.5);
+        }
+
+        .iPad .footer-elements {
+            max-height: 9rem;
+            width: 80%;
+            margin-left: 20%;
+            margin-right: 0;
+            padding-top: 1rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .iPad img {
+            max-height: 5rem;
+            padding: 1rem;
+            width: auto;
+        }
+
+        .iPad a {
+            display: block;
+            font-size: 1.2rem;
+            padding: 0.6rem 2rem;
+        }
+
+        .iPad p {
+            display: block;
+            font-size: 1.2rem;
+            padding: 0.6rem 2rem;
+            text-align: right;
+        }
+
+        .iPad a:hover{
+            background-color: hsla(0, 25%, 25%, 0.9)
+        }
+
+        .iPad .contact-tisms {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .iPad .copy-tisms {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .iPad #back-to-top {
+            text-align: right;
+        }
+
+        .iPad .fa-arrow-alt-circle-up {
+            float: right;
+            padding-left: 0.5rem;
+            padding-right: 0;
+        }
+
+        .iPad .spacer:hover, .iPad .copy:hover{
+            background-color: initial;
+        }
+        
+        .small-tablet {
+            display: none;
+        }
+
+        .tablet {
+            display: none;
+        }
+
+        .d {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1366px) {
+        .d {
+            height: 9rem;
+            display: flex;
+            width: 100%;
+            flex-shrink: 0;
+            z-index: 1;
+            background-image: linear-gradient(to bottom, hsla(0, 15%, 15%, 1), hsla(0, 20%, 20%, 1));
+            box-shadow: 0 -0.1rem 0.4rem hsla(0, 15%, 15%, 0.5);
+        }
+
+        .d .footer-elements {
+            max-height: 9rem;
+            width: 70%;
+            margin-left: 16%;
+            margin-right: 14%;
+            padding-top: 1rem;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .d img {
+            max-height: 5rem;
+            padding: 1rem;
+            width: auto;
+        }
+
+        .d a {
+            display: block;
+            font-size: 1.2rem;
+            padding: 0.6rem 2rem;
+        }
+
+        .d p {
+            display: block;
+            font-size: 1.2rem;
+            padding: 0.6rem 2rem;
+            text-align: right;
+        }
+
+        .d a:hover{
+            background-color: hsla(0, 25%, 25%, 0.9)
+        }
+
+        .d .contact-tisms {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .d .copy-tisms {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .d #back-to-top {
+            text-align: right;
+        }
+
+        .d .fa-arrow-alt-circle-up {
+            float: right;
+            padding-left: 0.5rem;
+            padding-right: 0;
+        }
+
+        .d .spacer:hover, .d .copy:hover{
+            background-color: initial;
+        }
+        
+        .small-tablet {
+            display: none;
+        }
+
+        .tablet {
+            display: none;
+        }
+
+        .iPad {
+            display: none;
+        }
+    }
+</style>
+<!--Width <= 768px-->
+<footer class="small-tablet">
+    <div class="footer-elements">
+        <a id="back-to-top" href="#start"><i class="fas fa-arrow-alt-circle-up"></i>Back to Top</a>
+        <a class="copy"><i class="far fa-copyright"></i>2020 Aaron Glynn</a>
+        <a href="mailto:ag@glynnportfolio.com"><i class="fas fa-envelope"></i>ag@glynnportfolio.com</a>
+        <a href="tel:1-312-366-0097"><i class="fas fa-mobile-alt"></i>(312) 366-0097</a>
+        <a href="https://www.linkedin.com/in/aaron-glynn"><i class="fas fa-user"></i>LinkedIn<sup class="reg">&reg;</sup> Profile</a>
+    </div>
+</footer>
+<!--Width <= 1024px-->
+<footer class="tablet">
+    <div class="footer-elements">
+        <div class="contact-tisms">
+            <a href="mailto:ag@glynnportfolio.com"><i class="fas fa-envelope"></i>ag@glynnportfolio.com</a>
+            <a href="tel:1-312-366-0097"><i class="fas fa-mobile-alt"></i>(312) 366-0097</a>
+            <a href="https://www.linkedin.com/in/aaron-glynn"><i class="fas fa-user"></i>LinkedIn<sup class="reg">&reg;</sup> Profile</a>
+        </div>
+        <div class="copy-tisms">
+            <a id="back-to-top" href="#start"><i class="fas fa-arrow-alt-circle-up"></i>Back to Top</a>
+            <a class="spacer">&nbsp;</a>
+            <a class="copy"><i class="far fa-copyright"></i>2020 Aaron Glynn</a>
+        </div>
+    </div>
+</footer>
+<!--Width <= 1366px-->
+<footer class="iPad">
+    <div class="footer-elements">
+        <div class="contact-tisms">
+            <a href="mailto:ag@glynnportfolio.com"><i class="fas fa-envelope"></i>ag@glynnportfolio.com</a>
+            <a href="tel:1-312-366-0097"><i class="fas fa-mobile-alt"></i>(312) 366-0097</a>
+            <a href="https://www.linkedin.com/in/aaron-glynn"><i class="fas fa-user"></i>LinkedIn<sup class="reg">&reg;</sup> Profile</a>
+        </div>
+        <img id="signature" src="/signature.png">
+        <div class="copy-tisms">
+            <a id="back-to-top" href="#start"><i class="fas fa-arrow-alt-circle-up"></i>Back to Top</a>
+            <a class="spacer">&nbsp;</a>
+            <a class="copy">&copy; 2020 Aaron Glynn</a>
+        </div>
+    </div>
+</footer>
+<!--Desktop-->
+<footer class="d">
+    <div class="footer-elements">
+        <div class="contact-tisms">
+            <a href="mailto:ag@glynnportfolio.com"><i class="fas fa-envelope"></i>ag@glynnportfolio.com</a>
+            <a href="tel:1-312-366-0097"><i class="fas fa-mobile-alt"></i>(312) 366-0097</a>
+            <a href="https://www.linkedin.com/in/aaron-glynn"><i class="fas fa-user"></i>LinkedIn<sup class="reg">&reg;</sup> Profile</a>
+        </div>
+        <img id="signature" src="/signature.png">
+        <div class="copy-tisms">
+            <a id="back-to-top" href="#start"><i class="fas fa-arrow-alt-circle-up"></i>Back to Top</a>
+            <a class="spacer">&nbsp;</a>
+            <a class="copy">&copy; 2020 Aaron Glynn</a>
+        </div>
+    </div>
+</footer>
